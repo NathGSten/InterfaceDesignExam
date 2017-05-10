@@ -1,8 +1,4 @@
-.event-img {
-
-    animation-duration: 4s;
-}
-
+@import "colors.scss";
 
 /* ================================= 
   Button Transitions
@@ -16,6 +12,34 @@ button:hover {
 	background: $btnGreen !important;
 }
 
+input[type="submit"] {
+    transition: background .3s, color .3s;
+}
+
+input[type="submit"]:hover {
+    color: $white;
+	background: $btnGreen !important;
+}
+
+
+/* ================================= 
+  Event tags and calendar Transitions
+==================================== */
+
+.calender-view-container, .filters {
+	transition: background .3s, color .3s;
+}
+
+.calender-view-container:hover, .filters:hover {
+	color: $white;
+	background: $darkGrey !important;
+}
+
+
+
+/* ================================= 
+  Image Transitions 
+==================================== */
 
 img {
 	transition: transform .5s;
