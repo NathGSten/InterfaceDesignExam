@@ -1,0 +1,29 @@
+.event-img {
+
+    animation-duration: 4s;
+}
+
+
+/* ================================= 
+  Button Transitions
+==================================== */
+
+button {
+	transition: background .3s, color .3s;
+}
+button:hover {
+	color: $white;
+	background: $btnGreen !important;
+}
+
+
+img {
+	transition: transform .5s;
+    transform-origin: center;
+
+}
+
+.single-event:hover img {
+	transition: all .4s ease-in-out;
+	transform: scale(1.2);
+}
