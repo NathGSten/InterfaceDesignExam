@@ -135,26 +135,49 @@ body .getInvolvedContainer {
         width: 40%;
         display: flex;
         flex-direction: column;
-        padding: 20px; } }
+        padding: 20px; }
+        body .getInvolvedContainer .getInvolvedWrapper .name {
+          flex-direction: row; } }
     @media screen and (min-width: 501px) and (max-width: 1000px) {
       body .getInvolvedContainer .getInvolvedWrapper {
         width: 70%;
         display: flex;
         flex-direction: column;
-        padding: 20px; } }
+        padding: 20px; }
+        body .getInvolvedContainer .getInvolvedWrapper .name {
+          flex-direction: row; } }
     @media screen and (max-width: 500px) {
       body .getInvolvedContainer .getInvolvedWrapper {
         width: 80%;
         display: flex;
         flex-direction: column;
-        padding: 20px; } }
+        padding: 20px; }
+        body .getInvolvedContainer .getInvolvedWrapper .name {
+          flex-direction: column; } }
     body .getInvolvedContainer .getInvolvedWrapper label {
+      margin-top: 10px;
       padding: 15px; }
     body .getInvolvedContainer .getInvolvedWrapper input {
       padding: 15px; }
     body .getInvolvedContainer .getInvolvedWrapper textarea {
       padding: 15px;
       margin-bottom: 10px; }
+    body .getInvolvedContainer .getInvolvedWrapper .name {
+      display: flex; }
+      body .getInvolvedContainer .getInvolvedWrapper .name .firstName, body .getInvolvedContainer .getInvolvedWrapper .name .lastName {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around; }
+      body .getInvolvedContainer .getInvolvedWrapper .name .firstName {
+        margin-right: 15px; }
+    body .getInvolvedContainer .getInvolvedWrapper #sendMessage {
+      color: white;
+      border-radius: 20px;
+      height: 40px;
+      padding-top: 12px;
+      border: 1.5px solid #0D0D0D;
+      background-color: #212121; }
 
 /* ================================= 
   Button Transitions
