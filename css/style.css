@@ -61,33 +61,33 @@ body .getInvolvedContainer {
   display: flex;
   width: 100%;
   justify-content: center; }
-  body .getInvolvedContainer form {
+  body .getInvolvedContainer .getInvolvedWrapper {
     display: flex;
     flex-direction: column;
     padding: 20px; }
     @media screen and (min-width: 1001px) {
-      body .getInvolvedContainer form {
+      body .getInvolvedContainer .getInvolvedWrapper {
         width: 40%;
         display: flex;
         flex-direction: column;
         padding: 20px; } }
     @media screen and (min-width: 501px) and (max-width: 1000px) {
-      body .getInvolvedContainer form {
+      body .getInvolvedContainer .getInvolvedWrapper {
         width: 70%;
         display: flex;
         flex-direction: column;
         padding: 20px; } }
     @media screen and (max-width: 500px) {
-      body .getInvolvedContainer form {
+      body .getInvolvedContainer .getInvolvedWrapper {
         width: 80%;
         display: flex;
         flex-direction: column;
         padding: 20px; } }
-    body .getInvolvedContainer form label {
+    body .getInvolvedContainer .getInvolvedWrapper label {
       padding: 15px; }
-    body .getInvolvedContainer form input {
+    body .getInvolvedContainer .getInvolvedWrapper input {
       padding: 15px; }
-    body .getInvolvedContainer form textarea {
+    body .getInvolvedContainer .getInvolvedWrapper textarea {
       padding: 15px;
       margin-bottom: 10px; }
 
