@@ -24,23 +24,32 @@
 				text-align: left;
 				justify-content: center;
 				flex-basis: 15%;
-				cursor: pointer;
-				
 
-				.calender-view-container {
+
+				.calender-view-container, .calender-view-container2 {
 					display: flex;
 					flex-basis: 70%;	
 					justify-content: center;
 					border-radius: 5px;
 	    			border: 1.5px solid $black;
 					background: $white;
+					cursor: pointer;
 
 					.fa-calendar {
 						font-size: 2em;
 						padding: 10px;
 					}
+
+					.fa-list {
+						font-size: 2em;
+						padding: 10px;
+					}
 					
 					.calender-view-text {
+						padding: 10px;
+					}
+
+					.calender-view-text2 {
 						padding: 10px;
 					}
 				}	
@@ -68,10 +77,22 @@
 	    			border: 1.5px solid $black;
 	    			padding: 0 10px;
 	    			margin: 0 20px;
+	    			cursor: pointer;
 	    			
 
 				}
 			}
+		}
+	}
+
+	.event-calendar {
+		display: flex;
+		flex-basis: 100%;
+		padding: 20px;
+
+		img {
+			width: 100%;
+			height: 100%;
 		}
 	}
 
@@ -124,6 +145,7 @@
 					height: 220px;
 		    		border: 1.5px solid $black;
 		    		background-color: $darkGrey;
+		    		cursor: pointer;
 
 		    		a {
 		    			color: $white;

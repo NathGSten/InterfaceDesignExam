@@ -53,19 +53,24 @@ img {
         margin: 10px 20px;
         text-align: left;
         justify-content: center;
-        flex-basis: 15%;
-        cursor: pointer; }
-        .event-container .header-container .tags-row .calender-view .calender-view-container {
+        flex-basis: 15%; }
+        .event-container .header-container .tags-row .calender-view .calender-view-container, .event-container .header-container .tags-row .calender-view .calender-view-container2 {
           display: flex;
           flex-basis: 70%;
           justify-content: center;
           border-radius: 5px;
           border: 1.5px solid #0D0D0D;
-          background: #FDFDFD; }
-          .event-container .header-container .tags-row .calender-view .calender-view-container .fa-calendar {
+          background: #FDFDFD;
+          cursor: pointer; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .fa-calendar, .event-container .header-container .tags-row .calender-view .calender-view-container2 .fa-calendar {
             font-size: 2em;
             padding: 10px; }
-          .event-container .header-container .tags-row .calender-view .calender-view-container .calender-view-text {
+          .event-container .header-container .tags-row .calender-view .calender-view-container .fa-list, .event-container .header-container .tags-row .calender-view .calender-view-container2 .fa-list {
+            font-size: 2em;
+            padding: 10px; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .calender-view-text, .event-container .header-container .tags-row .calender-view .calender-view-container2 .calender-view-text {
+            padding: 10px; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .calender-view-text2, .event-container .header-container .tags-row .calender-view .calender-view-container2 .calender-view-text2 {
             padding: 10px; }
       .event-container .header-container .tags-row .sep-line-events {
         width: 1.5px;
@@ -84,7 +89,15 @@ img {
           border-radius: 5px;
           border: 1.5px solid #0D0D0D;
           padding: 0 10px;
-          margin: 0 20px; }
+          margin: 0 20px;
+          cursor: pointer; }
+  .event-container .event-calendar {
+    display: flex;
+    flex-basis: 100%;
+    padding: 20px; }
+    .event-container .event-calendar img {
+      width: 100%;
+      height: 100%; }
   .event-container .event-row {
     display: flex;
     flex-direction: row; }
@@ -119,7 +132,8 @@ img {
           border-radius: 5px;
           height: 220px;
           border: 1.5px solid #0D0D0D;
-          background-color: #212121; }
+          background-color: #212121;
+          cursor: pointer; }
           .event-container .event-row .single-event .event-info-container .btn-event a {
             color: #FDFDFD;
             text-decoration: none; }
