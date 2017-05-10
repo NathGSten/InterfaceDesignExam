@@ -86,11 +86,13 @@
 	}
 
 	.event-calendar {
+
 		display: flex;
 		flex-basis: 100%;
 		padding: 20px;
 
 		img {
+			visibility: hidden;
 			width: 100%;
 			height: 100%;
 		}
