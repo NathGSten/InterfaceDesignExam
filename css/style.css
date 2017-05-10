@@ -92,6 +92,16 @@ img {
           padding: 0 10px;
           margin: 0 20px;
           cursor: pointer; }
+  .event-container .admin-new-event {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px 0 0; }
+    .event-container .admin-new-event .fa-plus {
+      margin-left: 30px;
+      font-size: 2.5em; }
   .event-container .event-calendar {
     display: flex;
     flex-basis: 100%;

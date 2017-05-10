@@ -68,6 +68,15 @@
 
     </div>
 
+    <div class="admin-new-event">
+      <div class="admin-new-event-text">
+        <h4>Hello Admin! Make a new event</h4>
+      </div>
+      <div class="admin-new-event-plus">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </div>
+    </div>
+
     <div class="event-content">
 
       <div class="event-calendar">
@@ -185,6 +194,7 @@
   $(".calender-view-text2").hide();
   $(".event-calendar").hide();
   $(".calender-view-img2").hide();
+  $(".admin-new-event").hide();
 
 
   /////////////  --    Calendar / list toggle    --  /////////////
@@ -222,7 +232,7 @@
       $(".flex-nav ul").toggleClass("open");
     });
 
-    //var localTest = localStorage.setItem("firstName", null);
+    var localTest = localStorage.setItem("firstName", "sofie");
 
     var checkUser = localStorage.getItem("firstName");
 
@@ -238,6 +248,10 @@
           <li class="makeAdmin-page"><a href="">Make new admin</a></li>\
           <li class="logOut"><a href="logout.html">Log out</a></li>\
         </ul>';
+
+      // the one between these brackets are not for the menu but for the admin extra
+      $(".admin-new-event").show();
+      // the one between these brackets are not for the menu but for the admin extra
 
       $(".nav-right").html(changeNameTemplate);
 
