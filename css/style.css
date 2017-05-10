@@ -1,46 +1,281 @@
-/*
-Error: Invalid CSS after "...volunteer.scss"": expected "{", was ";"
-        on line 5 of sass/style.scss
+.event-img {
+  animation-duration: 4s; }
 
-1: @import "mixins.scss";
-2: @import "index.scss";
-3: @import "colors.scss";
-4: <<<<<<< HEAD
-5: @import "volunteer.scss";
-6: =======
-7: @import "animation.scss";
-8: >>>>>>> Sofies_branch
-9: 
-10: * {
+/* ================================= 
+  Button Transitions
+==================================== */
+button {
+  transition: background .3s, color .3s; }
 
-Backtrace:
-sass/style.scss:5
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...volunteer.scss\"\": expected \"{\", was \";\"\A         on line 5 of sass/style.scss\A \A 1: @import \"mixins.scss\";\A 2: @import \"index.scss\";\A 3: @import \"colors.scss\";\A 4: <<<<<<< HEAD\A 5: @import \"volunteer.scss\";\A 6: =======\A 7: @import \"animation.scss\";\A 8: >>>>>>> Sofies_branch\A 9: \A 10: * {"; }
+button:hover {
+  color: #FDFDFD;
+  background: #2E7D32 !important; }
+
+img {
+  transition: transform .5s;
+  transform-origin: center; }
+
+.single-event:hover img {
+  transition: all .4s ease-in-out;
+  transform: scale(1.2); }
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; }
+  .event-container .header-container {
+    text-align: center;
+    background: #2E7D32; }
+    .event-container .header-container .tags-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-basis: 100; }
+      .event-container .header-container .tags-row .calender-view {
+        display: flex;
+        margin: 10px 20px;
+        text-align: left;
+        justify-content: center;
+        flex-basis: 15%; }
+        .event-container .header-container .tags-row .calender-view .calender-view-container {
+          display: flex;
+          flex-basis: 70%;
+          justify-content: center;
+          border-radius: 20px;
+          border: 1.5px solid #0D0D0D;
+          background: #FDFDFD; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .fa-calendar {
+            font-size: 2em;
+            padding: 10px; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .calender-view-text {
+            padding: 10px; }
+      .event-container .header-container .tags-row .sep-line-events {
+        width: 1.5px;
+        margin: 10px 20px;
+        height: 80px;
+        background: #0D0D0D; }
+      .event-container .header-container .tags-row .tags {
+        display: flex;
+        margin: 10px 20px;
+        flex-basis: 60%;
+        flex-direction: row; }
+        .event-container .header-container .tags-row .tags .filters {
+          display: flex;
+          background: #FDFDFD;
+          align-items: center;
+          border-radius: 20px;
+          border: 1.5px solid #0D0D0D;
+          padding: 0 10px;
+          margin: 0 20px; }
+  .event-container .event-row {
+    display: flex;
+    flex-direction: row; }
+    .event-container .event-row .single-event {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 20;
+      background: #F7F7F7; }
+      .event-container .event-row .single-event .event-head {
+        background: #2E7D32;
+        padding: 5px 15px; }
+      .event-container .event-row .single-event .event-img {
+        display: flex;
+        flex-basis: 100%;
+        height: 10vh;
+        overflow: hidden; }
+        .event-container .event-row .single-event .event-img img {
+          display: block;
+          max-width: 100%; }
+      .event-container .event-row .single-event .event-info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px 0; }
+        .event-container .event-row .single-event .event-info-container p {
+          text-align: center;
+          margin: 10px; }
+        .event-container .event-row .single-event .event-info-container .btn-event {
+          width: 30%;
+          border-radius: 20px;
+          height: 220px;
+          border: 1.5px solid #0D0D0D;
+          background-color: #212121; }
+          .event-container .event-row .single-event .event-info-container .btn-event a {
+            color: #FDFDFD;
+            text-decoration: none; }
+
+body .getInvolvedContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  body .getInvolvedContainer .getInvolvedWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    @media screen and (min-width: 1001px) {
+      body .getInvolvedContainer .getInvolvedWrapper {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; } }
+    @media screen and (min-width: 501px) and (max-width: 1000px) {
+      body .getInvolvedContainer .getInvolvedWrapper {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; } }
+    @media screen and (max-width: 500px) {
+      body .getInvolvedContainer .getInvolvedWrapper {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; } }
+    body .getInvolvedContainer .getInvolvedWrapper label {
+      padding: 15px; }
+    body .getInvolvedContainer .getInvolvedWrapper input {
+      padding: 15px; }
+    body .getInvolvedContainer .getInvolvedWrapper textarea {
+      padding: 15px;
+      margin-bottom: 10px; }
+
+.event-img {
+  animation-duration: 4s; }
+
+/* ================================= 
+  Button Transitions
+==================================== */
+button {
+  transition: background .3s, color .3s; }
+
+button:hover {
+  color: #FDFDFD;
+  background: #2E7D32 !important; }
+
+img {
+  transition: transform .5s;
+  transform-origin: center; }
+
+.single-event:hover img {
+  transition: all .4s ease-in-out;
+  transform: scale(1.2); }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  border: 0;
+  margin: 0;
+  font-size: 16px;
+  outline: 0;
+  -webkit-appearance: none; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-family: 'Ubuntu', sans-serif; }
+
+.toggleNav {
+  display: none; }
+
+.flex-nav {
+  background-color: #FDFDFD;
+  font-family: 'Ubuntu', sans-serif;
+  height: 55px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  flex-direction: row;
+  color: #0D0D0D;
+  justify-content: space-between;
+  border-bottom: 1px solid #0D0D0D;
+  /* Flex Container */
+  /* Flex Item */ }
+  .flex-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+  .flex-nav .nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .flex-nav .nav-left img {
+      display: flex;
+      align-items: center;
+      width: 45px; }
+    .flex-nav .nav-left div {
+      margin-left: 20px; }
+  .flex-nav li {
+    margin-left: 20px;
+    color: #0D0D0D; }
+  .flex-nav a {
+    color: #0D0D0D;
+    text-decoration: none; }
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FDFDFD;
+  color: black;
+  margin-top: 20px;
+  border-top: 1px solid #0D0D0D; }
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+  .flex-nav {
+    padding: 0 20px; }
+    .flex-nav ul li {
+      flex-basis: 100%;
+      font-size: 0.9em;
+      margin-left: 5px; } }
+@media screen and (min-width: 501px) and (max-width: 720px) {
+  .flex-nav {
+    padding: 0 10px; }
+    .flex-nav ul {
+      display: none;
+      flex-wrap: wrap;
+      position: absolute;
+      text-align: right;
+      top: 50px;
+      background-color: #FDFDFD; }
+    .flex-nav ul li {
+      flex-basis: 100%;
+      margin: 8px 5px; }
+    .flex-nav ul.open {
+      display: flex; }
+    .flex-nav .nav-right {
+      flex-basis: 40%; }
+    .flex-nav .toggleNav {
+      display: block;
+      text-align: right; } }
+@media screen and (max-width: 500px) {
+  .flex-nav {
+    padding: 0 10px; }
+    .flex-nav ul {
+      display: none;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 50px;
+      flex-basis: 60%;
+      background-color: #FDFDFD; }
+    .flex-nav ul li {
+      flex-basis: 100%;
+      margin: 8px 5px; }
+    .flex-nav ul.open {
+      display: flex; }
+    .flex-nav .nav-right {
+      flex-basis: 60%; }
+    .flex-nav .toggleNav {
+      display: block;
+      text-align: right; } }
+
+/*# sourceMappingURL=style.css.map */
