@@ -358,7 +358,7 @@ footer {
 
 @media screen and (min-width: 721px) and (max-width: 1000px) {
   body {
-    font-size: 0.9em; }
+    font-size: 0.8em !important; }
 
   .flex-nav {
     padding: 0 20px; }
@@ -375,13 +375,16 @@ footer {
     .flex-nav ul {
       display: none;
       flex-wrap: wrap;
+      width: 40%;
       position: absolute;
       text-align: right;
-      top: 50px;
+      top: 22px;
+      right: 0px;
       background-color: #FDFDFD; }
     .flex-nav ul li {
       flex-basis: 100%;
-      margin: 8px 5px; }
+      margin: 8px 5px;
+      padding: 10px 0; }
     .flex-nav ul.open {
       display: flex; }
     .flex-nav .nav-right {
@@ -399,12 +402,17 @@ footer {
       display: none;
       flex-wrap: wrap;
       position: absolute;
-      top: 50px;
-      flex-basis: 60%;
+      z-index: 1;
+      top: 22px;
+      right: 0px;
+      width: 70% !important;
       background-color: #FDFDFD; }
     .flex-nav ul li {
       flex-basis: 100%;
-      margin: 8px 5px; }
+      margin: 8px 5px;
+      padding: 20px 0;
+      text-align: right;
+      margin-right: 5px; }
     .flex-nav ul.open {
       display: flex; }
     .flex-nav .nav-right {
