@@ -1,0 +1,90 @@
+@import "mixins.scss";
+@import "colors.scss";
+
+.event-container {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+
+	.header-container {
+		text-align: center;
+		background: $btnGreen;
+
+		.tags-row {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			flex-basis: 100;
+
+			.calender-view {
+				display: flex;
+				margin: 10px 20px;
+				text-align: left;
+				justify-content: center;
+				flex-basis: 15%;
+				
+
+				.calender-view-container {
+					display: flex;
+					flex-basis: 70%;	
+					justify-content: center;
+					border-radius: 20px;
+	    			border: 1.5px solid $black;
+					background: $white;
+
+					.fa-calendar {
+						font-size: 2em;
+						padding: 10px;
+					}
+					
+					.calender-view-text {
+						padding: 10px;
+					}
+				}	
+			}
+
+			.sep-line-events {
+				width: 1.5px;
+				margin: 10px 20px;
+				height: 80px;
+				background: $black;
+
+			}
+
+			.tags {
+				display: flex;
+				margin: 10px 20px;
+				flex-basis: 60%;
+				flex-direction: row;
+
+				.filters {
+					display: flex;
+					background: $white;
+					align-items: center;
+					border-radius: 20px;
+	    			border: 1.5px solid $black;
+	    			padding: 0 10px;
+	    			margin: 0 20px;
+
+				}
+			}
+		}
+	}
+
+	.event-row {
+		display: flex;
+		flex-direction: row;
+
+		.single-event {
+			margin: 20px;
+			display: flex;
+			flex: 20;
+			background: $grey;
+
+			.event-head {
+				background: $btnGreen;
+			}
+		}
+	}
+	
+}

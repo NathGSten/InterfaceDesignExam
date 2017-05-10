@@ -1,0 +1,171 @@
+@import "mixins.scss";
+@import "index.scss";
+@import "colors.scss";
+
+* {
+  @include boxSizing(border-box);
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  border: 0;
+  margin: 0; 
+  font-size: 16px;
+  outline: 0;
+  -webkit-appearance: none; 
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+.toggleNav {
+  display: none;
+}
+
+.flex-nav{
+  background-color: $menuColor;
+  font-family: 'Ubuntu', sans-serif;
+  height: 55px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  flex-direction: row;
+  color: $black;
+  justify-content: space-between;
+  border-bottom: 1px solid $black;
+  
+  /* Flex Container */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      display: flex;
+      align-items: center;
+      width: 45px;
+    }
+
+    div {
+      margin-left: 20px;
+    }
+  }
+
+  /* Flex Item */
+  li {
+    margin-left: 20px;
+    color: $black;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+footer {  
+  font-family: 'Ubuntu', sans-serif;
+   left:0;
+   bottom:0;
+   right: 0;
+   height:45px;
+   width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: $menuColor;
+   color: black;
+   margin-top: 20px;
+   border-top: 1px solid $black;
+}
+
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+
+  .flex-nav {
+    padding: 0 20px;
+
+    ul li {
+      flex-basis: 100%;
+      font-size: 0.9em;
+      margin-left: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 720px) {
+
+  .flex-nav {
+    padding: 0 10px;
+
+    ul {
+      display: none; 
+      flex-wrap: wrap;
+      position: absolute;
+      text-align: right;
+      top: 50px;
+      background-color: $menuColor;
+    }
+
+    ul li {
+      flex-basis: 100%;
+      margin: 8px 5px;
+    }
+
+    ul.open {
+      display: flex;
+    }
+
+    .nav-right {
+      flex-basis: 40%;
+    }
+
+    .toggleNav {
+      display: block;
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  .flex-nav {
+    padding: 0 10px;
+
+    ul {
+      display: none;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 50px;
+      flex-basis: 60%;
+      background-color: $menuColor;
+    }
+
+    ul li {
+      flex-basis: 100%;
+      margin: 8px 5px;
+    }
+
+    ul.open {
+      display: flex;
+    }
+
+    .nav-right {
+      flex-basis: 60%;
+    }
+
+    .toggleNav {
+      display: block;
+      text-align: right;
+    }
+  }
+}
