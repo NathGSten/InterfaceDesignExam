@@ -324,6 +324,19 @@ body .event-container .eventImageContainer {
   height: 300px;
   background-color: red; }
 
+body .sent-message {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  body .sent-message .message {
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%; }
+    body .sent-message .message p {
+      display: flex;
+      justify-content: center; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
