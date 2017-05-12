@@ -1,0 +1,439 @@
+/* ================================= 
+  Button Transitions
+==================================== */
+button {
+  transition: background .3s, color .3s; }
+
+button:hover {
+  color: #FDFDFD;
+  background: #2E7D32 !important; }
+
+input[type="submit"] {
+  transition: background .3s, color .3s; }
+
+input[type="submit"]:hover {
+  color: #FDFDFD;
+  background: #2E7D32 !important; }
+
+/* ================================= 
+  Event tags and calendar Transitions
+==================================== */
+.calender-view-container, .filters {
+  transition: background .3s, color .3s; }
+
+.calender-view-container:hover, .filters:hover {
+  color: #FDFDFD;
+  background: #212121 !important; }
+
+/* ================================= 
+  Image Transitions 
+==================================== */
+img {
+  transition: transform .5s;
+  transform-origin: center; }
+
+.single-event:hover img {
+  transition: all .4s ease-in-out;
+  transform: scale(1.2); }
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; }
+  .event-container .header-container {
+    text-align: center;
+    background: #2E7D32; }
+    .event-container .header-container .tags-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-basis: 100; }
+      .event-container .header-container .tags-row .calender-view {
+        display: flex;
+        margin: 10px 20px;
+        text-align: left;
+        justify-content: center;
+        flex-basis: 15%; }
+        .event-container .header-container .tags-row .calender-view .calender-view-container, .event-container .header-container .tags-row .calender-view .calender-view-container2 {
+          display: flex;
+          flex-basis: 70%;
+          justify-content: center;
+          border-radius: 5px;
+          border: 1.5px solid #0D0D0D;
+          background: #FDFDFD;
+          cursor: pointer; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .fa-calendar, .event-container .header-container .tags-row .calender-view .calender-view-container2 .fa-calendar {
+            font-size: 2em;
+            padding: 10px; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .fa-list, .event-container .header-container .tags-row .calender-view .calender-view-container2 .fa-list {
+            font-size: 2em;
+            padding: 10px; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .calender-view-text, .event-container .header-container .tags-row .calender-view .calender-view-container2 .calender-view-text {
+            padding: 10px; }
+          .event-container .header-container .tags-row .calender-view .calender-view-container .calender-view-text2, .event-container .header-container .tags-row .calender-view .calender-view-container2 .calender-view-text2 {
+            padding: 10px; }
+      .event-container .header-container .tags-row .sep-line-events {
+        width: 1.5px;
+        margin: 10px 20px;
+        height: 80px;
+        background: #0D0D0D; }
+      .event-container .header-container .tags-row .tags {
+        display: flex;
+        margin: 10px 20px;
+        flex-basis: 60%;
+        flex-direction: row; }
+        .event-container .header-container .tags-row .tags .filters {
+          display: flex;
+          background: #FDFDFD;
+          align-items: center;
+          border-radius: 5px;
+          height: 56px !important;
+          border: 1.5px solid #0D0D0D;
+          padding: 0 10px;
+          margin: 0 20px;
+          cursor: pointer; }
+  .event-container .admin-new-event {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px 0 0; }
+    .event-container .admin-new-event .fa-plus {
+      margin-left: 30px;
+      font-size: 2.5em; }
+  .event-container .event-calendar {
+    display: flex;
+    flex-basis: 100%;
+    padding: 20px; }
+    .event-container .event-calendar img {
+      visibility: hidden;
+      width: 100%;
+      height: 100%; }
+  .event-container .event-row {
+    display: flex;
+    flex-direction: row; }
+    .event-container .event-row .single-event {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 20;
+      background: #F7F7F7; }
+      .event-container .event-row .single-event .event-head {
+        background: #2E7D32;
+        padding: 5px 15px; }
+      .event-container .event-row .single-event .event-img {
+        display: flex;
+        flex-basis: 100%;
+        height: 10vh;
+        overflow: hidden; }
+        .event-container .event-row .single-event .event-img img {
+          display: block;
+          max-width: 100%; }
+      .event-container .event-row .single-event .event-info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 15px 0; }
+        .event-container .event-row .single-event .event-info-container p {
+          text-align: center;
+          margin: 10px; }
+        .event-container .event-row .single-event .event-info-container .btn-event {
+          width: 30%;
+          border-radius: 5px;
+          height: 220px;
+          border: 1.5px solid #0D0D0D;
+          background-color: #212121;
+          cursor: pointer; }
+          .event-container .event-row .single-event .event-info-container .btn-event a {
+            color: #FDFDFD;
+            text-decoration: none; }
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+  .header-container .calender-view {
+    flex-basis: 5% !important; }
+  .header-container .sep-line-events {
+    width: 1.5px;
+    margin: 5px 10px !important;
+    height: 50px !important; }
+  .header-container .tags {
+    margin: 5px 10px !important; }
+    .header-container .tags .filters {
+      padding: 0 5px !important;
+      margin: 0 10px !important; }
+
+  .event-row .single-event .event-head {
+    padding: 2px 10px !important; }
+  .event-row .single-event .event-img {
+    height: 5vh !important; } }
+@media screen and (min-width: 501px) and (max-width: 720px) {
+  .header-container .calender-view {
+    flex-basis: 5% !important; }
+  .header-container .sep-line-events {
+    width: 1.5px;
+    margin: 5px 10px !important;
+    height: 50px !important; }
+  .header-container .tags {
+    margin: 5px 10px !important;
+    flex-wrap: wrap; }
+    .header-container .tags .filters {
+      padding: 0 5px !important;
+      margin: 0 10px !important;
+      height: 40px !important; }
+
+  .event-row .single-event .event-head {
+    padding: 2px 10px !important; }
+  .event-row .single-event .event-img {
+    height: 5vh !important; } }
+@media screen and (max-width: 500px) {
+  .event-container .header-container .tags-row {
+    flex-direction: column; }
+    .event-container .header-container .tags-row .sep-line-events {
+      width: 80px;
+      height: 1.5px; }
+    .event-container .header-container .tags-row .tags {
+      margin: 10px 20px;
+      flex-basis: 60%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .event-container .header-container .tags-row .tags .filters {
+        align-items: center;
+        height: 40px !important;
+        margin: 3px 10px; }
+  .event-container .event-calendar {
+    padding: 10px; }
+  .event-container .event-row {
+    flex-direction: column; }
+    .event-container .event-row .single-event {
+      margin: 10px;
+      flex: 100%; }
+      .event-container .event-row .single-event .event-head {
+        padding: 1px 15px; }
+      .event-container .event-row .single-event .event-img {
+        height: 180px; }
+      .event-container .event-row .single-event .event-info-container .btn-event {
+        width: 60%;
+        border-radius: 5px;
+        height: 50px;
+        border: 1.5px solid #0D0D0D;
+        background-color: #212121;
+        cursor: pointer; }
+        .event-container .event-row .single-event .event-info-container .btn-event a {
+          color: #FDFDFD;
+          text-decoration: none; } }
+body .getInvolvedContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  body .getInvolvedContainer .getInvolvedWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    @media screen and (min-width: 1001px) {
+      body .getInvolvedContainer .getInvolvedWrapper {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; } }
+    @media screen and (min-width: 501px) and (max-width: 1000px) {
+      body .getInvolvedContainer .getInvolvedWrapper {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; } }
+    @media screen and (max-width: 500px) {
+      body .getInvolvedContainer .getInvolvedWrapper {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; } }
+    body .getInvolvedContainer .getInvolvedWrapper label {
+      padding: 15px; }
+    body .getInvolvedContainer .getInvolvedWrapper input {
+      padding: 15px; }
+    body .getInvolvedContainer .getInvolvedWrapper textarea {
+      padding: 15px;
+      margin-bottom: 10px; }
+
+/* ================================= 
+  Button Transitions
+==================================== */
+button {
+  transition: background .3s, color .3s; }
+
+button:hover {
+  color: #FDFDFD;
+  background: #2E7D32 !important; }
+
+input[type="submit"] {
+  transition: background .3s, color .3s; }
+
+input[type="submit"]:hover {
+  color: #FDFDFD;
+  background: #2E7D32 !important; }
+
+/* ================================= 
+  Event tags and calendar Transitions
+==================================== */
+.calender-view-container, .filters {
+  transition: background .3s, color .3s; }
+
+.calender-view-container:hover, .filters:hover {
+  color: #FDFDFD;
+  background: #212121 !important; }
+
+/* ================================= 
+  Image Transitions 
+==================================== */
+img {
+  transition: transform .5s;
+  transform-origin: center; }
+
+.single-event:hover img {
+  transition: all .4s ease-in-out;
+  transform: scale(1.2); }
+
+body .event-container .eventImageContainer {
+  width: 500px;
+  height: 300px;
+  background-color: red; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  border: 0;
+  margin: 0;
+  font-size: 16px;
+  outline: 0;
+  -webkit-appearance: none; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-family: 'Ubuntu', sans-serif; }
+
+.toggleNav {
+  display: none; }
+
+.flex-nav {
+  background-color: #FDFDFD;
+  font-family: 'Ubuntu', sans-serif;
+  height: 55px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  flex-direction: row;
+  color: #0D0D0D;
+  justify-content: space-between;
+  border-bottom: 1px solid #0D0D0D;
+  /* Flex Container */
+  /* Flex Item */ }
+  .flex-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; }
+  .flex-nav .nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .flex-nav .nav-left img {
+      display: flex;
+      align-items: center;
+      width: 45px; }
+    .flex-nav .nav-left div {
+      margin-left: 20px; }
+  .flex-nav li {
+    margin-left: 20px;
+    color: #0D0D0D; }
+  .flex-nav a {
+    color: #0D0D0D;
+    text-decoration: none; }
+
+footer {
+  font-family: 'Ubuntu', sans-serif;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FDFDFD;
+  color: black;
+  margin-top: 20px;
+  border-top: 1px solid #0D0D0D; }
+
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+  body {
+    font-size: 0.8em !important; }
+
+  .flex-nav {
+    padding: 0 20px; }
+    .flex-nav ul li {
+      width: 100px;
+      margin-left: 5px;
+      font-size: 1.2em; } }
+@media screen and (min-width: 501px) and (max-width: 720px) {
+  body {
+    font-size: 0.8em; }
+
+  .flex-nav {
+    padding: 0 10px; }
+    .flex-nav ul {
+      display: none;
+      flex-wrap: wrap;
+      width: 40%;
+      position: absolute;
+      text-align: right;
+      top: 22px;
+      right: 0px;
+      background-color: #FDFDFD; }
+    .flex-nav ul li {
+      flex-basis: 100%;
+      margin: 8px 5px;
+      padding: 10px 0; }
+    .flex-nav ul.open {
+      display: flex; }
+    .flex-nav .nav-right {
+      flex-basis: 40%; }
+    .flex-nav .toggleNav {
+      display: block;
+      text-align: right; } }
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 0.8em; }
+
+  .flex-nav {
+    padding: 0 10px; }
+    .flex-nav ul {
+      display: none;
+      flex-wrap: wrap;
+      position: absolute;
+      z-index: 1;
+      top: 22px;
+      right: 0px;
+      width: 70% !important;
+      background-color: #FDFDFD; }
+    .flex-nav ul li {
+      flex-basis: 100%;
+      margin: 8px 5px;
+      padding: 20px 0;
+      text-align: right;
+      margin-right: 5px; }
+    .flex-nav ul.open {
+      display: flex; }
+    .flex-nav .nav-right {
+      flex-basis: 60%; }
+    .flex-nav .toggleNav {
+      display: block;
+      text-align: right; } }
+
+/*# sourceMappingURL=style.css.map */
