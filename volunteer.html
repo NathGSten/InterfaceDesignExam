@@ -24,7 +24,7 @@
             <ul>
                 <ul>
                     <li class="event-page"><a href="index.html">Events</a></li>
-                    <li class="volunteer-page"><a href="volunteer.html">Contact</a></li>
+                    <li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>
                     <li class="aboutUs-page"><a href="about.html">About Us</a></li>
                 </ul>
             </ul>
@@ -40,35 +40,34 @@
 
     </div>
     <div class="getInvolvedContainer">
-            <div class="getInvolvedWrapper">
-                <div class="name">
-                    <div class="firstName">
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    </div>
-                    <div class="lastName">
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    </div>
+        <div class="getInvolvedWrapper">
+            <div class="name">
+                <div class="firstName">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 </div>
-
-                <label for="email">EMAIL</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
-
-                <label for="reason">REASONS FOR CONTACTING</label>
-                <select id="reason" name="reason">
-                    <option value="getInvolved">I want to get involved</option>
-                    <option value="suggestions">I have some event suggestions</option>
-                    <option value="feedback">I have some feedback on the service to share</option>
-                </select>
-
-                <label for="subject">MESSAGE</label>
-                <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
-
-                <input id="sendMessage" type="submit" value="SEND">
-
+                <div class="lastName">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
             </div>
+
+            <label for="email">EMAIL</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="reason">REASONS FOR CONTACTING</label>
+            <select id="reason" name="reason">
+                <option value="getInvolved">I want to get involved</option>
+                <option value="suggestions">I have some event suggestions</option>
+                <option value="feedback">I have some feedback on the service to share</option>
+            </select>
+
+            <label for="subject">MESSAGE</label>
+            <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
+
+            <input id="sendMessage" type="submit" value="SEND">
         </div>
+    </div>
 </div>
 
 <footer>
@@ -86,6 +85,10 @@
     });
 
     //var localTest = localStorage.setItem("firstName", null);
+
+    $("#sendMessage").click(function(){
+        document.location = "sent_message.html";
+    });
 
     var checkUser = localStorage.getItem("firstName");
 
