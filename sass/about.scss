@@ -1,0 +1,26 @@
+body{
+
+  .about-info-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .about-info{
+      width: 70%;
+      flex-direction: column;
+
+      p{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        padding-bottom: 5px;
+      }
+
+      h4{
+        display:flex;
+        justify-content: center;
+        padding: 15px;
+      }
+    }
+  }
+}

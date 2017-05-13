@@ -569,6 +569,23 @@ body .sent-message {
       body .partnersContainer .first-partner-wrapper img, body .partnersContainer .second-partner-wrapper img, body .partnersContainer .third-partner-wrapper img {
         padding: 20px 15px; } }
 
+body .about-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  body .about-info-container .about-info {
+    width: 70%;
+    flex-direction: column; }
+    body .about-info-container .about-info p {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      padding-bottom: 5px; }
+    body .about-info-container .about-info h4 {
+      display: flex;
+      justify-content: center;
+      padding: 15px; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
