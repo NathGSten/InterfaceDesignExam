@@ -150,7 +150,6 @@ img {
       margin: 20px;
       display: flex;
       flex-direction: column;
-      flex: 20;
       background: #F7F7F7; }
       .event-container .event-row .single-event .upperHalf {
         display: flex;
@@ -213,6 +212,216 @@ img {
               color: #FDFDFD;
               text-decoration: none; }
 
+@media screen and (min-width: 1251px) {
+  .event-container {
+    flex-wrap: wrap; }
+    .event-container .event-content {
+      display: flex;
+      justify-content: center;
+      /* flex-direction: column; */
+      align-items: center;
+      flex-wrap: wrap; }
+      .event-container .event-content .event-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* flex-direction: row; */
+        width: 90%;
+        /* flex: 100; */ }
+        .event-container .event-content .event-row .single-event {
+          margin: 20px;
+          width: 20%;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          background: #F7F7F7; }
+          .event-container .event-content .event-row .single-event .event-head {
+            padding: 2px 10px !important; } }
+@media screen and (min-width: 801px) and (max-width: 1250px) {
+  .header-container .header-left {
+    width: 0; }
+  .header-container .header-mid {
+    width: 70%; }
+  .header-container .header-right {
+    width: 30%; }
+    .header-container .header-right .calender-view {
+      margin: 65px 5px 10px 20px; }
+
+  .tags-row {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    align-self: center;
+    flex-basis: 100;
+    justify-content: center; }
+    .tags-row .tags {
+      margin: 5px 10px !important; }
+      .tags-row .tags .filters {
+        padding: 0 5px !important;
+        margin: 0 10px !important; }
+
+  .event-container .event-content {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap; }
+    .event-container .event-content .event-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /* flex-direction: row; */
+      width: 90%;
+      /* flex: 100; */ }
+      .event-container .event-content .event-row .single-event {
+        margin: 20px;
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+        background: #F7F7F7; }
+        .event-container .event-content .event-row .single-event .event-head {
+          padding: 2px 10px !important; } }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .event-container .header-container {
+    flex-direction: column;
+    text-align: center;
+    background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+    background-size: 100%;
+    height: 180px;
+    /* border-bottom: 2px black solid; */
+    /* border-top: 1px black solid; */
+    padding-top: 1%;
+    display: flex; }
+    .event-container .header-container .header-mid {
+      width: 100%;
+      color: white; }
+    .event-container .header-container .header-right {
+      width: 100%; }
+      .event-container .header-container .header-right .calender-view {
+        display: flex;
+        margin: 10px;
+        text-align: left;
+        justify-content: center; }
+  .event-container .tags-row {
+    flex-direction: column;
+    width: 90%;
+    align-self: center; }
+    .event-container .tags-row .tags-border {
+      border-bottom: 1px grey solid;
+      border-left: 0;
+      border-right: 0;
+      width: 90%;
+      display: flex;
+      overflow: scroll;
+      justify-content: center;
+      padding: 1% 2%; }
+      .event-container .tags-row .tags-border .tags {
+        margin: 10px 20px;
+        flex-basis: 60%;
+        flex-direction: row;
+        justify-content: center; }
+        .event-container .tags-row .tags-border .tags .filters {
+          align-items: center;
+          height: 40px !important;
+          margin: 3px 10px; }
+  .event-container .event-calendar {
+    padding: 10px; }
+  .event-container .event-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%; }
+    .event-container .event-row .single-event {
+      margin: 10px;
+      flex: 40%;
+      width: 40%; }
+      .event-container .event-row .single-event .event-head {
+        padding: 1px 15px; }
+      .event-container .event-row .single-event .event-img {
+        height: 180px; }
+      .event-container .event-row .single-event .event-info-container .btn-event {
+        width: 60%;
+        border-radius: 5px;
+        height: 50px;
+        border: 1.5px solid #0D0D0D;
+        background-color: #212121;
+        cursor: pointer; }
+        .event-container .event-row .single-event .event-info-container .btn-event a {
+          color: #FDFDFD;
+          text-decoration: none; } }
+@media screen and (max-width: 500px) {
+  .event-container .header-container {
+    flex-direction: column;
+    text-align: center;
+    background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+    background-size: 100%;
+    height: 180px;
+    /* border-bottom: 2px black solid; */
+    /* border-top: 1px black solid; */
+    padding-top: 1%;
+    display: flex; }
+    .event-container .header-container .header-mid {
+      width: 100%;
+      color: white; }
+    .event-container .header-container .header-right {
+      width: 100%; }
+      .event-container .header-container .header-right .calender-view {
+        display: flex;
+        margin: 10px;
+        text-align: left;
+        justify-content: center; }
+  .event-container .tags-row {
+    flex-direction: column;
+    width: 90%;
+    align-self: center; }
+    .event-container .tags-row .tags-border {
+      border-bottom: 1px grey solid;
+      border-left: 0;
+      border-right: 0;
+      width: 90%;
+      display: flex;
+      overflow: scroll;
+      justify-content: center;
+      padding: 1% 2%; }
+      .event-container .tags-row .tags-border .tags {
+        margin: 10px 20px;
+        flex-basis: 60%;
+        flex-direction: row;
+        justify-content: center; }
+        .event-container .tags-row .tags-border .tags .filters {
+          align-items: center;
+          height: 40px !important;
+          margin: 3px 10px; }
+  .event-container .event-calendar {
+    padding: 10px; }
+  .event-container .event-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%; }
+    .event-container .event-row .single-event {
+      margin: 10px;
+      flex: 100%; }
+      .event-container .event-row .single-event .event-head {
+        padding: 1px 15px; }
+      .event-container .event-row .single-event .event-img {
+        height: 180px; }
+      .event-container .event-row .single-event .event-info-container .btn-event {
+        width: 60%;
+        border-radius: 5px;
+        height: 50px;
+        border: 1.5px solid #0D0D0D;
+        background-color: #212121;
+        cursor: pointer; }
+        .event-container .event-row .single-event .event-info-container .btn-event a {
+          color: #FDFDFD;
+          text-decoration: none; } }
 body .getInvolvedContainer {
   display: flex;
   width: 100%;
