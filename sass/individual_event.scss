@@ -181,7 +181,7 @@ body {
   }
 
   @media screen and (max-width: 1080px) and (min-width: 581px) {
-    .header-container{
+    .individual-event .header-container{
       height: 750px !important;
       background-size: 350% !important;
     }
@@ -199,7 +199,7 @@ body {
   }
 
   @media screen and (max-width: 580px) and (min-width: 481px){
-    .header-container{
+    .individual-event .header-container{
       height: 850px !important;
       background-size: 350% !important;
     }
@@ -217,7 +217,7 @@ body {
   }
 
   @media screen and (max-width: 480px) {
-    .header-container{
+    .individual-event .header-container{
       height: 900px !important;
       background-size: 350% !important;
     }

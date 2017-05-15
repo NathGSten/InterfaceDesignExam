@@ -677,7 +677,7 @@ body footer {
     body .event-place-container p, body .event-attendance-container p, body .event-date-and-time-container p {
       padding-right: 15px; } }
 @media screen and (max-width: 1080px) and (min-width: 581px) {
-  body .header-container {
+  body .individual-event .header-container {
     height: 750px !important;
     background-size: 350% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
@@ -688,7 +688,7 @@ body footer {
       padding: 12px 20px 1px 10px;
       color: #ecd06f; } }
 @media screen and (max-width: 580px) and (min-width: 481px) {
-  body .header-container {
+  body .individual-event .header-container {
     height: 850px !important;
     background-size: 350% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
@@ -699,7 +699,7 @@ body footer {
       padding: 12px 20px 1px 10px;
       color: #ecd06f; } }
 @media screen and (max-width: 480px) {
-  body .header-container {
+  body .individual-event .header-container {
     height: 900px !important;
     background-size: 350% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
