@@ -37,17 +37,6 @@ body {
           //padding-bottom: 10px;
           //margin-bottom: 10px;
 
-          .event-place-container, .event-attendance-container, .event-date-and-time-container {
-
-            i {
-              color: #ecd06f;
-            }
-
-            p {
-              padding-right: 15px;
-            }
-          }
-
           .event-place-container, .event-date-and-time-container {
 
             p {
@@ -141,6 +130,22 @@ body {
       margin: 0;
     }
 
+  @media screen and (min-width: 1081px) {
+    .event-place-container, .event-attendance-container, .event-date-and-time-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+
+      i {
+        color: #ecd06f;
+        padding: 12px 20px 18px 10px;
+      }
+
+      p {
+        padding-right: 15px;
+      }
+    }
+  }
 
   @media screen and (max-width: 1080px) and (min-width: 581px) {
     .header-container{
@@ -151,7 +156,7 @@ body {
     .event-place-container, .event-attendance-container, .event-date-and-time-container {
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      flex-direction: row;
 
       i {
         padding: 12px 20px 1px 10px;
