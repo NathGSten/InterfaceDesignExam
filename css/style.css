@@ -723,60 +723,55 @@ body .sent-message {
       display: flex;
       justify-content: center; }
 
-@media screen and (min-width: 1001px) {
-  body .partnersContainer {
+body .partners-header {
+  text-align: center;
+  background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+  background-size: 100%;
+  height: 150px;
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column !important;
+  color: white; }
+  body .partners-header h1 {
+    margin: 20px 0 0 0; }
+body .partners-border {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  padding: 0; }
+  body .partners-border .partners {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 565px; }
-    body .partnersContainer .first-partner-wrapper, body .partnersContainer .second-partner-wrapper, body .partnersContainer .third-partner-wrapper {
-      width: 40%;
-      height: 500px;
+    align-self: center; }
+    body .partners-border .partners img {
+      width: 10%;
       display: flex;
-      flex-direction: row;
       justify-content: center;
-      align-self: center; }
-      body .partnersContainer .first-partner-wrapper img, body .partnersContainer .second-partner-wrapper img, body .partnersContainer .third-partner-wrapper img {
-        padding: 70px;
-        width: 70%;
-        margin-bottom: 50px; }
-      body .partnersContainer .first-partner-wrapper .ibm-image, body .partnersContainer .second-partner-wrapper .ibm-image, body .partnersContainer .third-partner-wrapper .ibm-image {
-        padding: 140px 50px;
-        width: 70%; }
-      body .partnersContainer .first-partner-wrapper .google-image, body .partnersContainer .second-partner-wrapper .google-image, body .partnersContainer .third-partner-wrapper .google-image {
-        padding: 100px 50px;
-        width: 70%; } }
-@media screen and (min-width: 501px) and (max-width: 1000px) {
-  body .partnersContainer {
+      align-self: center;
+      margin: 16px 50px; }
+  body .partners-border p {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 840px; }
-    body .partnersContainer .first-partner-wrapper, body .partnersContainer .second-partner-wrapper, body .partnersContainer .third-partner-wrapper {
-      width: 40%;
-      height: 850px;
-      display: flex;
-      flex-direction: column;
-      align-self: center; }
-      body .partnersContainer .first-partner-wrapper img, body .partnersContainer .second-partner-wrapper img, body .partnersContainer .third-partner-wrapper img {
-        padding: 20px 15px; } }
+    justify-content: center; }
+body footer {
+  margin-top: 40px; }
 @media screen and (max-width: 500px) {
-  body .partnersContainer {
+  body .partners-row {
+    width: 70%;
+    align-self: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 840px; }
-    body .partnersContainer .first-partner-wrapper, body .partnersContainer .second-partner-wrapper, body .partnersContainer .third-partner-wrapper {
-      width: 60%;
-      height: 850px;
-      display: flex;
-      flex-direction: column;
-      align-self: center; }
-      body .partnersContainer .first-partner-wrapper img, body .partnersContainer .second-partner-wrapper img, body .partnersContainer .third-partner-wrapper img {
-        padding: 20px 15px; } }
+    flex-direction: column; }
+  body .partners img {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 15px 35px !important; } }
 
 body .about-info-container {
   width: 100%;
