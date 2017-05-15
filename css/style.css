@@ -773,6 +773,37 @@ body footer {
     align-self: center;
     margin: 15px 35px !important; } }
 
+body .about-container {
+  text-align: center;
+  background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+  background-size: 100%;
+  height: 200px !important;
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column !important;
+  color: white; }
+  body .about-container h1 {
+    margin: 20px 0 0 0; }
+  body .about-container .mail-view {
+    display: flex;
+    text-align: left;
+    justify-content: flex-end; }
+    body .about-container .mail-view .mail-view-container {
+      display: flex;
+      justify-content: center;
+      border-radius: 5px;
+      /* border: 1.5px solid #0D0D0D; */
+      cursor: pointer;
+      background-color: #ecd06f; }
+      body .about-container .mail-view .mail-view-container .fa-envelope-o {
+        font-size: 2em;
+        padding: 10px;
+        color: white; }
+      body .about-container .mail-view .mail-view-container .mail-view-text {
+        padding: 17px 15px 15px 5px;
+        color: white; }
 body .about-info-container {
   width: 100%;
   display: flex;
@@ -789,6 +820,14 @@ body .about-info-container {
       display: flex;
       justify-content: center;
       padding: 15px; }
+@media screen and (min-width: 501px) {
+  body .mail-view-container {
+    margin-right: 8%; } }
+@media screen and (max-width: 500px) {
+  body .about-container .mail-view.mail-view {
+    display: flex;
+    text-align: left;
+    justify-content: center; } }
 
 * {
   -webkit-box-sizing: border-box;
