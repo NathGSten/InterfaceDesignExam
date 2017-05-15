@@ -9,7 +9,8 @@ button {
 }
 button:hover {
 	color: $white;
-	background: $btnGreen !important;
+	background: black !important;
+	border: 1px solid black;
 }
 
 input[type="submit"] {
@@ -31,8 +32,9 @@ input[type="submit"]:hover {
 }
 
 .calender-view-container:hover, .filters:hover {
-	color: $white;
+	color: $white !important;
 	background: $darkGrey !important;
+	border-color: $darkGrey !important;
 }
 
 
