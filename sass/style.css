@@ -584,15 +584,10 @@ body .individual-event {
       justify-content: center;
       align-self: center;
       width: 80%; }
-      body .individual-event .header-container .place-and-time .event-place-container, body .individual-event .header-container .place-and-time .event-attendance-container, body .individual-event .header-container .place-and-time .event-date-and-time-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: row; }
-        body .individual-event .header-container .place-and-time .event-place-container i, body .individual-event .header-container .place-and-time .event-attendance-container i, body .individual-event .header-container .place-and-time .event-date-and-time-container i {
-          padding: 12px 20px 18px 10px;
-          color: #ecd06f; }
-        body .individual-event .header-container .place-and-time .event-place-container p, body .individual-event .header-container .place-and-time .event-attendance-container p, body .individual-event .header-container .place-and-time .event-date-and-time-container p {
-          padding-right: 15px; }
+      body .individual-event .header-container .place-and-time .event-place-container i, body .individual-event .header-container .place-and-time .event-attendance-container i, body .individual-event .header-container .place-and-time .event-date-and-time-container i {
+        color: #ecd06f; }
+      body .individual-event .header-container .place-and-time .event-place-container p, body .individual-event .header-container .place-and-time .event-attendance-container p, body .individual-event .header-container .place-and-time .event-date-and-time-container p {
+        padding-right: 15px; }
       body .individual-event .header-container .place-and-time .event-place-container p, body .individual-event .header-container .place-and-time .event-date-and-time-container p {
         border-right: 1px #42ab9e solid; }
     body .individual-event .header-container h1 {
@@ -637,7 +632,7 @@ body .individual-event {
             color: #42ab9e;
             font-size: 11px; }
     body .individual-event .event-info .btn-event {
-      width: 15%;
+      width: 20%;
       border-radius: 5px;
       margin: 0 3%;
       height: 40px;
@@ -654,6 +649,39 @@ body .individual-event {
       margin: 10px; }
 body footer {
   margin: 0; }
+@media screen and (max-width: 1080px) and (min-width: 581px) {
+  body .header-container {
+    height: 750px !important;
+    background-size: 350% !important; }
+  body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
+      padding: 12px 20px 1px 10px;
+      color: #ecd06f; } }
+@media screen and (max-width: 580px) and (min-width: 481px) {
+  body .header-container {
+    height: 850px !important;
+    background-size: 350% !important; }
+  body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
+      padding: 12px 20px 1px 10px;
+      color: #ecd06f; } }
+@media screen and (max-width: 480px) {
+  body .header-container {
+    height: 900px !important;
+    background-size: 350% !important; }
+  body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
+      padding: 12px 20px 1px 10px;
+      color: #ecd06f; } }
 
 body .sent-message {
   display: flex;
