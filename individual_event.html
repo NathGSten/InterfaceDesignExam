@@ -15,7 +15,7 @@
 
         <div class="nav-left">
             <!-- <a href="index.html"><img src="" alt="logo"></a> -->
-            <a href="index.html"> <h3>codify</h3></a>
+            <a href="index.html"> <img src="images/logo.png"></a>
         </div>
 
 
@@ -35,20 +35,28 @@
 
 <body>
 <div class="event-container individual-event">
-    <div class="header-container">
-        <h1>Individual Event Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    <div class="countdown">
+        <p id="demo"></p>
     </div>
+    <div class="header-container">
+        <h1>Html 5 for beginners</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 
-    <div class="event-information">
         <div class="place-and-time">
             <div class="event-place-container">
-                <p>PLACE</p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>VALBY LANGGADE 14, 2500 VALBY</p>
             </div>
             <div class="event-date-and-time-container">
-                <p>DATE - TIME</p>
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <p>AUGUST 12 2017</p>
+            </div>
+            <div class="event-attendance-container">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <p>42 ARE ATTENDING THIS EVENT</p>
             </div>
         </div>
+
         <div class="event-info">
             <h4>LOREM IPSUM DOLOR SIR AMET, CONSECTETUR</h4>
 
@@ -56,16 +64,29 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam orci, fermentum id luctus ac, finibus ac nulla. Vestibulum viverra vulputate tellus, sed scelerisque lacus condimentum ac. Phasellus placerat mi nec lacus cursus, id porttitor risus pretium. Phasellus libero nunc, varius ac consequat ut, ullamcorper a felis. Curabitur efficitur velit at mi semper pretium. Proin pellentesque hendrerit sodales. Ut tristique ac velit ac dignissim.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam orci, fermentum id luctus ac, finibus ac nulla. Vestibulum viverra vulputate tellus, sed scelerisque lacus condimentum ac. Phasellus placerat mi nec lacus cursus, id porttitor risus pretium. Phasellus libero nunc, varius ac consequat ut, ullamcorper a felis. Curabitur efficitur velit at mi semper pretium. Proin pellentesque hendrerit sodales. Ut tristique ac velit ac dignissim.</p>
 
-            <div class="event-tags">
-                <div>Html</div>
-                <div>css</div>
-                <div>JavaScript</div>
+            <div class="individual-event-tags-row">
+
+                <div class="individual-event-tags-border">
+
+                    <div class="individual-event-tags">
+                        <div class="individual-event-filters html">HTML</div>
+                        <div class="individual-event-filters css">CSS</div>
+                        <div class="individual-event-filters javascript">JAVASCRIPT</div>
+                    </div>
+
+                </div>
+
             </div>
+
             <div class="button">
                 <button class="btn-event"><a href="#">ATTEND</a></button>
                 <button class="btn-event"><a href="#">SHARE</a></button>
             </div>
         </div>
+    </div>
+
+    <div class="event-information">
+
     </div>
 </div>
 
@@ -111,7 +132,33 @@
 
     ///////////// RELEVANT FOR MENU --    END    -- ALL SHOULD HAVE THIS  /////////////
 
+    var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
 
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + " DAYS " + hours + " HOURS "
+                + minutes + " MINUTES " + seconds + " SECONDS";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
 
 </script>
 </body>
