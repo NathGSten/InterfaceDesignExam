@@ -6,7 +6,7 @@ button {
 
 button:hover {
   color: #FDFDFD;
-  background: black !important;
+  background: #FC4A1A !important;
   border: 1px solid black; }
 
 input[type="submit"] {
@@ -20,12 +20,11 @@ input[type="submit"]:hover {
   Event tags and calendar Transitions
 ==================================== */
 .calender-view-container, .filters {
-  transition: background .3s, color .3s; }
+  transition: background .5s, color .3s; }
 
 .calender-view-container:hover, .filters:hover, .individual-event-filters:hover {
   color: #FDFDFD !important;
-  background: #212121 !important;
-  border-color: #212121 !important; }
+  background: #FC4A1A !important; }
 
 /* ================================= 
   Image Transitions 
@@ -37,6 +36,12 @@ img {
 .single-event:hover img {
   transition: all .4s ease-in-out;
   transform: scale(1.2); }
+
+.admin-new-event-text {
+  transition: background .3s, color .3s; }
+
+.admin-new-event-text:hover {
+  color: #FC4A1A !important; }
 
 .event-container {
   display: flex;
@@ -71,7 +76,7 @@ img {
           border-radius: 5px;
           /* border: 1.5px solid #0D0D0D; */
           cursor: pointer;
-          background-color: #ecd06f; }
+          background-color: #F7B733; }
           .event-container .header-container .header-right .calender-view .calender-view-container .fa-calendar, .event-container .header-container .header-right .calender-view .calender-view-container2 .fa-calendar, .event-container .header-container .header-left .calender-view .calender-view-container .fa-calendar, .event-container .header-container .header-left .calender-view .calender-view-container2 .fa-calendar {
             font-size: 2em;
             padding: 10px;
@@ -257,7 +262,8 @@ img {
     flex-basis: 100;
     justify-content: center; }
     .tags-row .tags {
-      margin: 5px 10px !important; }
+      margin: 5px 10px !important;
+      flex-wrap: wrap; }
       .tags-row .tags .filters {
         padding: 0 5px !important;
         margin: 0 10px !important; }
@@ -509,7 +515,7 @@ button {
 
 button:hover {
   color: #FDFDFD;
-  background: black !important;
+  background: #FC4A1A !important;
   border: 1px solid black; }
 
 input[type="submit"] {
@@ -523,12 +529,11 @@ input[type="submit"]:hover {
   Event tags and calendar Transitions
 ==================================== */
 .calender-view-container, .filters {
-  transition: background .3s, color .3s; }
+  transition: background .5s, color .3s; }
 
 .calender-view-container:hover, .filters:hover, .individual-event-filters:hover {
   color: #FDFDFD !important;
-  background: #212121 !important;
-  border-color: #212121 !important; }
+  background: #FC4A1A !important; }
 
 /* ================================= 
   Image Transitions 
@@ -540,6 +545,12 @@ img {
 .single-event:hover img {
   transition: all .4s ease-in-out;
   transform: scale(1.2); }
+
+.admin-new-event-text {
+  transition: background .3s, color .3s; }
+
+.admin-new-event-text:hover {
+  color: #FC4A1A !important; }
 
 /* ================================= 
   Button Transitions
@@ -549,7 +560,7 @@ button {
 
 button:hover {
   color: #FDFDFD;
-  background: black !important;
+  background: #FC4A1A !important;
   border: 1px solid black; }
 
 input[type="submit"] {
@@ -563,12 +574,11 @@ input[type="submit"]:hover {
   Event tags and calendar Transitions
 ==================================== */
 .calender-view-container, .filters {
-  transition: background .3s, color .3s; }
+  transition: background .5s, color .3s; }
 
 .calender-view-container:hover, .filters:hover, .individual-event-filters:hover {
   color: #FDFDFD !important;
-  background: #212121 !important;
-  border-color: #212121 !important; }
+  background: #FC4A1A !important; }
 
 /* ================================= 
   Image Transitions 
@@ -580,6 +590,12 @@ img {
 .single-event:hover img {
   transition: all .4s ease-in-out;
   transform: scale(1.2); }
+
+.admin-new-event-text {
+  transition: background .3s, color .3s; }
+
+.admin-new-event-text:hover {
+  color: #FC4A1A !important; }
 
 body .individual-event {
   display: flex;
@@ -955,7 +971,7 @@ footer {
     .flex-nav .nav-right {
       flex-basis: 40%; }
     .flex-nav .toggleNav {
-      display: block;
+      display: block !important;
       text-align: right; } }
 @media screen and (max-width: 500px) {
   body {
@@ -982,8 +998,8 @@ footer {
       display: flex; }
     .flex-nav .nav-right {
       flex-basis: 60%; }
-    .flex-nav .toggleNav {
-      display: block;
-      text-align: right; } }
+      .flex-nav .nav-right .toggleNav {
+        display: block !important;
+        text-align: right; } }
 
 /*# sourceMappingURL=style.css.map */

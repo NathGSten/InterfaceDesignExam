@@ -152,7 +152,7 @@ footer {
     }
 
     .toggleNav {
-      display: block;
+      display: block !important;
       text-align: right;
     }
   }
@@ -195,11 +195,12 @@ footer {
 
     .nav-right {
       flex-basis: 60%;
+
+      .toggleNav {
+        display: block !important;
+        text-align: right;
+      }
     }
 
-    .toggleNav {
-      display: block;
-      text-align: right;
-    }
   }
 }

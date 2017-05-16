@@ -9,7 +9,7 @@ button {
 }
 button:hover {
 	color: $white;
-	background: black !important;
+	background: $orange !important;
 	border: 1px solid black;
 }
 
@@ -28,13 +28,12 @@ input[type="submit"]:hover {
 ==================================== */
 
 .calender-view-container, .filters {
-	transition: background .3s, color .3s;
+	transition: background .5s, color .3s;
 }
 
 .calender-view-container:hover, .filters:hover, .individual-event-filters:hover {
 	color: $white !important;
-	background: $darkGrey !important;
-	border-color: $darkGrey !important;
+	background: $orange !important;
 }
 
 
@@ -52,4 +51,13 @@ img {
 .single-event:hover img {
 	transition: all .4s ease-in-out;
 	transform: scale(1.2);
+}
+
+
+.admin-new-event-text {
+	transition: background .3s, color .3s;
+}
+
+.admin-new-event-text:hover {
+	color: $orange !important;
 }

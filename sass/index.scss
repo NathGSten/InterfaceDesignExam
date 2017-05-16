@@ -44,7 +44,7 @@
 					border-radius: 5px;
 					/* border: 1.5px solid #0D0D0D; */
 					cursor: pointer;
-					background-color: #ecd06f;
+					background-color: $yellow;
 
 					.fa-calendar {
 						font-size: 2em;
@@ -136,6 +136,7 @@
 			margin-left: 30px;
 			font-size: 2.5em;
 		}
+
 	}
 
 	.event-calendar {
@@ -339,6 +340,7 @@
 
 		.tags {
 			margin: 5px 10px !important;
+			flex-wrap: wrap;
 
 			.filters {
 				padding: 0 5px !important;
