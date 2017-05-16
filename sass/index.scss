@@ -77,6 +77,33 @@
 		justify-content: center;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
+
+		.event-calendar{
+			width: 60%;
+			flex-direction: column;
+
+			.buttons{
+				padding: 20px;
+				display: flex;
+				justify-content: space-around;
+
+				.btn-event {
+					width: 30%;
+					border-radius: 5px;
+					margin: 3%;
+					height: 40px;
+					border: 1px solid $grey;
+					background-color: $yellow;
+					cursor: pointer;
+
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
 	}
 
 	.tags-row {
