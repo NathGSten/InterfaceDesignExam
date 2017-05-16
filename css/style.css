@@ -633,7 +633,7 @@ body .individual-event {
     justify-content: center;
     flex-direction: column;
     color: white;
-    height: 680px;
+    height: 300px;
     box-shadow: inset 0 0 0 1100px rgba(66, 171, 158, 0.8);
     background-size: 100%; }
     body .individual-event .header-container .place-and-time {
@@ -683,45 +683,100 @@ body .individual-event {
             margin: 0 20px;
             color: #4ABDAC;
             font-size: 11px; }
-    body .individual-event .event-info .btn-event {
-      width: 20%;
-      border-radius: 5px;
-      margin: 0 3%;
-      height: 40px;
-      border: 1px solid #4ABDAC;
-      background-color: #F7B733;
-      cursor: pointer; }
-      body .individual-event .event-info .btn-event a {
-        color: #FDFDFD;
-        text-decoration: none; }
-    body .individual-event .event-info h4 {
-      font-size: 1.2em;
-      margin: 10px; }
-    body .individual-event .event-info p {
-      margin: 10px; }
-  body .individual-event .tags-row .tags-border {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    flex-direction: column;
-    border: none;
-    margin: 0;
-    padding: 0; }
-    body .individual-event .tags-row .tags-border .tags {
+    body .individual-event .event-info .button {
       display: flex;
       justify-content: center;
-      align-self: center; }
-      body .individual-event .tags-row .tags-border .tags img {
-        width: 10%;
+      padding-bottom: 40px; }
+      body .individual-event .event-info .button .btn-event {
+        width: 20%;
+        border-radius: 5px;
+        margin: 0 3%;
+        height: 40px;
+        border: 1px solid #FDFDFD;
+        background-color: #F7B733;
+        cursor: pointer; }
+        body .individual-event .event-info .button .btn-event a {
+          color: #FDFDFD;
+          text-decoration: none; }
+    body .individual-event .event-info h4 {
+      font-size: 1.2em;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px; }
+    body .individual-event .event-info p {
+      margin: 10px; }
+  body .individual-event .google-maps {
+    position: relative;
+    padding-bottom: 170px;
+    height: 0;
+    overflow: hidden; }
+    body .individual-event .google-maps iframe {
+      position: absolute;
+      border: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150px; }
+  body .individual-event .partners-row {
+    flex-direction: row;
+    width: 100%;
+    align-self: center; }
+    body .individual-event .partners-row .partners-border {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+      border: none;
+      margin: 0;
+      padding: 0; }
+      body .individual-event .partners-row .partners-border .partners {
         display: flex;
         justify-content: center;
-        align-self: center;
-        margin: 0 20px; }
-    body .individual-event .tags-row .tags-border p {
+        align-self: center; }
+        body .individual-event .partners-row .partners-border .partners img {
+          width: 10%;
+          display: flex;
+          justify-content: center;
+          align-self: center;
+          margin: 0 20px; }
+      body .individual-event .partners-row .partners-border p {
+        display: flex;
+        justify-content: center; }
+  body .individual-event .related-events {
+    padding-top: 10px;
+    margin-top: 20px;
+    background: #42ab9e;
+    padding-bottom: 10px; }
+    body .individual-event .related-events p {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      align-self: center;
+      color: white; }
+    body .individual-event .related-events .event-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%; }
+      body .individual-event .related-events .event-row .single-event {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        background: #F7F7F7;
+        width: 12%; }
+        body .individual-event .related-events .event-row .single-event .upperHalf .event-head {
+          background: #42ab9e;
+          padding: 4px 15px 0 15px; }
+        body .individual-event .related-events .event-row .single-event .upperHalf .title-img .event-img {
+          display: flex;
+          flex-basis: 100%;
+          height: 11vh;
+          overflow: hidden; }
+        body .individual-event .related-events .event-row .single-event .lowerHalf {
+          display: flex;
+          justify-content: center; }
 body footer {
-  margin: 0; }
+  margin: 0 0 !important; }
 @media screen and (min-width: 1081px) {
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
     display: flex;
