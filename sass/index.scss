@@ -125,17 +125,29 @@
 
 	.admin-new-event {
 		display: flex;
-		flex-basis: 100%;
-		flex-direction: row;
+		flex-basis: 100%;	
 		align-items: center;
 		justify-content: flex-end;
 		padding: 10px 20px 0 0;
 
+		.new-event-container {
+			display: flex;
+			flex-basis: 25%;
+			margin: -20px 0px;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			cursor: pointer;
 
-		.fa-plus {
-			margin-left: 30px;
-			font-size: 2.5em;
+
+			.fa-plus {
+				margin-left: 30px;
+				font-size: 2.5em;
+			}
 		}
+
+
+		
 
 	}
 

@@ -37,10 +37,14 @@ img {
   transition: all .4s ease-in-out;
   transform: scale(1.2); }
 
-.admin-new-event-text {
-  transition: background .3s, color .3s; }
+/* ================================= 
+	New Event and new partner
+==================================== */
+.new-event-container {
+  transition: background .3s, color .3s, transform .5s;
+  transform-origin: center; }
 
-.admin-new-event-text:hover {
+.new-event-container:hover {
   color: #FC4A1A !important; }
 
 .event-container {
@@ -132,13 +136,20 @@ img {
   .event-container .admin-new-event {
     display: flex;
     flex-basis: 100%;
-    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     padding: 10px 20px 0 0; }
-    .event-container .admin-new-event .fa-plus {
-      margin-left: 30px;
-      font-size: 2.5em; }
+    .event-container .admin-new-event .new-event-container {
+      display: flex;
+      flex-basis: 25%;
+      margin: -20px 0px;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer; }
+      .event-container .admin-new-event .new-event-container .fa-plus {
+        margin-left: 30px;
+        font-size: 2.5em; }
   .event-container .event-calendar {
     display: flex;
     flex-basis: 100%;
@@ -546,10 +557,14 @@ img {
   transition: all .4s ease-in-out;
   transform: scale(1.2); }
 
-.admin-new-event-text {
-  transition: background .3s, color .3s; }
+/* ================================= 
+	New Event and new partner
+==================================== */
+.new-event-container {
+  transition: background .3s, color .3s, transform .5s;
+  transform-origin: center; }
 
-.admin-new-event-text:hover {
+.new-event-container:hover {
   color: #FC4A1A !important; }
 
 /* ================================= 
@@ -591,10 +606,14 @@ img {
   transition: all .4s ease-in-out;
   transform: scale(1.2); }
 
-.admin-new-event-text {
-  transition: background .3s, color .3s; }
+/* ================================= 
+	New Event and new partner
+==================================== */
+.new-event-container {
+  transition: background .3s, color .3s, transform .5s;
+  transform-origin: center; }
 
-.admin-new-event-text:hover {
+.new-event-container:hover {
   color: #FC4A1A !important; }
 
 body .individual-event {

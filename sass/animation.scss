@@ -53,11 +53,18 @@ img {
 	transform: scale(1.2);
 }
 
+/* ================================= 
+	New Event and new partner
+==================================== */
 
-.admin-new-event-text {
-	transition: background .3s, color .3s;
+
+.new-event-container {
+	transition: background .3s, color .3s, transform .5s;
+	transform-origin: center;
+	
 }
 
-.admin-new-event-text:hover {
+.new-event-container:hover {
 	color: $orange !important;
 }
+
