@@ -2,7 +2,15 @@
 @import "colors.scss";
 @import "animation.scss";
 
+
+
+
 body {
+
+  .swal2-modal .swal2-styled {
+    background-color: $yellow !important;
+  
+  }
 
     .individual-event {
       display: flex;
@@ -112,6 +120,7 @@ body {
             border: 1px solid $white;
             background-color: $yellow;
             cursor: pointer;
+            color: $white;
 
             a {
               color: $white;

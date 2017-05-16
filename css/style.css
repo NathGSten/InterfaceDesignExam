@@ -1,13 +1,12 @@
 /* ================================= 
   Button Transitions
 ==================================== */
-button {
+button, .swal2-modal .swal2-styled {
   transition: background .3s, color .3s; }
 
-button:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover {
   color: #FDFDFD;
-  background: #FC4A1A !important;
-  border: 1px solid black; }
+  background: #FC4A1A !important; }
 
 input[type="submit"] {
   transition: background .3s, color .3s; }
@@ -17,12 +16,12 @@ input[type="submit"]:hover {
   background: black !important; }
 
 /* ================================= 
-  Event tags and calendar Transitions
+  Event tags, calendar and about btn Transitions
 ==================================== */
-.calender-view-container, .filters {
+.calender-view-container, .filters, .mail-view-container {
   transition: background .5s, color .3s; }
 
-.calender-view-container:hover, .filters:hover {
+.calender-view-container:hover, .filters:hover, .mail-view-container:hover {
   color: #FDFDFD !important;
   background: #FC4A1A !important; }
 
@@ -167,7 +166,7 @@ img {
       justify-content: flex-end;
       align-items: center;
       cursor: pointer; }
-      .event-container .admin-new-event .new-event-container .fa-plus {
+      .event-container .admin-new-event .new-event-container .fa {
         margin-left: 30px;
         font-size: 2.5em; }
   .event-container .event-calendar {
@@ -541,13 +540,12 @@ body .getInvolvedContainer {
 /* ================================= 
   Button Transitions
 ==================================== */
-button {
+button, .swal2-modal .swal2-styled {
   transition: background .3s, color .3s; }
 
-button:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover {
   color: #FDFDFD;
-  background: #FC4A1A !important;
-  border: 1px solid black; }
+  background: #FC4A1A !important; }
 
 input[type="submit"] {
   transition: background .3s, color .3s; }
@@ -557,12 +555,12 @@ input[type="submit"]:hover {
   background: black !important; }
 
 /* ================================= 
-  Event tags and calendar Transitions
+  Event tags, calendar and about btn Transitions
 ==================================== */
-.calender-view-container, .filters {
+.calender-view-container, .filters, .mail-view-container {
   transition: background .5s, color .3s; }
 
-.calender-view-container:hover, .filters:hover {
+.calender-view-container:hover, .filters:hover, .mail-view-container:hover {
   color: #FDFDFD !important;
   background: #FC4A1A !important; }
 
@@ -590,13 +588,12 @@ img {
 /* ================================= 
   Button Transitions
 ==================================== */
-button {
+button, .swal2-modal .swal2-styled {
   transition: background .3s, color .3s; }
 
-button:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover {
   color: #FDFDFD;
-  background: #FC4A1A !important;
-  border: 1px solid black; }
+  background: #FC4A1A !important; }
 
 input[type="submit"] {
   transition: background .3s, color .3s; }
@@ -606,12 +603,12 @@ input[type="submit"]:hover {
   background: black !important; }
 
 /* ================================= 
-  Event tags and calendar Transitions
+  Event tags, calendar and about btn Transitions
 ==================================== */
-.calender-view-container, .filters {
+.calender-view-container, .filters, .mail-view-container {
   transition: background .5s, color .3s; }
 
-.calender-view-container:hover, .filters:hover {
+.calender-view-container:hover, .filters:hover, .mail-view-container:hover {
   color: #FDFDFD !important;
   background: #FC4A1A !important; }
 
@@ -636,6 +633,8 @@ img {
 .new-event-container:hover {
   color: #FC4A1A !important; }
 
+body .swal2-modal .swal2-styled {
+  background-color: #F7B733 !important; }
 body .individual-event {
   display: flex;
   width: 100%; }
@@ -714,7 +713,8 @@ body .individual-event {
         height: 40px;
         border: 1px solid #FDFDFD;
         background-color: #F7B733;
-        cursor: pointer; }
+        cursor: pointer;
+        color: #FDFDFD; }
         body .individual-event .event-info .button .btn-event a {
           color: #FDFDFD;
           text-decoration: none; }
