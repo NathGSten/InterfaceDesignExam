@@ -307,6 +307,13 @@
 	.event-container{
 		flex-wrap: wrap;
 
+		.admin-new-event {	
+
+			.new-event-container {
+				flex-basis: 80%;
+			}
+		}
+
 		.event-content{
 			display: flex;
 			justify-content: center;
@@ -366,6 +373,14 @@
 				margin: 65px 5px 10px 20px;
 			}
 		}
+	}
+
+	.admin-new-event {	
+
+			.new-event-container {
+				flex-basis: 80% !important;
+				margin: 5px 0 !important;
+			}
 	}
 
 	.tags-row{
@@ -469,6 +484,15 @@
 				}
 			}
 		}
+
+		.admin-new-event {	
+
+			.new-event-container {
+				flex-basis: 80% !important;
+				margin: 5px 0 !important;
+			}
+		}
+
 
 		.tags-row {
 			flex-direction: column;
@@ -589,6 +613,14 @@
 					.calender-view-container{
 					}
 				}
+			}
+		}
+		
+		.admin-new-event {	
+
+			.new-event-container {
+				flex-basis: 80% !important;
+				margin: 5px 0 !important;
 			}
 		}
 

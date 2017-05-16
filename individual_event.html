@@ -359,6 +359,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 
+    $(".admin-new-event").hide();
+
 
     ///////////// RELEVANT FOR MENU --    START    -- ALL SHOULD HAVE THIS  /////////////
 
@@ -385,6 +387,10 @@
                 </ul>';
 
         $(".nav-right-ul").html(changeNameTemplate);
+
+        // the one between these brackets are not for the menu but for the admin extra
+        $(".admin-new-event").show();
+        // the one between these brackets are not for the menu but for the admin extra
 
         $(".makeAdmin-page").show();
         $(".logOut").show();

@@ -35,9 +35,34 @@
 
 <body>
     <div class="event-container">
-        <div class="partners-header">
+        <div class="partners-header header-container">
             <h1>PARTNERS</h1>
-            <p>Your message was successfully received in our inbox.</p>
+            <p>We cherish working with our partners and we are always looking for new partners!</p>
+
+            <div class="mail-view">
+            <div class="mail-view-container toggable">
+
+                <div class="mail-view-img">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="mail-view-text"> Contact Us </div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="admin-new-event">
+          <div class="new-event-container">
+            <div class="admin-new-event-text">
+              <h4>Hello Admin! Register a new partner</h4>
+            </div>
+            <div class="admin-new-event-plus">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+          </div>
         </div>
 
         <div class="partners-row">
@@ -85,6 +110,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 
+    $(".admin-new-event").hide();
+
     ///////////// RELEVANT FOR MENU --    START    -- ALL SHOULD HAVE THIS  /////////////
 
     $(".toggleNav").click( function(){
@@ -111,6 +138,10 @@
 
         $(".nav-right-ul").html(changeNameTemplate);
 
+        // the one between these brackets are not for the menu but for the admin extra
+        $(".admin-new-event").show();
+        // the one between these brackets are not for the menu but for the admin extra
+
         $(".makeAdmin-page").show();
         $(".logOut").show();
     } else {
@@ -119,6 +150,10 @@
     }
 
     ///////////// RELEVANT FOR MENU --    END    -- ALL SHOULD HAVE THIS  /////////////
+
+    $(".mail-view-container").click(function(){
+        document.location = "volunteer.html";
+    });
 
 
 

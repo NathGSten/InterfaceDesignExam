@@ -4,10 +4,10 @@
   Button Transitions
 ==================================== */
 
-button, .swal2-modal .swal2-styled {
+button, .swal2-modal .swal2-styled, #sendMessage {
 	transition: background .3s, color .3s;
 }
-button:hover, .swal2-modal:hover .swal2-styled:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover, #sendMessage:hover {
 	color: $white;
 	background: $orange !important;
 }
