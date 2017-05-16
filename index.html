@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Codify - events</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <head>
+    <title>Codify - events</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<header class="top">
+  <header class="top">
+
     <nav class="flex-nav">
       
       <div class="nav-left">
@@ -110,11 +111,17 @@
     <div class="event-content">
 
       <div class="event-calendar">
-        <img src="images/july.svg">
+
+        <img class="july" src="images/july.svg">
+        <img class="june" src="images/june.svg">
+        <img class="august" src="images/august.svg">
+
+        <h4 class="previous-month-text">No previous months are available</h4>
+        <h4 class="next-month-text">No further months are available</h4>
 
         <div class="buttons">
-          <button class="btn-event"><a href="individual_event.html">PREVIOUS MONTH</a></button>
-          <button class="btn-event"><a href="individual_event.html">NEXT MONTH</a></button>
+          <button class="btn-event previous-month">PREVIOUS MONTH</button>
+          <button class="btn-event next-month">NEXT MONTH</button>
         </div>
 
       </div>
@@ -546,7 +553,64 @@
 
      ///////////// RELEVANT FOR MENU --    END    -- ALL SHOULD HAVE THIS  /////////////
 
-    
+    // SHOW CALENDAR FOR SPECIFIC MONTHS //
+
+    $(".july").hide();
+    $(".august").hide();
+    $(".previous-month-text").hide();
+    $(".next-month-text").hide();
+
+    $(".next-month").click(function(){
+      if($(".june").is(':visible')) {
+        $(".june").hide();
+        $(".july").show();
+        $(".august").hide();
+        $(".previous-month-text").hide();
+        $(".next-month-text").hide();
+      }
+
+      if($(".july").is(':visible')) {
+        $(".june").hide();
+        $(".july").hide();
+        $(".august").show();
+        $(".previous-month-text").hide();
+        $(".next-month-text").hide();
+      }
+
+      if($(".august").is(':visible')) {
+        $(".june").hide();
+        $(".july").hide();
+        $(".august").hide();
+        $(".previous-month-text").hide();
+        $(".next-month-text").hide();
+      }
+    });
+
+  $(".previous-month").click(function(){
+    if($(".june").is(':visible')) {
+      $(".june").hide();
+      $(".july").hide();
+      $(".august").hide();
+      $(".previous-month-text").hide();
+      $(".next-month-text").hide();
+    }
+
+    if($(".july").is(':visible')) {
+      $(".june").show();
+      $(".july").hide();
+      $(".august").hide();
+      $(".previous-month-text").hide();
+      $(".next-month-text").hide();
+    }
+
+    if($(".august").is(':visible')) {
+      $(".june").hide();
+      $(".july").show();
+      $(".august").hide();
+      $(".previous-month-text").hide();
+      $(".next-month-text").hide();
+    }
+  });
 
   </script>
 </body>

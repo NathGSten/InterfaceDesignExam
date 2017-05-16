@@ -80,7 +80,7 @@
 		width: 100%;
 
 		.event-calendar{
-			width: 60%;
+			width: 70%;
 			flex-direction: column;
 
 			.buttons{
@@ -96,6 +96,7 @@
 					border: 1px solid $grey;
 					background-color: $yellow;
 					cursor: pointer;
+					color: $white;
 
 					a {
 						color: $white;

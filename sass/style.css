@@ -102,7 +102,7 @@ img {
     align-items: center;
     width: 100%; }
     .event-container .event-content .event-calendar {
-      width: 60%;
+      width: 70%;
       flex-direction: column; }
       .event-container .event-content .event-calendar .buttons {
         padding: 20px;
@@ -115,7 +115,8 @@ img {
           height: 40px;
           border: 1px solid #F7F7F7;
           background-color: #F7B733;
-          cursor: pointer; }
+          cursor: pointer;
+          color: #FDFDFD; }
           .event-container .event-content .event-calendar .buttons .btn-event a {
             color: #FDFDFD;
             text-decoration: none; }
