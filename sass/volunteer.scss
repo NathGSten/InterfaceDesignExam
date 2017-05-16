@@ -17,7 +17,7 @@ body{
     display: flex;
     flex-direction: column !important;
     margin: 0;
-    color: white;
+    color: $white;
 
     h1{
       margin: 20px 0 0 0;
@@ -69,7 +69,7 @@ body{
 
       label {
         margin-top: 10px;
-        padding: 15px;
+        padding: 15px 15px 15px 0px;
       }
 
       input {
@@ -102,8 +102,8 @@ body{
         width: 150px;
         justify-content: center;
         padding-top: 12px;
-        border: 1.5px solid white;
-        background-color: #ecd06f;
+        border: 1.5px solid $white;
+        background-color: $yellow;
         display: flex;
         align-self: center;
       }
