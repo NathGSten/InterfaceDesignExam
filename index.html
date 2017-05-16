@@ -559,57 +559,20 @@
     $(".august").hide();
     $(".previous-month-text").hide();
     $(".next-month-text").hide();
+    $(".previous-month").hide();
 
     $(".next-month").click(function(){
-      if($(".june").is(':visible')) {
         $(".june").hide();
         $(".july").show();
-        $(".august").hide();
-        $(".previous-month-text").hide();
-        $(".next-month-text").hide();
-      }
-
-      if($(".july").is(':visible')) {
-        $(".june").hide();
-        $(".july").hide();
-        $(".august").show();
-        $(".previous-month-text").hide();
-        $(".next-month-text").hide();
-      }
-
-      if($(".august").is(':visible')) {
-        $(".june").hide();
-        $(".july").hide();
-        $(".august").hide();
-        $(".previous-month-text").hide();
-        $(".next-month-text").hide();
-      }
+        $(".previous-month").show();
+        $(".next-month").hide();
     });
 
   $(".previous-month").click(function(){
-    if($(".june").is(':visible')) {
-      $(".june").hide();
-      $(".july").hide();
-      $(".august").hide();
-      $(".previous-month-text").hide();
-      $(".next-month-text").hide();
-    }
-
-    if($(".july").is(':visible')) {
-      $(".june").show();
-      $(".july").hide();
-      $(".august").hide();
-      $(".previous-month-text").hide();
-      $(".next-month-text").hide();
-    }
-
-    if($(".august").is(':visible')) {
-      $(".june").hide();
-      $(".july").show();
-      $(".august").hide();
-      $(".previous-month-text").hide();
-      $(".next-month-text").hide();
-    }
+    $(".june").show();
+    $(".july").hide();
+    $(".previous-month").hide();
+    $(".next-month").show();
   });
 
   </script>
