@@ -34,42 +34,31 @@
 </header>
 
 <body>
-    <div class="event-container">
-    <div class="header-container get-involved-container">
-        <h1>GET INVOLVED</h1>
-        <p>Want to give feedback on our services, suggest future events or become a volunteer?</p>
+    <div class="admin-login">
 
-    </div>
-    <div class="getInvolvedContainer">
-        <div class="getInvolvedWrapper">
-            <div class="name">
-                <div class="firstName">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-                <div class="lastName">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
+        <div class="header-container get-involved-container">
+            <h1>CREATE A NEW ADMIN</h1>
+            <p>Fill in the login information for a new admin below</p>
+        </div>
+
+        <div class="login-container">
+          <div  class="flex-form-login" >
+            <div class="userEmail-container">
+                <label for="userEmail">USER EMAIL</label>
+                <input class="logForm-Email"  id="userEmail" type="email" placeholder="Email address" required>
             </div>
 
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
+            <div class="password-container">
+                <label for="password">PASSWORD</label>
+                <input class="logForm-Pass"  id="password" type="password" placeholder="Password" required>
+            </div>
 
-            <label for="reason">REASONS FOR CONTACTING</label>
-            <select id="reason" name="reason">
-                <option value="getInvolved">I want to get involved</option>
-                <option value="suggestions">I have some event suggestions</option>
-                <option value="feedback">I have some feedback on the service to share</option>
-            </select>
+            <input class="logForm-btn" type="submit" onclick="login()" value="REGISTER">
 
-            <label for="subject">MESSAGE</label>
-            <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
-
-            <input id="sendMessage" type="submit" value="SEND">
+          </div>
         </div>
+    
     </div>
-</div>
 
 <footer>
     <p>Copyright @Interface Design Gr 9 2017</p>
