@@ -49,23 +49,23 @@
 					.fa-calendar {
 						font-size: 2em;
 						padding: 10px;
-						color: white;
+						color: $white;
 					}
 
 					.fa-list {
 						font-size: 2em;
 						padding: 10px;
-						color: white;
+						color: $white;
 					}
 
 					.calender-view-text {
 						padding: 17px 15px 15px 5px;
-						color: white;
+						color: $white;
 					}
 
 					.calender-view-text2 {
 						padding: 15px 15px 15px 5px;
-						color: white;
+						color: $white;
 					}
 				}
 			}
@@ -88,7 +88,7 @@
 		justify-content: center;
 
 		.tags-border{
-			border-bottom: 1px grey solid;
+			border-bottom: 1px $grey solid;
 			border-left: 0;
 			border-right: 0;
 			width: 90%;
@@ -105,15 +105,15 @@
 
 				.filters {
 					display: flex;
-					background: #FDFDFD;
+					background: $white;
 					align-items: center;
 					border-radius: 5px;
 					height: 40px !important;
-					border: 1px solid darkgrey;
+					border: 1px solid $darkGrey;
 					padding: 0 10px;
 					margin: 0 20px;
 					cursor: pointer;
-					color: darkgrey;
+					color: $darkGrey;
 					font-size: 11px;
 
 
@@ -180,12 +180,12 @@
 				flex-direction: row;
 
 				.event-head {
-					background: #42ab9e;
+					background: $blue;
 					padding: 10px 15px 5px 15px;
 
 					h2, h5{
 						margin: 0;
-						color: white;
+						color: $white;
 					}
 
 					h2{
@@ -232,7 +232,7 @@
 					h2, h3, h4, h5, h6{
 						margin: 5px 0 5px 0;
 						font-size: 0.9em;
-						color: #42ab9e;
+						color: $blue;
 
 					}
 
@@ -260,7 +260,7 @@
 						margin: 3%;
 						height: 40px;
 						border: 1px solid $grey;
-						background-color: #ecd06f;
+						background-color: $yellow;
 						cursor: pointer;
 
 						a {
@@ -301,7 +301,7 @@
 					flex-wrap: wrap;
 					flex-direction: column;
 					//flex: 0;
-					background: #F7F7F7;
+					background: $white;
 
 					.event-head {
 						padding: 2px 10px !important;
@@ -385,7 +385,7 @@
 					display: flex;
 					flex-direction: column;
 					//flex: 0;
-					background: #F7F7F7;
+					background: $white;
 
 					.event-head {
 						padding: 2px 10px !important;
@@ -448,7 +448,7 @@
 			align-self: center;
 
 			.tags-border{
-				border-bottom: 1px grey solid;
+				border-bottom: 1px $grey solid;
 				border-left: 0;
 				border-right: 0;
 				width: 90%;
@@ -570,7 +570,7 @@
 			align-self: center;
 
 			.tags-border{
-				border-bottom: 1px grey solid;
+				border-bottom: 1px $grey solid;
 				border-left: 0;
 				border-right: 0;
 				width: 90%;

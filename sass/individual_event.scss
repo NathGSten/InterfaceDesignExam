@@ -11,7 +11,6 @@ body {
       .countdown{
         display: flex;
         width: 100%;
-        background-color: #orange;
         color: white;
         justify-content: space-around;
         align-self: center;
@@ -40,7 +39,7 @@ body {
           .event-place-container, .event-date-and-time-container {
 
             p {
-              border-right: 1px #42ab9e solid;
+              border-right: 1px $blue solid;
             }
           }
         }
@@ -195,7 +194,7 @@ body {
           display: flex;
           justify-content: center;
           align-self: center;
-          color: white;
+          color: $white;
         }
 
         .event-row {
@@ -208,13 +207,13 @@ body {
             margin: 20px;
             display: flex;
             flex-direction: column;
-            background: #F7F7F7;
+            background: $white;
             width: 12%;
 
             .upperHalf{
 
               .event-head {
-                background: #42ab9e;
+                background: $blue;
                 padding: 4px 15px 0 15px;
               }
 
