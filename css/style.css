@@ -645,7 +645,8 @@ body .individual-event {
     color: white;
     justify-content: space-around;
     align-self: center;
-    flex-direction: row; }
+    flex-direction: column;
+    padding: 10px; }
   body .individual-event .header-container {
     padding-top: 1%;
     display: flex;
