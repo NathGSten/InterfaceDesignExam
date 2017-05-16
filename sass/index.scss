@@ -10,79 +10,116 @@
 
 	.header-container {
 		text-align: center;
-		background: $btnGreen;
+		background-image: url("https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg");
+		background-repeat: no-repeat;
+		box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+		background-size: 100%;
+		height: 150px;
+		/* border-bottom: 2px black solid; */
+		/* border-top: 1px black solid; */
+		padding-top: 1%;
+		display: flex;
+		flex-direction: row;
 
-		.tags-row {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			flex-basis: 100;
+		.header-mid{
+			width: 66%;
+			color: white;
+		}
+
+		.header-right, .header-left{
+			width: 17%;
 
 			.calender-view {
 				display: flex;
-				margin: 10px 20px;
+				margin: 65px 0 10px 20px;
 				text-align: left;
-				justify-content: center;
-				flex-basis: 15%;
+				justify-content: flex-end;
+				//flex-basis: 15%;
 
 
 				.calender-view-container, .calender-view-container2 {
 					display: flex;
-					flex-basis: 70%;	
+					margin-right: 8%;
 					justify-content: center;
 					border-radius: 5px;
-	    			border: 1.5px solid $black;
-					background: $white;
+					/* border: 1.5px solid #0D0D0D; */
 					cursor: pointer;
+					background-color: #ecd06f;
 
 					.fa-calendar {
 						font-size: 2em;
 						padding: 10px;
+						color: white;
 					}
 
 					.fa-list {
 						font-size: 2em;
 						padding: 10px;
+						color: white;
 					}
-					
+
 					.calender-view-text {
-						padding: 10px;
+						padding: 17px 15px 15px 5px;
+						color: white;
 					}
 
 					.calender-view-text2 {
-						padding: 10px;
+						padding: 15px 15px 15px 5px;
+						color: white;
 					}
-				}	
+				}
 			}
+		}
+	}
 
-			.sep-line-events {
-				width: 1.5px;
-				margin: 10px 20px;
-				height: 80px;
-				background: $black;
+	.event-content{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
 
-			}
+	.tags-row {
+		padding: 1%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-basis: 100;
+		justify-content: center;
+
+		.tags-border{
+			border-bottom: 1px grey solid;
+			border-left: 0;
+			border-right: 0;
+			width: 90%;
+			display: flex;
+			justify-content: center;
+			padding: 1% 2%;
 
 			.tags {
 				display: flex;
 				margin: 10px 20px;
 				flex-basis: 60%;
 				flex-direction: row;
+				padding-bottom: 1%;
 
 				.filters {
 					display: flex;
-					background: $white;
+					background: #FDFDFD;
 					align-items: center;
 					border-radius: 5px;
-					height: 56px !important;
-	    			border: 1.5px solid $black;
-	    			padding: 0 10px;
-	    			margin: 0 20px;
-	    			cursor: pointer;
-	    			
+					height: 40px !important;
+					border: 1px solid darkgrey;
+					padding: 0 10px;
+					margin: 0 20px;
+					cursor: pointer;
+					color: darkgrey;
+					font-size: 11px;
+
 
 				}
 			}
+
 		}
 	}
 
@@ -117,199 +154,305 @@
 	.event-row {
 		display: flex;
 		flex-direction: row;
+		width: 90%;
 
 		.single-event {
 			margin: 20px;
 			display: flex;
 			flex-direction: column;
-			flex: 20;
 			background: $grey;
 
-			.event-head {
-				background: $btnGreen;
-				padding: 5px 15px;
-			}
-
-			.event-img {
+			.upperHalf{
 				display: flex;
-				flex-basis: 100%;
-				height: 10vh;
-				overflow: hidden;
+				flex-direction: row;
 
-				img {
-					display: block;
-					max-width: 100%;
+				.event-head {
+					background: #42ab9e;
+					padding: 10px 15px 5px 15px;
+
+					h2, h5{
+						margin: 0;
+						color: white;
+					}
+
+					h2{
+						font-size: 35px;
+					}
+
+					h5{
+						padding-bottom: 5px;
+					}
 				}
 
+				.title-img{
+
+					.event-img {
+						display: flex;
+						flex-basis: 100%;
+						height: 20vh;
+						overflow: hidden;
+
+						img {
+							display: block;
+							max-width: 100%;
+						}
+					}
+				}
 			}
 
-			.event-info-container {
-				
+			.lowerHalf{
 				display: flex;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
-				flex-direction: column;
-				margin: 15px 0;
 
-				p {
+				.event-info-container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					text-align: center;
-					margin: 10px;
-				}
+					flex-direction: column;
+					margin: 15px 0;
 
-				
-				.btn-event {
-					width: 30%;
-					border-radius: 5px;
-					height: 220px;
-		    		border: 1.5px solid $black;
-		    		background-color: $darkGrey;
-		    		cursor: pointer;
+					h1{
+						font-size: 1.5em;
+						margin: 5px;
+					}
 
-		    		a {
-		    			color: $white;
-		    			text-decoration: none;
-		    		}
+					h2, h3, h4, h5, h6{
+						margin: 5px 0 5px 0;
+						font-size: 0.9em;
+						color: #42ab9e;
+
+					}
+
+					p {
+						text-align: center;
+						margin: 10px;
+						font-size: 0.9em;
+					}
+
+					.event-tags{
+						display: flex;
+						flex-direction: row;
+						font-size: 10px;
+						margin-top: 15px;
+
+						div{
+							padding: 5px 5px;
+							margin-bottom: 5px;
+						}
+					}
+
+					.btn-event {
+						width: 30%;
+						border-radius: 5px;
+						margin: 3%;
+						height: 40px;
+						border: 1px solid $grey;
+						background-color: #ecd06f;
+						cursor: pointer;
+
+						a {
+							color: $white;
+							text-decoration: none;
+						}
+					}
 				}
 			}
-
-			
 		}
 	}
 	
 }
 
+@media screen and (min-width: 1251px) {
+	.event-container{
+		flex-wrap: wrap;
 
-@media screen and (min-width: 721px) and (max-width: 1000px) {
+		.event-content{
+			display: flex;
+			justify-content: center;
+			/* flex-direction: column; */
+			align-items: center;
+			flex-wrap: wrap;
 
-	.header-container {
-
-			.calender-view {
-				flex-basis: 5% !important;
-			}
-
-			.sep-line-events {
-				width: 1.5px;
-				margin: 5px 10px !important;
-				height: 50px !important;
-
-			}
-
-			.tags {
-				margin: 5px 10px !important;
-
-				.filters {
-	    			padding: 0 5px !important;
-	    			margin: 0 10px !important;
-	    		
-				}
-			}
-		
-	}
-
-	.event-row {
-
-		.single-event {
-
-			.event-head {
-				padding: 2px 10px !important;
-			}
-
-			.event-img {
-				height: 5vh !important;
-
-			}
-
-			.event-info-container {
-						
-			// BTN HERE 
-			}
-			
-		}
-	}
-	
-}
-
-@media screen and (min-width: 501px) and (max-width: 720px) { 
-
-	.header-container {
-
-			.calender-view {
-				flex-basis: 5% !important;
-			}
-
-			.sep-line-events {
-				width: 1.5px;
-				margin: 5px 10px !important;
-				height: 50px !important;
-
-			}
-
-			.tags {
-				margin: 5px 10px !important;
+			.event-row {
+				display: flex;
 				flex-wrap: wrap;
+				justify-content: center;
+				/* flex-direction: row; */
+				width: 90%;
+				/* flex: 100; */
 
-				.filters {
-	    			padding: 0 5px !important;
-	    			margin: 0 10px !important;
-	    			height: 40px !important;
+				.single-event {
+					margin: 20px;
+					width: 21%;
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+					//flex: 0;
+					background: #F7F7F7;
+
+					.event-head {
+						padding: 2px 10px !important;
+					}
+
+					.event-info-container {
+
+						// BTN HERE
+					}
+
 				}
 			}
-		
+		}
 	}
+}
 
-	.event-row {
+@media screen and (min-width: 801px) and (max-width: 1250px) {
 
-		.single-event {
+	.header-container {
 
-			.event-head {
-				padding: 2px 10px !important;
+
+		.header-left{
+			width: 0;
+		}
+
+		.header-mid{
+			width: 70%;
+		}
+
+		.header-right{
+			width: 30%;
+
+			.calender-view {
+				margin: 65px 5px 10px 20px;
 			}
-
-			.event-img {
-				height: 5vh !important;
-
-			}
-
-			.event-info-container {
-						
-				// BTN HERE
-			}
-			
 		}
 	}
 
+	.tags-row{
+		padding: 1%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		align-self: center;
+		flex-basis: 100;
+		justify-content: center;
 
+		.tags {
+			margin: 5px 10px !important;
+
+			.filters {
+				padding: 0 5px !important;
+				margin: 0 10px !important;
+
+			}
+		}
+	}
+
+	.event-container{
+
+		.event-content{
+			display: flex;
+			justify-content: center;
+			/* flex-direction: column; */
+			align-items: center;
+			flex-wrap: wrap;
+
+			.event-row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				/* flex-direction: row; */
+				width: 90%;
+				/* flex: 100; */
+
+				.single-event {
+					margin: 20px;
+					width: 27%;
+					display: flex;
+					flex-direction: column;
+					//flex: 0;
+					background: #F7F7F7;
+
+					.event-head {
+						padding: 2px 10px !important;
+					}
+
+					.event-info-container {
+
+						// BTN HERE
+					}
+
+				}
+			}
+		}
+	}
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (min-width: 501px) and (max-width: 800px) {
 
 	.event-container {
 
 		.header-container {
-			
-			.tags-row {
-				flex-direction: column;
+			flex-direction: column;
+			text-align: center;
+			background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+			background-repeat: no-repeat;
+			box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+			background-size: 100%;
+			height: 180px;
+			/* border-bottom: 2px black solid; */
+			/* border-top: 1px black solid; */
+			padding-top: 1%;
+			display: flex;
 
+			.header-left{
+			}
 
-				.sep-line-events {
-					width: 80px;
-					height: 1.5px;
+			.header-mid{
+				width: 100%;
+				color: white;
+			}
 
+			.header-right{
+				width: 100%;
+
+				.calender-view{
+					display: flex;
+					margin: 10px;
+					text-align: left;
+					justify-content: center;
+
+					.calender-view-container{
+					}
 				}
+			}
+		}
+
+		.tags-row {
+			flex-direction: column;
+			width: 90%;
+			align-self: center;
+
+			.tags-border{
+				border-bottom: 1px grey solid;
+				border-left: 0;
+				border-right: 0;
+				width: 90%;
+				display: flex;
+				overflow: scroll;
+				justify-content: center;
+				padding: 1% 2%;
 
 				.tags {
 					margin: 10px 20px;
 					flex-basis: 60%;
 					flex-direction: row;
-					flex-wrap: wrap;
 					justify-content: center;
 
 					.filters {
 						align-items: center;
 						height: 40px !important;
-		    			margin: 3px 10px;
-		    			
+						margin: 3px 10px;
 
 					}
 				}
@@ -322,7 +465,132 @@
 		}
 
 		.event-row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 90%;
+
+			.single-event {
+				margin: 10px;
+				flex: 40%;
+				width: 40%;
+
+				.event-head {
+					padding: 1px 15px;
+				}
+
+				.event-img {
+					height: 180px;
+
+				}
+
+				.event-info-container {
+
+					.btn-event {
+						width: 60%;
+						border-radius: 5px;
+						height: 50px;
+						border: 1.5px solid $black;
+						background-color: $darkGrey;
+						cursor: pointer;
+
+						a {
+							color: $white;
+							text-decoration: none;
+						}
+					}
+				}
+
+
+			}
+		}
+
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.event-container {
+
+		.header-container {
 			flex-direction: column;
+			text-align: center;
+			background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+			background-repeat: no-repeat;
+			box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+			background-size: 100%;
+			height: 180px;
+			/* border-bottom: 2px black solid; */
+			/* border-top: 1px black solid; */
+			padding-top: 1%;
+			display: flex;
+
+			.header-left{
+			}
+
+			.header-mid{
+				width: 100%;
+				color: white;
+			}
+
+			.header-right{
+				width: 100%;
+
+				.calender-view{
+					display: flex;
+					margin: 10px;
+					text-align: left;
+					justify-content: center;
+
+					.calender-view-container{
+					}
+				}
+			}
+		}
+
+		.tags-row {
+			flex-direction: column;
+			width: 90%;
+			align-self: center;
+
+			.tags-border{
+				border-bottom: 1px grey solid;
+				border-left: 0;
+				border-right: 0;
+				width: 90%;
+				display: flex;
+				overflow: scroll;
+				justify-content: center;
+				padding: 1% 2%;
+
+				.tags {
+					margin: 10px 20px;
+					flex-basis: 60%;
+					flex-direction: row;
+					justify-content: center;
+
+					.filters {
+						align-items: center;
+						height: 40px !important;
+						margin: 3px 10px;
+
+					}
+				}
+			}
+		}
+
+		.event-calendar {
+			padding: 10px;
+
+		}
+
+		.event-row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 80%;
 
 			.single-event {
 				margin: 10px;
@@ -338,7 +606,7 @@
 				}
 
 				.event-info-container {
-					
+
 					.btn-event {
 						width: 60%;
 						border-radius: 5px;
@@ -354,10 +622,10 @@
 					}
 				}
 
-				
+
 			}
 		}
-		
+
 	}
 
 

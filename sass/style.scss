@@ -3,6 +3,10 @@
 @import "colors.scss";
 @import "volunteer.scss";
 @import "animation.scss";
+@import "individual_event.scss";
+@import "sent_message.scss";
+@import "partners.scss";
+@import "about.scss";
 
 * {
   @include boxSizing(border-box);
@@ -15,7 +19,7 @@ body {
   margin: 0; 
   font-size: 16px;
   outline: 0;
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
 
   h1, h2, h3, h4, h5 {
     font-family: 'Ubuntu', sans-serif;
@@ -29,7 +33,7 @@ body {
 .flex-nav{
   background-color: $menuColor;
   font-family: 'Ubuntu', sans-serif;
-  height: 55px;
+  height: 75px;
   display: flex;
   padding: 0 30px;
   align-items: center;
@@ -55,7 +59,7 @@ body {
     img {
       display: flex;
       align-items: center;
-      width: 45px;
+      width: 100px;
     }
 
     div {

@@ -9,7 +9,8 @@ button {
 }
 button:hover {
 	color: $white;
-	background: $btnGreen !important;
+	background: black !important;
+	border: 1px solid black;
 }
 
 input[type="submit"] {
@@ -18,7 +19,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color: $white;
-	background: $btnGreen !important;
+	background: black !important;
 }
 
 
@@ -30,9 +31,10 @@ input[type="submit"]:hover {
 	transition: background .3s, color .3s;
 }
 
-.calender-view-container:hover, .filters:hover {
-	color: $white;
+.calender-view-container:hover, .filters:hover, .individual-event-filters:hover {
+	color: $white !important;
 	background: $darkGrey !important;
+	border-color: $darkGrey !important;
 }
 
 

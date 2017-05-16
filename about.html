@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Codify - Volunteer</title>
+    <title>Codify - About</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -34,40 +34,36 @@
 </header>
 
 <body>
-    <div class="event-container">
-    <div class="header-container get-involved-container">
-        <h1>GET INVOLVED</h1>
-        <p>Want to give feedback on our services, suggest future events or become a volunteer?</p>
+<div class="event-container">
+    <div class="header-container about-container">
+        <h1>ABOUT US</h1>
+        <p>Want to know more about us and our mission?</p>
+
+        <div class="mail-view">
+            <div class="mail-view-container toggable">
+
+                <div class="mail-view-img">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="mail-view-text"> Contact Us </div>
+
+            </div>
+        </div>
 
     </div>
-    <div class="getInvolvedContainer">
-        <div class="getInvolvedWrapper">
-            <div class="name">
-                <div class="firstName">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-                <div class="lastName">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
+</div>
+<div class="about-info-container">
+    <div class="about-info">
+        <h4>LOREM IPSUM DOLOR SIR AMET, CONSECTETUR</h4>
 
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam orci, fermentum id luctus ac, finibus ac nulla. Vestibulum viverra vulputate tellus, sed scelerisque lacus condimentum ac. Phasellus placerat mi nec lacus cursus, id porttitor risus pretium. Phasellus libero nunc, varius ac consequat ut, ullamcorper a felis. Curabitur efficitur velit at mi semper pretium. Proin pellentesque hendrerit sodales. Ut tristique ac velit ac dignissim.</p>
+        <h4>LOREM IPSUM DOLOR SIR AMET, CONSECTETUR</h4>
 
-            <label for="reason">REASONS FOR CONTACTING</label>
-            <select id="reason" name="reason">
-                <option value="getInvolved">I want to get involved</option>
-                <option value="suggestions">I have some event suggestions</option>
-                <option value="feedback">I have some feedback on the service to share</option>
-            </select>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam orci, fermentum id luctus ac, finibus ac nulla. Vestibulum viverra vulputate tellus, sed scelerisque lacus condimentum ac. Phasellus placerat mi nec lacus cursus, id porttitor risus pretium. Phasellus libero nunc, varius ac consequat ut, ullamcorper a felis. Curabitur efficitur velit at mi semper pretium. Proin pellentesque hendrerit sodales. Ut tristique ac velit ac dignissim.</p>
+        <h4>LOREM IPSUM DOLOR SIR AMET, CONSECTETUR</h4>
 
-            <label for="subject">MESSAGE</label>
-            <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
-
-            <input id="sendMessage" type="submit" value="SEND">
-        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum diam orci, fermentum id luctus ac, finibus ac nulla. Vestibulum viverra vulputate tellus, sed scelerisque lacus condimentum ac. Phasellus placerat mi nec lacus cursus, id porttitor risus pretium. Phasellus libero nunc, varius ac consequat ut, ullamcorper a felis. Curabitur efficitur velit at mi semper pretium. Proin pellentesque hendrerit sodales. Ut tristique ac velit ac dignissim.</p>
     </div>
 </div>
 
@@ -87,10 +83,6 @@
 
     //var localTest = localStorage.setItem("firstName", null);
 
-    $("#sendMessage").click(function(){
-        document.location = "sent_message.html";
-    });
-
     var checkUser = localStorage.getItem("firstName");
 
     console.log(checkUser);
@@ -100,7 +92,7 @@
         var changeNameTemplate =
                 '<ul>\
                   <li class="event-page"><a href="index.html">Events</a></li>\
-                  <li class="volunteer-page"><a href="volunteer.html">Volunteer</a></li>\
+                  <li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>\
                   <li class="aboutUs-page"><a href="about.html">About Us</a></li>\
                   <li class="makeAdmin-page"><a href="">Make new admin</a></li>\
                   <li class="logOut"><a href="logout.html">Log out</a></li>\
@@ -117,6 +109,12 @@
 
     ///////////// RELEVANT FOR MENU --    END    -- ALL SHOULD HAVE THIS  /////////////
 
+
+    // CONTACT BTN //
+
+    $(".mail-view-container").click(function(){
+        document.location = "volunteer.html";
+    });
 
 
 </script>

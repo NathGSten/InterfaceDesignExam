@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Codify - Volunteer</title>
+    <title>Codify - Partners</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -35,46 +35,52 @@
 
 <body>
     <div class="event-container">
-    <div class="header-container get-involved-container">
-        <h1>GET INVOLVED</h1>
-        <p>Want to give feedback on our services, suggest future events or become a volunteer?</p>
+        <div class="partners-header">
+            <h1>PARTNERS</h1>
+            <p>Your message was successfully received in our inbox.</p>
+        </div>
 
-    </div>
-    <div class="getInvolvedContainer">
-        <div class="getInvolvedWrapper">
-            <div class="name">
-                <div class="firstName">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <div class="partners-row">
+
+            <div class="partners-border">
+
+                <div class="partners">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png">
+                    <img src="http://static.tumblr.com/5dd99e84eb5ca1581026f89b26b8205f/uafylyw/NPbmn8u79/tumblr_static_ibm_press_posdesign_k.png">
+                    <img src="https://static1.squarespace.com/static/57a8859915d5db4d0a5fdde3/t/581b5374ebbd1a88df38631d/1478185851006/tdc_logo_blk.png">
+                    <img src="http://www.bygovenpaa.dk/content/uploads/2015/07/kea.png">
                 </div>
-                <div class="lastName">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
+
             </div>
 
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
+            <div class="partners-border">
 
-            <label for="reason">REASONS FOR CONTACTING</label>
-            <select id="reason" name="reason">
-                <option value="getInvolved">I want to get involved</option>
-                <option value="suggestions">I have some event suggestions</option>
-                <option value="feedback">I have some feedback on the service to share</option>
-            </select>
+                <div class="partners">
+                    <img src="http://www.iconsdb.com/icons/preview/black/dell-xxl.png">
+                    <img src="https://mobilepay.dk/SiteCollectionImages/MobilePay-Universe-2/Materiale/Logoer/MobilePay_Logo_Sort.png">
+                    <img src="https://logo-png.com/logo/steelseries-logo.png">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Panasonic_logo.svg/2000px-Panasonic_logo.svg.png">
+                </div>
 
-            <label for="subject">MESSAGE</label>
-            <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
+            </div>
 
-            <input id="sendMessage" type="submit" value="SEND">
+            <div class="partners-border">
+
+                <div class="partners">
+                    <img src="http://pngimg.com/uploads/microsoft/microsoft_PNG8.png">
+                    <img src="http://idekoproductions.com/wp-content/uploads/2015/02/red-bull-logo1.png">
+                    <img src="http://www.radpardazesh.com/image/cache/data/Headset/Bose/bose-logo-995x158_0.png">
+                    <img src="http://it-minds.dk/sites/default/files/case/ituniversitetet_o.png">
+                </div>
+
+            </div>
+
         </div>
     </div>
-</div>
 
-<footer>
-    <p>Copyright @Interface Design Gr 9 2017</p>
-</footer>
-
+    <footer>
+        <p>Copyright @Interface Design Gr 9 2017</p>
+    </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
@@ -87,10 +93,6 @@
 
     //var localTest = localStorage.setItem("firstName", null);
 
-    $("#sendMessage").click(function(){
-        document.location = "sent_message.html";
-    });
-
     var checkUser = localStorage.getItem("firstName");
 
     console.log(checkUser);
@@ -100,7 +102,7 @@
         var changeNameTemplate =
                 '<ul>\
                   <li class="event-page"><a href="index.html">Events</a></li>\
-                  <li class="volunteer-page"><a href="volunteer.html">Volunteer</a></li>\
+                  <li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>\
                   <li class="aboutUs-page"><a href="about.html">About Us</a></li>\
                   <li class="makeAdmin-page"><a href="">Make new admin</a></li>\
                   <li class="logOut"><a href="logout.html">Log out</a></li>\

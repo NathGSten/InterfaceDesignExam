@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Codify - Volunteer</title>
+    <title>Codify - Message Sent</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -15,7 +15,7 @@
 
         <div class="nav-left">
             <!-- <a href="index.html"><img src="" alt="logo"></a> -->
-            <a href="index.html"> <img src="images/logo.png"></a>
+            <a href="index.html"> <h3>codify</h3></a>
         </div>
 
 
@@ -34,40 +34,13 @@
 </header>
 
 <body>
-    <div class="event-container">
-    <div class="header-container get-involved-container">
-        <h1>GET INVOLVED</h1>
-        <p>Want to give feedback on our services, suggest future events or become a volunteer?</p>
-
+<div class="event-container sent-message">
+    <div class="header-container">
+        <h1>MESSAGE SENT</h1>
     </div>
-    <div class="getInvolvedContainer">
-        <div class="getInvolvedWrapper">
-            <div class="name">
-                <div class="firstName">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-                <div class="lastName">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-            </div>
-
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
-
-            <label for="reason">REASONS FOR CONTACTING</label>
-            <select id="reason" name="reason">
-                <option value="getInvolved">I want to get involved</option>
-                <option value="suggestions">I have some event suggestions</option>
-                <option value="feedback">I have some feedback on the service to share</option>
-            </select>
-
-            <label for="subject">MESSAGE</label>
-            <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
-
-            <input id="sendMessage" type="submit" value="SEND">
-        </div>
+    <div class="message">
+        <p>Your message was successfully received in our inbox.</p>
+        <p>We will get back to you as soon as possible. </p>
     </div>
 </div>
 
@@ -87,10 +60,6 @@
 
     //var localTest = localStorage.setItem("firstName", null);
 
-    $("#sendMessage").click(function(){
-        document.location = "sent_message.html";
-    });
-
     var checkUser = localStorage.getItem("firstName");
 
     console.log(checkUser);
@@ -100,7 +69,7 @@
         var changeNameTemplate =
                 '<ul>\
                   <li class="event-page"><a href="index.html">Events</a></li>\
-                  <li class="volunteer-page"><a href="volunteer.html">Volunteer</a></li>\
+                  <li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>\
                   <li class="aboutUs-page"><a href="about.html">About Us</a></li>\
                   <li class="makeAdmin-page"><a href="">Make new admin</a></li>\
                   <li class="logOut"><a href="logout.html">Log out</a></li>\
