@@ -4,13 +4,12 @@
   Button Transitions
 ==================================== */
 
-button {
+button, .swal2-modal .swal2-styled, #sendMessage {
 	transition: background .3s, color .3s;
 }
-button:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover, #sendMessage:hover {
 	color: $white;
 	background: $orange !important;
-	border: 1px solid black;
 }
 
 input[type="submit"] {
@@ -19,22 +18,24 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     color: $white;
-	background: black !important;
+	background: $orange !important;
 }
 
 
 /* ================================= 
-  Event tags and calendar Transitions
+  Event tags, calendar and about btn Transitions
 ==================================== */
 
-.calender-view-container, .filters {
+.calender-view-container, .filters, .mail-view-container {
 	transition: background .5s, color .3s;
 }
 
-.calender-view-container:hover, .filters:hover {
+.calender-view-container:hover, .filters:hover, .mail-view-container:hover {
 	color: $white !important;
 	background: $orange !important;
 }
+
+
 
 
 

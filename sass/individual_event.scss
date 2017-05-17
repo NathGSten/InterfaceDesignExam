@@ -2,7 +2,22 @@
 @import "colors.scss";
 @import "animation.scss";
 
+
+
+
 body {
+
+  .swal2-modal .swal2-styled {
+    background-color: $yellow !important;
+    font-family: 'Roboto', sans-serif;
+    
+  
+  }
+
+  .swal2-content {
+    font-family: 'Roboto', sans-serif;
+  }
+
 
     .individual-event {
       display: flex;
@@ -112,6 +127,7 @@ body {
             border: 1px solid $white;
             background-color: $yellow;
             cursor: pointer;
+            color: $white;
 
             a {
               color: $white;
@@ -294,7 +310,7 @@ body {
 
   @media screen and (max-width: 480px) {
     .individual-event .header-container{
-      height: 900px !important;
+      height: 700px !important;
       background-size: 350% !important;
     }
 

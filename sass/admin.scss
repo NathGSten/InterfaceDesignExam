@@ -1,0 +1,90 @@
+body{
+
+  .get-involved-container{
+    text-align: center;
+    background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+    background-size: 100%;
+    height: 150px;
+  }
+
+  .login-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .flex-form-login{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+
+      @media screen and (min-width: 1001px) {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .userEmail-container{
+          flex-direction: row;
+        }
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1000px){
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .userEmail-container{
+          flex-direction: row;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .userEmail-container{
+          flex-direction: column;
+        }
+      }
+
+      label {
+        margin-top: 10px;
+        padding: 15px 15px 15px 0px;
+      }
+
+      input {
+        padding: 15px;
+      }
+
+      textarea {
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+
+      .userEmail-container, .password-container{
+        display:flex;
+        flex-direction: column;
+        
+      }
+
+      .logForm-btn{
+        color: white;
+        border-radius: 5px;
+        height: 40px;
+        width: 150px;
+        justify-content: center;
+        padding-top: 12px;
+        margin: 10px 0 150px 0;
+        border: 1.5px solid $white;
+        background-color: $yellow;
+        display: flex;
+        align-self: center;
+      }
+    }
+  }
+}

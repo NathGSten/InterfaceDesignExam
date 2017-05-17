@@ -7,6 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.css">
+
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -68,7 +75,7 @@
                 <h4>Edit event</h4>
             </div>
             <div class="admin-new-event-plus">
-                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -96,8 +103,8 @@
         </div>
 
         <div class="button">
-            <button class="btn-event"><a href="#">ATTEND THE EVENT</a></button>
-            <button class="btn-event"><a href="#">GET REMINDER OF EVENT</a></button>
+            <button class="btn-event btn-attend">ATTEND THE EVENT</button>
+            <button class="btn-event btn-remind">GET REMINDER OF EVENT</button>
         </div>
     </div>
 
@@ -123,7 +130,7 @@
     </div>
 
     <div class="related-events">
-        <p>EVENT YOU MIGHT BE INTERESTED IN</p>
+        <p>EVENTS YOU MIGHT BE INTERESTED IN</p>
 
         <div class="event-row">
 
@@ -352,6 +359,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 
+    $(".admin-new-event").hide();
+
+
     ///////////// RELEVANT FOR MENU --    START    -- ALL SHOULD HAVE THIS  /////////////
 
     $(".toggleNav").click( function(){
@@ -372,11 +382,15 @@
                   <li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>\
                   <li class="volunteer-page"><a href="partners.html">Partners</a></li>\
                   <li class="aboutUs-page"><a href="about.html">About Us</a></li>\
-                  <li class="makeAdmin-page"><a href="">Make new admin</a></li>\
+                  <li class="makeAdmin-page"><a href="new-admin.html">Make new admin</a></li>\
                   <li class="logOut"><a href="logout.html">Log out</a></li>\
                 </ul>';
 
         $(".nav-right-ul").html(changeNameTemplate);
+
+        // the one between these brackets are not for the menu but for the admin extra
+        $(".admin-new-event").show();
+        // the one between these brackets are not for the menu but for the admin extra
 
         $(".makeAdmin-page").show();
         $(".logOut").show();
@@ -414,6 +428,75 @@
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
     }, 1000);
+
+    $(".btn-attend").click(function(){
+
+        console.log("hej");
+
+        swal({
+          title: 'Write your email to sign up for this event.',
+            text: 'We cant wait to see you!',
+          input: 'email',
+          showCancelButton: true,
+          confirmButtonText: 'Submit',
+          showLoaderOnConfirm: true,
+          preConfirm: function (email) {
+            return new Promise(function (resolve, reject) {
+              setTimeout(function() {
+                if (email === 'taken@example.com') {
+                  reject('This email is already taken.')
+                } else {
+                  resolve()
+                }
+              }, 2000)
+            })
+          },
+          allowOutsideClick: false
+        }).then(function (email) {
+          swal({
+            type: 'success',
+            title: 'You are now attending!',
+            html: 'We will send information to: ' + email
+          })
+        })
+
+    });
+
+    $(".btn-remind").click(function(){
+
+        console.log("hej");
+
+        swal({
+          title: 'Not sure if you can make it?',
+            text: 'We will remind you when the event approaches. Submit your email!',
+          input: 'email',
+          showCancelButton: true,
+          confirmButtonText: 'Submit',
+          showLoaderOnConfirm: true,
+          preConfirm: function (email) {
+            return new Promise(function (resolve, reject) {
+              setTimeout(function() {
+                if (email === 'taken@example.com') {
+                  reject('This email is already taken.')
+                } else {
+                  resolve()
+                }
+              }, 2000)
+            })
+          },
+          allowOutsideClick: false
+        }).then(function (email) {
+          swal({
+            type: 'success',
+            title: 'We will remind you of this event!',
+            html: 'We will send the reminder to: ' + email
+          })
+        })
+
+    });
+
+
+    
 
 </script>
 </body>

@@ -6,7 +6,7 @@ body{
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
     background-size: 100%;
-    height: 150px;
+    height: 200px !important;
     padding-top: 1%;
     display: flex;
     flex-direction: column !important;
@@ -14,6 +14,34 @@ body{
 
     h1{
       margin: 20px 0 0 0;
+    }
+
+    .mail-view {
+      display: flex;
+      text-align: left;
+      justify-content: flex-end;
+      //flex-basis: 15%;
+
+
+      .mail-view-container{
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        /* border: 1.5px solid #0D0D0D; */
+        cursor: pointer;
+        background-color: $yellow;
+
+        .fa-envelope-o {
+          font-size: 2em;
+          padding: 10px;
+          color: white;
+        }
+
+        .mail-view-text {
+          padding: 17px 15px 15px 5px;
+          color: white;
+        }
+      }
     }
   }
 
@@ -51,7 +79,20 @@ body{
     margin-top: 40px;
   }
 
+  @media screen and (min-width: 501px) {
+
+    .mail-view-container{
+      margin-right: 8%;
+    }
+  }
+
   @media screen and (max-width: 500px) {
+
+    .partners-header .mail-view.mail-view {
+      display: flex;
+      text-align: left;
+      justify-content: center;
+    }
 
     .partners-row{
       width: 70%;

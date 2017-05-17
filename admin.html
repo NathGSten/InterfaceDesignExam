@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Codify - Volunteer</title>
+    <title>Codify - ADMIN LOGIN</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-    <script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.css">
-
-    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,42 +34,31 @@
 </header>
 
 <body>
-    <div class="event-container">
-    <div class="header-container get-involved-container">
-        <h1>GET INVOLVED</h1>
-        <p>Want to give feedback on our services, suggest future events or become a volunteer?</p>
+    <div class="admin-login">
 
-    </div>
-    <div class="getInvolvedContainer">
-        <div class="getInvolvedWrapper">
-            <div class="name">
-                <div class="firstName">
-                    <label for="fname">FIRST NAME</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-                <div class="lastName">
-                    <label for="lname">LAST NAME</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
+        <div class="header-container get-involved-container">
+            <h1>ADMIN LOGIN</h1>
+            <p>This is the entry for admins. <br>Type in your user email and password below.</p>
+        </div>
+
+        <div class="login-container">
+          <div  class="flex-form-login" >
+            <div class="userEmail-container">
+                <label for="userEmail">USER EMAIL</label>
+                <input class="logForm-Email"  id="userEmail" type="email" placeholder="Email address" required>
             </div>
 
-            <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email" placeholder="Your email..">
+            <div class="password-container">
+                <label for="password">PASSWORD</label>
+                <input class="logForm-Pass"  id="password" type="password" placeholder="Password" required>
+            </div>
 
-            <label for="reason">REASONS FOR CONTACTING</label>
-            <select id="reason" name="reason">
-                <option value="getInvolved">I want to get involved</option>
-                <option value="suggestions">I have some event suggestions</option>
-                <option value="feedback">I have some feedback on the service to share</option>
-            </select>
+            <input class="logForm-btn" type="submit" onclick="login()" value="LOGIN">
 
-            <label for="subject">MESSAGE</label>
-            <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
-
-            <input id="sendMessage" type="submit" value="SEND">
+          </div>
         </div>
+    
     </div>
-</div>
 
 <footer>
     <p>Copyright @Interface Design Gr 9 2017</p>
@@ -94,11 +77,7 @@
     //var localTest = localStorage.setItem("firstName", null);
 
     $("#sendMessage").click(function(){
-        swal(
-          'Message sent!',
-          'We will respond as soon as possible!',
-          'success'
-        )
+        document.location = "sent_message.html";
     });
 
     var checkUser = localStorage.getItem("firstName");
