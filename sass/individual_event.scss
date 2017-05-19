@@ -275,9 +275,9 @@ body {
     }
   }
 
-  @media screen and (max-width: 1080px) and (min-width: 581px) {
+  @media screen and (max-width: 1080px) and (min-width: 771px) {
     .individual-event .header-container{
-      height: 750px !important;
+      height: 600px !important;
       background-size: 350% !important;
     }
 
@@ -293,10 +293,71 @@ body {
     }
   }
 
+  @media screen and (max-width: 770px) and (min-width: 581px) {
+    .individual-event .header-container{
+      height: 600px !important;
+      background-size: 350% !important;
+    }
+
+    .button {
+      flex-direction: column;
+      align-items: center;  
+      flex-basis: 100%;
+
+        .btn-event {
+          margin: 10px !important;
+          width: 70% !important;
+        }
+
+    }
+
+    .event-place-container, .event-attendance-container, .event-date-and-time-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+
+      i {
+        padding: 12px 20px 1px 10px;
+        color: $yellow;
+      }
+    }
+
+
+  }
+
+
+
   @media screen and (max-width: 580px) and (min-width: 481px){
     .individual-event .header-container{
       height: 850px !important;
       background-size: 350% !important;
+
+      .place-and-time {
+        flex-direction: column !important;
+
+        .event-place-container, .event-date-and-time-container {
+
+            p {
+              border-right: 0px;
+              padding-bottom: 20px;
+              border-bottom: 1px $blue solid;
+            }
+
+
+          }
+      }
+    }
+
+    .button {
+      flex-direction: column;
+      align-items: center;  
+      flex-basis: 100%;
+
+        .btn-event {
+          margin: 10px !important;
+          width: 60% !important;
+        }
+
     }
 
     .event-place-container, .event-attendance-container, .event-date-and-time-container {
@@ -309,12 +370,61 @@ body {
         color: $yellow;
       }
     }
+
+    .partners-row{
+
+        .partners-border{
+
+          .partners{
+            flex-direction: column !important;
+
+            img{
+              width: 30% !important;
+              margin: 10px 0px !important;
+            }
+          }
+
+          p{
+            display: flex;
+            justify-content: center;
+          }
+
+        }
+      }
+
+
   }
 
   @media screen and (max-width: 480px) {
     .individual-event .header-container{
       height: 700px !important;
       background-size: 350% !important;
+
+      .place-and-time {
+        flex-direction: column !important;
+
+        .event-place-container, .event-date-and-time-container {
+
+            p {
+              border-right: 0px;
+              padding-bottom: 20px;
+              border-bottom: 1px $blue solid;
+            }
+
+
+          }
+      }
+    }
+
+    .button {
+      flex-direction: column;
+      align-items: center;  
+      flex-basis: 100%;
+
+        .btn-event {
+          margin: 10px !important;
+          width: 70% !important;
+        }
     }
 
     .event-place-container, .event-attendance-container, .event-date-and-time-container {
@@ -328,5 +438,26 @@ body {
       }
     }
   }
+
+  .partners-row{
+
+        .partners-border{
+
+          .partners{
+            flex-direction: column !important;
+
+            img{
+              width: 30% !important;
+              margin: 10px 0px !important;
+            }
+          }
+
+          p{
+            display: flex;
+            justify-content: center;
+          }
+
+        }
+      }
 }
 

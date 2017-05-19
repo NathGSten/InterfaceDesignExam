@@ -822,10 +822,28 @@ body footer {
       padding: 12px 20px 18px 10px; }
     body .event-place-container p, body .event-attendance-container p, body .event-date-and-time-container p {
       padding-right: 15px; } }
-@media screen and (max-width: 1080px) and (min-width: 581px) {
+@media screen and (max-width: 1080px) and (min-width: 771px) {
   body .individual-event .header-container {
-    height: 750px !important;
+    height: 600px !important;
     background-size: 350% !important; }
+  body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+    body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
+      padding: 12px 20px 1px 10px;
+      color: #F7B733; } }
+@media screen and (max-width: 770px) and (min-width: 581px) {
+  body .individual-event .header-container {
+    height: 600px !important;
+    background-size: 350% !important; }
+  body .button {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+    body .button .btn-event {
+      margin: 10px !important;
+      width: 70% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
     display: flex;
     justify-content: center;
@@ -837,17 +855,51 @@ body footer {
   body .individual-event .header-container {
     height: 850px !important;
     background-size: 350% !important; }
+    body .individual-event .header-container .place-and-time {
+      flex-direction: column !important; }
+      body .individual-event .header-container .place-and-time .event-place-container p, body .individual-event .header-container .place-and-time .event-date-and-time-container p {
+        border-right: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px #4ABDAC solid; }
+  body .button {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+    body .button .btn-event {
+      margin: 10px !important;
+      width: 60% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
     display: flex;
     justify-content: center;
     flex-direction: column; }
     body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
       padding: 12px 20px 1px 10px;
-      color: #F7B733; } }
+      color: #F7B733; }
+  body .partners-row .partners-border .partners {
+    flex-direction: column !important; }
+    body .partners-row .partners-border .partners img {
+      width: 30% !important;
+      margin: 10px 0px !important; }
+  body .partners-row .partners-border p {
+    display: flex;
+    justify-content: center; } }
 @media screen and (max-width: 480px) {
   body .individual-event .header-container {
     height: 700px !important;
     background-size: 350% !important; }
+    body .individual-event .header-container .place-and-time {
+      flex-direction: column !important; }
+      body .individual-event .header-container .place-and-time .event-place-container p, body .individual-event .header-container .place-and-time .event-date-and-time-container p {
+        border-right: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px #4ABDAC solid; }
+  body .button {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+    body .button .btn-event {
+      margin: 10px !important;
+      width: 70% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
     display: flex;
     justify-content: center;
@@ -855,6 +907,14 @@ body footer {
     body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
       padding: 12px 20px 1px 10px;
       color: #F7B733; } }
+body .partners-row .partners-border .partners {
+  flex-direction: column !important; }
+  body .partners-row .partners-border .partners img {
+    width: 30% !important;
+    margin: 10px 0px !important; }
+body .partners-row .partners-border p {
+  display: flex;
+  justify-content: center; }
 
 body .sent-message {
   display: flex;
