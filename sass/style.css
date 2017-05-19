@@ -812,6 +812,17 @@ body .individual-event {
         body .individual-event .related-events .event-row .single-event .lowerHalf {
           display: flex;
           justify-content: center; }
+          body .individual-event .related-events .event-row .single-event .lowerHalf .btn-event-related {
+            width: 50%;
+            border-radius: 5px;
+            margin: 3%;
+            height: 40px;
+            border: 1px solid #F7F7F7;
+            background-color: #F7B733;
+            cursor: pointer; }
+            body .individual-event .related-events .event-row .single-event .lowerHalf .btn-event-related a {
+              color: #FDFDFD;
+              text-decoration: none; }
 body footer {
   margin: 0 0 !important; }
 @media screen and (min-width: 1081px) {
