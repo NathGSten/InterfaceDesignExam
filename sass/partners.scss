@@ -54,6 +54,7 @@ body{
 
   .p-partners-border{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-self: center;
     flex-direction: column;
@@ -126,7 +127,7 @@ body{
 
     .partners-border{
       flex-direction: column;
-      width: 70%;
+      width: 100%;
     }
 
 
