@@ -754,20 +754,21 @@ body .individual-event {
       width: 100%;
       height: 150px; }
   body .individual-event .partners-row {
-    flex-direction: row;
+    flex-direction: column !important;
     width: 100%;
     align-self: center; }
     body .individual-event .partners-row .partners-border {
       display: flex;
       justify-content: center;
       align-self: center;
-      flex-direction: column;
+      flex-direction: row;
       border: none;
       margin: 0;
       padding: 0; }
       body .individual-event .partners-row .partners-border .partners {
         display: flex;
         justify-content: center;
+        flex-direction: row !important;
         align-self: center; }
         body .individual-event .partners-row .partners-border .partners img {
           width: 10%;

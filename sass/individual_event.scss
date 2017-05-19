@@ -169,7 +169,7 @@ body {
       }
 
       .partners-row{
-        flex-direction: row;
+        flex-direction: column !important;
         width: 100%;
         align-self: center;
 
@@ -177,7 +177,7 @@ body {
           display: flex;
           justify-content: center;
           align-self: center;
-          flex-direction: column;
+          flex-direction: row;
           border: none;
           margin: 0;
           padding: 0;
@@ -185,6 +185,7 @@ body {
           .partners{
             display: flex;
             justify-content: center;
+            flex-direction: row !important;
             align-self: center;
 
             img{
