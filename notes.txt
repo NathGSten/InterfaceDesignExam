@@ -1,0 +1,10 @@
+html for new event and creating new partners          -----with sweetalert
+
+admin will need to select partners for each new event
+
+functional register and login
+
+new events and partners should be appended
+
+
+! Expected "text", "email", "password", "number", "tel", "select", "radio", "checkbox", "textarea", "file" or "url", got "another"
