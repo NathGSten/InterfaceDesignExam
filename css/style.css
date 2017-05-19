@@ -932,38 +932,38 @@ body .sent-message {
       justify-content: center; }
 
 body .p-partners-header {
+  flex-direction: column;
   text-align: center;
   background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
   background-size: 100%;
-  height: 200px !important;
+  height: 180px;
+  /* border-bottom: 2px black solid; */
+  /* border-top: 1px black solid; */
   padding-top: 1%;
-  display: flex;
-  flex-direction: column !important;
-  color: #FDFDFD; }
+  display: flex; }
   body .p-partners-header h1 {
     margin: 20px 0 0 0; }
-  body .p-partners-header .mail-view {
-    display: flex;
-    text-align: left;
-    justify-content: flex-end; }
-    body .p-partners-header .mail-view .mail-view-container {
+  body .p-partners-header .header-right {
+    width: 17%; }
+    body .p-partners-header .header-right .mail-view {
       display: flex;
-      justify-content: center;
-      border-radius: 5px;
-      /* border: 1.5px solid #0D0D0D; */
-      cursor: pointer;
-      background-color: #F7B733; }
-      body .p-partners-header .mail-view .mail-view-container .fa-envelope-o {
-        font-size: 2em;
-        padding: 10px;
-        color: white; }
-      body .p-partners-header .mail-view .mail-view-container .mail-view-text {
-        padding: 17px 15px 15px 5px;
-        color: white; }
+      text-align: left; }
+      body .p-partners-header .header-right .mail-view .mail-view-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #F7B733; }
+        body .p-partners-header .header-right .mail-view .mail-view-container .fa-envelope-o {
+          font-size: 2em;
+          padding: 10px;
+          color: white; }
+        body .p-partners-header .header-right .mail-view .mail-view-container .mail-view-text {
+          padding: 17px 15px 15px 5px;
+          color: white; }
   body .p-partners-header p {
-    width: 90%;
     display: flex;
     justify-content: center;
     align-self: center; }
@@ -993,20 +993,29 @@ body .p-partners-border {
     justify-content: center; }
 body footer {
   margin-top: 40px; }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
   body .mail-view-container {
-    margin-right: 8%; } }
-@media screen and (max-width: 500px) {
-  body .p-partners-header .mail-view.mail-view {
+    margin: 65px 0 10px 20px;
+    justify-content: flex-end; } }
+@media screen and (max-width: 800px) {
+  body .p-partners-header p {
+    margin: 15px;
+    align-self: center;
+    justify-content: center; }
+  body .p-partners-header .mail-view {
     display: flex;
     text-align: left;
-    justify-content: center; }
+    justify-content: center;
+    margin: 0px; }
   body .p-partners-row {
     width: 100%;
     align-self: center;
     display: flex;
     justify-content: center;
     flex-direction: column; }
+  body .partners-border {
+    flex-direction: column;
+    width: 70%; }
   body .p-partners {
     flex-wrap: wrap; }
     body .p-partners img {
@@ -1017,34 +1026,39 @@ body footer {
       margin: 15px 35px !important; } }
 
 body .about-container {
+  flex-direction: column;
   text-align: center;
   background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
   background-size: 100%;
-  height: 200px !important;
+  height: 180px;
+  /* border-bottom: 2px black solid; */
+  /* border-top: 1px black solid; */
   padding-top: 1%;
-  display: flex;
-  flex-direction: column !important;
-  color: white; }
+  display: flex; }
   body .about-container h1 {
     margin: 20px 0 0 0; }
-  body .about-container .mail-view {
-    display: flex;
-    text-align: left;
-    justify-content: flex-end; }
-    body .about-container .mail-view .mail-view-container {
+  body .about-container .header-mid p {
+    width: 100%; }
+  body .about-container .header-right {
+    width: 17%; }
+    body .about-container .header-right .mail-view {
       display: flex;
-      justify-content: center;
-      border-radius: 5px;
-      /* border: 1.5px solid #0D0D0D; */
-      cursor: pointer;
-      background-color: #F7B733; }
-      body .about-container .mail-view .mail-view-container .fa-envelope-o {
-        font-size: 2em;
-        padding: 10px;
-        color: white; }
-      body .about-container .mail-view .mail-view-container .mail-view-text {
+      text-align: left; }
+      body .about-container .header-right .mail-view .mail-view-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        /* border: 1.5px solid #0D0D0D; */
+        cursor: pointer;
+        background-color: #F7B733;
+        transition: background .5s, color .3s; }
+        body .about-container .header-right .mail-view .mail-view-container .fa-envelope-o {
+          font-size: 2em;
+          padding: 10px;
+          color: white; }
+      body .about-container .header-right .mail-view .mail-view-text {
         padding: 17px 15px 15px 5px;
         color: white; }
 body .about-info-container {
@@ -1063,14 +1077,26 @@ body .about-info-container {
       display: flex;
       justify-content: center;
       padding: 15px; }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
   body .mail-view-container {
-    margin-right: 8%; } }
-@media screen and (max-width: 500px) {
-  body .about-container .mail-view.mail-view {
+    margin: 65px 0 10px 20px;
+    justify-content: flex-end; } }
+@media screen and (max-width: 800px) {
+  body .about-container {
     display: flex;
-    text-align: left;
-    justify-content: center; } }
+    flex-direction: column;
+    align-self: center; }
+    body .about-container p {
+      width: 100%;
+      display: flex;
+      margin: 10px;
+      align-self: center;
+      justify-content: center; }
+  body .header-right .mail-view {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-self: center; } }
 
 body .get-involved-container {
   text-align: center;
