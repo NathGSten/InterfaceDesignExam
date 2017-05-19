@@ -1,6 +1,6 @@
 body{
 
-  .partners-header{
+  .p-partners-header{
     text-align: center;
     background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
     background-repeat: no-repeat;
@@ -43,9 +43,16 @@ body{
         }
       }
     }
+
+    p{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
   }
 
-  .partners-border{
+  .p-partners-border{
     display: flex;
     justify-content: center;
     align-self: center;
@@ -54,17 +61,20 @@ body{
     margin: 0;
     padding: 0;
 
-    .partners{
+    .p-partners{
       display: flex;
       justify-content: center;
       align-self: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
 
       img{
-        width: 10%;
+        width: 30%;
         display: flex;
         justify-content: center;
         align-self: center;
-        margin: 16px 50px;
+        margin: 20px;
+        padding: 20px;
       }
     }
 
@@ -88,14 +98,14 @@ body{
 
   @media screen and (max-width: 500px) {
 
-    .partners-header .mail-view.mail-view {
+    .p-partners-header .mail-view.mail-view {
       display: flex;
       text-align: left;
       justify-content: center;
     }
 
-    .partners-row{
-      width: 70%;
+    .p-partners-row{
+      width: 100%;
       align-self: center;
       display: flex;
       justify-content: center;
@@ -103,7 +113,8 @@ body{
     }
 
 
-    .partners{
+    .p-partners{
+      flex-wrap: wrap;
 
       img{
         width: 10%;

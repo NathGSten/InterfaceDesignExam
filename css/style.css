@@ -761,11 +761,12 @@ body .individual-event {
       display: flex;
       justify-content: center;
       align-self: center;
-      flex-direction: row;
+      flex-direction: column;
       border: none;
       margin: 0;
       padding: 0; }
       body .individual-event .partners-row .partners-border .partners {
+        width: 70%;
         display: flex;
         justify-content: center;
         flex-direction: row !important;
@@ -930,7 +931,7 @@ body .sent-message {
       display: flex;
       justify-content: center; }
 
-body .partners-header {
+body .p-partners-header {
   text-align: center;
   background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
   background-repeat: no-repeat;
@@ -941,27 +942,32 @@ body .partners-header {
   display: flex;
   flex-direction: column !important;
   color: #FDFDFD; }
-  body .partners-header h1 {
+  body .p-partners-header h1 {
     margin: 20px 0 0 0; }
-  body .partners-header .mail-view {
+  body .p-partners-header .mail-view {
     display: flex;
     text-align: left;
     justify-content: flex-end; }
-    body .partners-header .mail-view .mail-view-container {
+    body .p-partners-header .mail-view .mail-view-container {
       display: flex;
       justify-content: center;
       border-radius: 5px;
       /* border: 1.5px solid #0D0D0D; */
       cursor: pointer;
       background-color: #F7B733; }
-      body .partners-header .mail-view .mail-view-container .fa-envelope-o {
+      body .p-partners-header .mail-view .mail-view-container .fa-envelope-o {
         font-size: 2em;
         padding: 10px;
         color: white; }
-      body .partners-header .mail-view .mail-view-container .mail-view-text {
+      body .p-partners-header .mail-view .mail-view-container .mail-view-text {
         padding: 17px 15px 15px 5px;
         color: white; }
-body .partners-border {
+  body .p-partners-header p {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+body .p-partners-border {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -969,17 +975,20 @@ body .partners-border {
   border: none;
   margin: 0;
   padding: 0; }
-  body .partners-border .partners {
+  body .p-partners-border .p-partners {
     display: flex;
     justify-content: center;
-    align-self: center; }
-    body .partners-border .partners img {
-      width: 10%;
+    align-self: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+    body .p-partners-border .p-partners img {
+      width: 30%;
       display: flex;
       justify-content: center;
       align-self: center;
-      margin: 16px 50px; }
-  body .partners-border p {
+      margin: 20px;
+      padding: 20px; }
+  body .p-partners-border p {
     display: flex;
     justify-content: center; }
 body footer {
@@ -988,22 +997,24 @@ body footer {
   body .mail-view-container {
     margin-right: 8%; } }
 @media screen and (max-width: 500px) {
-  body .partners-header .mail-view.mail-view {
+  body .p-partners-header .mail-view.mail-view {
     display: flex;
     text-align: left;
     justify-content: center; }
-  body .partners-row {
-    width: 70%;
+  body .p-partners-row {
+    width: 100%;
     align-self: center;
     display: flex;
     justify-content: center;
     flex-direction: column; }
-  body .partners img {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin: 15px 35px !important; } }
+  body .p-partners {
+    flex-wrap: wrap; }
+    body .p-partners img {
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 15px 35px !important; } }
 
 body .about-container {
   text-align: center;

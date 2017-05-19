@@ -177,12 +177,13 @@ body {
           display: flex;
           justify-content: center;
           align-self: center;
-          flex-direction: row;
+          flex-direction: column;
           border: none;
           margin: 0;
           padding: 0;
 
           .partners{
+            width: 70%;
             display: flex;
             justify-content: center;
             flex-direction: row !important;
