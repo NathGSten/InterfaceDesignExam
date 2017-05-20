@@ -27,6 +27,7 @@
 		var startTime = $("#new-event-start-time").val();
 		var endTime = $("#new-event-end-time").val();
 		var address = $("#new-event-address").val();
+		var shortDescription = $("#new-event-short-description").val();
 		var description = $("#new-event-description").val();
 
 
@@ -35,7 +36,9 @@
 		var month = aDate[1].toUpperCase();
 		var year = aDate[2];
 		
-		 var jEvent = {
+		var aTags = newEventTagsArray();
+
+		var jEvent = {
 		 	title: title,
 		 	coverImage: coverImage,
 		 	day: day,
@@ -44,12 +47,15 @@
 		 	startTime: startTime,
 		 	endTime: endTime,
 		 	address: address,
-		 	description: description
+		 	shortDescription: shortDescription,
+		 	description: description,
+		 	tags: aTags
 		 }
 
 		 var sEvent = JSON.stringify(jEvent);
 		 localStorage.newEvent = sEvent;
 		 console.log(sEvent);
+
 	});
 
 
@@ -80,15 +86,14 @@
 							<h3>{{startTime}} - {{endTime}}</h3>\
 							<h5>{{address}}</h5>\
 							<p>{{description}}</p>\
-							<div class="event-tags">\
-								<div>Html</div>\
-								<div>css</div>\
-								<div>JavaScript</div>\
+							<div class="event-tags" id="new-event-tags-container">\
 							</div>\
 							<button class="btn-event"><a href="individual_event.html">READ MORE</a></button>\
 						</div>\
 					</div>\
 				</div>'
+
+		var sTagsTemplate = '';
 
 		sDivTemplate = sDivTemplate.replace("{{day}}", jEvent.day);
 		sDivTemplate = sDivTemplate.replace("{{month}}", jEvent.month);
@@ -98,9 +103,26 @@
 		sDivTemplate = sDivTemplate.replace("{{startTime}}", jEvent.startTime);
 		sDivTemplate = sDivTemplate.replace("{{endTime}}", jEvent.endTime);
 		sDivTemplate = sDivTemplate.replace("{{address}}", jEvent.address);
-		sDivTemplate = sDivTemplate.replace("{{description}}", jEvent.description);
+		sDivTemplate = sDivTemplate.replace("{{description}}", jEvent.shortDescription);
 
 		$(".event-row").append(sDivTemplate);
+
+		$.each( jEvent.tags, function(iIndex, sTag){
+
+			$("#new-event-tags-container").append("<div>"+ sTag +"</div>");
+
+		});
+	}
+
+
+
+	function newEventTagsArray(){
+		var aTags = [];
+		$(".new-event-tag:checked").each(function(index,element){
+			aTags.push($(this).val());
+
+		});
+		return aTags;
 	}
 
 
