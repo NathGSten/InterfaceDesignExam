@@ -1,52 +1,60 @@
 body{
 
-  .partners-header{
+  .p-partners-header{
+    flex-direction: column;
     text-align: center;
     background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
     background-repeat: no-repeat;
     box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
     background-size: 100%;
-    height: 200px !important;
+    height: 180px;
+    /* border-bottom: 2px black solid; */
+    /* border-top: 1px black solid; */
     padding-top: 1%;
     display: flex;
-    flex-direction: column !important;
-    color: $white;
 
     h1{
       margin: 20px 0 0 0;
     }
 
-    .mail-view {
-      display: flex;
-      text-align: left;
-      justify-content: flex-end;
-      //flex-basis: 15%;
+    .header-right{
+      width: 17%;
 
-
-      .mail-view-container{
+      .mail-view {
         display: flex;
-        justify-content: center;
-        border-radius: 5px;
-        /* border: 1.5px solid #0D0D0D; */
-        cursor: pointer;
-        background-color: $yellow;
+        text-align: left;
 
-        .fa-envelope-o {
-          font-size: 2em;
-          padding: 10px;
-          color: white;
-        }
+        .mail-view-container{
+          display: flex;
+          justify-content: center;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: $yellow;
 
-        .mail-view-text {
-          padding: 17px 15px 15px 5px;
-          color: white;
+          .fa-envelope-o {
+            font-size: 2em;
+            padding: 10px;
+            color: white;
+          }
+
+          .mail-view-text {
+            padding: 17px 15px 15px 5px;
+            color: white;
+          }
         }
       }
     }
+
+    p{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+    }
   }
 
-  .partners-border{
+  .p-partners-border{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-self: center;
     flex-direction: column;
@@ -54,17 +62,20 @@ body{
     margin: 0;
     padding: 0;
 
-    .partners{
+    .p-partners{
       display: flex;
       justify-content: center;
       align-self: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
 
       img{
-        width: 10%;
+        width: 30%;
         display: flex;
         justify-content: center;
         align-self: center;
-        margin: 16px 50px;
+        margin: 20px;
+        padding: 20px;
       }
     }
 
@@ -79,31 +90,49 @@ body{
     margin-top: 40px;
   }
 
-  @media screen and (min-width: 501px) {
+  @media screen and (min-width: 801px) {
 
     .mail-view-container{
-      margin-right: 8%;
+      margin: 65px 0 10px 20px;
+      justify-content: flex-end;
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
 
-    .partners-header .mail-view.mail-view {
-      display: flex;
-      text-align: left;
-      justify-content: center;
+    .p-partners-header {
+
+      p{
+        margin: 15px;
+        align-self: center;
+        justify-content: center;
+      }
+
+      .mail-view {
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        margin: 0px;
+
+      }
     }
 
-    .partners-row{
-      width: 70%;
+    .p-partners-row{
+      width: 100%;
       align-self: center;
       display: flex;
       justify-content: center;
       flex-direction: column;
     }
 
+    .partners-border{
+      flex-direction: column;
+      width: 100%;
+    }
 
-    .partners{
+
+    .p-partners{
+      flex-wrap: wrap;
 
       img{
         width: 10%;

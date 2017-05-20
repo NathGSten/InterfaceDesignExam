@@ -1,28 +1,27 @@
 /* ================================= 
   Button Transitions
 ==================================== */
-button {
+button, .swal2-modal .swal2-styled, #sendMessage {
   transition: background .3s, color .3s; }
 
-button:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover, #sendMessage:hover {
   color: #FDFDFD;
-  background: #FC4A1A !important;
-  border: 1px solid black; }
+  background: #FC4A1A !important; }
 
 input[type="submit"] {
   transition: background .3s, color .3s; }
 
 input[type="submit"]:hover {
   color: #FDFDFD;
-  background: black !important; }
+  background: #FC4A1A !important; }
 
 /* ================================= 
-  Event tags and calendar Transitions
+  Event tags, calendar and about btn Transitions
 ==================================== */
-.calender-view-container, .filters {
+.calender-view-container, .filters, .mail-view-container {
   transition: background .5s, color .3s; }
 
-.calender-view-container:hover, .filters:hover {
+.calender-view-container:hover, .filters:hover, .mail-view-container:hover {
   color: #FDFDFD !important;
   background: #FC4A1A !important; }
 
@@ -167,7 +166,7 @@ img {
       justify-content: flex-end;
       align-items: center;
       cursor: pointer; }
-      .event-container .admin-new-event .new-event-container .fa-plus {
+      .event-container .admin-new-event .new-event-container .fa {
         margin-left: 30px;
         font-size: 2.5em; }
   .event-container .event-calendar {
@@ -251,6 +250,8 @@ img {
 @media screen and (min-width: 1251px) {
   .event-container {
     flex-wrap: wrap; }
+    .event-container .admin-new-event .new-event-container {
+      flex-basis: 80%; }
     .event-container .event-content {
       display: flex;
       justify-content: center;
@@ -282,6 +283,10 @@ img {
     width: 30%; }
     .header-container .header-right .calender-view {
       margin: 65px 5px 10px 20px; }
+
+  .admin-new-event .new-event-container {
+    flex-basis: 80% !important;
+    margin: 5px 0 !important; }
 
   .tags-row {
     padding: 1%;
@@ -343,6 +348,9 @@ img {
         margin: 10px;
         text-align: left;
         justify-content: center; }
+  .event-container .admin-new-event .new-event-container {
+    flex-basis: 80% !important;
+    margin: 5px 0 !important; }
   .event-container .tags-row {
     flex-direction: column;
     width: 90%;
@@ -413,6 +421,9 @@ img {
         margin: 10px;
         text-align: left;
         justify-content: center; }
+  .event-container .admin-new-event .new-event-container {
+    flex-basis: 80% !important;
+    margin: 5px 0 !important; }
   .event-container .tags-row {
     flex-direction: column;
     width: 90%;
@@ -541,28 +552,27 @@ body .getInvolvedContainer {
 /* ================================= 
   Button Transitions
 ==================================== */
-button {
+button, .swal2-modal .swal2-styled, #sendMessage {
   transition: background .3s, color .3s; }
 
-button:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover, #sendMessage:hover {
   color: #FDFDFD;
-  background: #FC4A1A !important;
-  border: 1px solid black; }
+  background: #FC4A1A !important; }
 
 input[type="submit"] {
   transition: background .3s, color .3s; }
 
 input[type="submit"]:hover {
   color: #FDFDFD;
-  background: black !important; }
+  background: #FC4A1A !important; }
 
 /* ================================= 
-  Event tags and calendar Transitions
+  Event tags, calendar and about btn Transitions
 ==================================== */
-.calender-view-container, .filters {
+.calender-view-container, .filters, .mail-view-container {
   transition: background .5s, color .3s; }
 
-.calender-view-container:hover, .filters:hover {
+.calender-view-container:hover, .filters:hover, .mail-view-container:hover {
   color: #FDFDFD !important;
   background: #FC4A1A !important; }
 
@@ -590,28 +600,27 @@ img {
 /* ================================= 
   Button Transitions
 ==================================== */
-button {
+button, .swal2-modal .swal2-styled, #sendMessage {
   transition: background .3s, color .3s; }
 
-button:hover {
+button:hover, .swal2-modal:hover .swal2-styled:hover, #sendMessage:hover {
   color: #FDFDFD;
-  background: #FC4A1A !important;
-  border: 1px solid black; }
+  background: #FC4A1A !important; }
 
 input[type="submit"] {
   transition: background .3s, color .3s; }
 
 input[type="submit"]:hover {
   color: #FDFDFD;
-  background: black !important; }
+  background: #FC4A1A !important; }
 
 /* ================================= 
-  Event tags and calendar Transitions
+  Event tags, calendar and about btn Transitions
 ==================================== */
-.calender-view-container, .filters {
+.calender-view-container, .filters, .mail-view-container {
   transition: background .5s, color .3s; }
 
-.calender-view-container:hover, .filters:hover {
+.calender-view-container:hover, .filters:hover, .mail-view-container:hover {
   color: #FDFDFD !important;
   background: #FC4A1A !important; }
 
@@ -636,6 +645,11 @@ img {
 .new-event-container:hover {
   color: #FC4A1A !important; }
 
+body .swal2-modal .swal2-styled {
+  background-color: #F7B733 !important;
+  font-family: 'Roboto', sans-serif; }
+body .swal2-content {
+  font-family: 'Roboto', sans-serif; }
 body .individual-event {
   display: flex;
   width: 100%; }
@@ -714,7 +728,8 @@ body .individual-event {
         height: 40px;
         border: 1px solid #FDFDFD;
         background-color: #F7B733;
-        cursor: pointer; }
+        cursor: pointer;
+        color: #FDFDFD; }
         body .individual-event .event-info .button .btn-event a {
           color: #FDFDFD;
           text-decoration: none; }
@@ -739,7 +754,7 @@ body .individual-event {
       width: 100%;
       height: 150px; }
   body .individual-event .partners-row {
-    flex-direction: row;
+    flex-direction: column !important;
     width: 100%;
     align-self: center; }
     body .individual-event .partners-row .partners-border {
@@ -751,8 +766,10 @@ body .individual-event {
       margin: 0;
       padding: 0; }
       body .individual-event .partners-row .partners-border .partners {
+        width: 70%;
         display: flex;
         justify-content: center;
+        flex-direction: row !important;
         align-self: center; }
         body .individual-event .partners-row .partners-border .partners img {
           width: 10%;
@@ -795,6 +812,17 @@ body .individual-event {
         body .individual-event .related-events .event-row .single-event .lowerHalf {
           display: flex;
           justify-content: center; }
+          body .individual-event .related-events .event-row .single-event .lowerHalf .btn-event-related {
+            width: 50%;
+            border-radius: 5px;
+            margin: 3%;
+            height: 40px;
+            border: 1px solid #F7F7F7;
+            background-color: #F7B733;
+            cursor: pointer; }
+            body .individual-event .related-events .event-row .single-event .lowerHalf .btn-event-related a {
+              color: #FDFDFD;
+              text-decoration: none; }
 body footer {
   margin: 0 0 !important; }
 @media screen and (min-width: 1081px) {
@@ -807,10 +835,28 @@ body footer {
       padding: 12px 20px 18px 10px; }
     body .event-place-container p, body .event-attendance-container p, body .event-date-and-time-container p {
       padding-right: 15px; } }
-@media screen and (max-width: 1080px) and (min-width: 581px) {
+@media screen and (max-width: 1080px) and (min-width: 771px) {
   body .individual-event .header-container {
-    height: 750px !important;
+    height: 600px !important;
     background-size: 350% !important; }
+  body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+    body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
+      padding: 12px 20px 1px 10px;
+      color: #F7B733; } }
+@media screen and (max-width: 770px) and (min-width: 581px) {
+  body .individual-event .header-container {
+    height: 600px !important;
+    background-size: 350% !important; }
+  body .button {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+    body .button .btn-event {
+      margin: 10px !important;
+      width: 70% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
     display: flex;
     justify-content: center;
@@ -822,17 +868,51 @@ body footer {
   body .individual-event .header-container {
     height: 850px !important;
     background-size: 350% !important; }
+    body .individual-event .header-container .place-and-time {
+      flex-direction: column !important; }
+      body .individual-event .header-container .place-and-time .event-place-container p, body .individual-event .header-container .place-and-time .event-date-and-time-container p {
+        border-right: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px #4ABDAC solid; }
+  body .button {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+    body .button .btn-event {
+      margin: 10px !important;
+      width: 60% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
     display: flex;
     justify-content: center;
     flex-direction: column; }
     body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
       padding: 12px 20px 1px 10px;
-      color: #F7B733; } }
+      color: #F7B733; }
+  body .partners-row .partners-border .partners {
+    flex-direction: column !important; }
+    body .partners-row .partners-border .partners img {
+      width: 30% !important;
+      margin: 10px 0px !important; }
+  body .partners-row .partners-border p {
+    display: flex;
+    justify-content: center; } }
 @media screen and (max-width: 480px) {
   body .individual-event .header-container {
-    height: 900px !important;
+    height: 700px !important;
     background-size: 350% !important; }
+    body .individual-event .header-container .place-and-time {
+      flex-direction: column !important; }
+      body .individual-event .header-container .place-and-time .event-place-container p, body .individual-event .header-container .place-and-time .event-date-and-time-container p {
+        border-right: 0px;
+        padding-bottom: 20px;
+        border-bottom: 1px #4ABDAC solid; }
+  body .button {
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%; }
+    body .button .btn-event {
+      margin: 10px !important;
+      width: 70% !important; }
   body .event-place-container, body .event-attendance-container, body .event-date-and-time-container {
     display: flex;
     justify-content: center;
@@ -840,6 +920,14 @@ body footer {
     body .event-place-container i, body .event-attendance-container i, body .event-date-and-time-container i {
       padding: 12px 20px 1px 10px;
       color: #F7B733; } }
+body .partners-row .partners-border .partners {
+  flex-direction: column !important; }
+  body .partners-row .partners-border .partners img {
+    width: 30% !important;
+    margin: 10px 0px !important; }
+body .partners-row .partners-border p {
+  display: flex;
+  justify-content: center; }
 
 body .sent-message {
   display: flex;
@@ -854,85 +942,135 @@ body .sent-message {
       display: flex;
       justify-content: center; }
 
-body .partners-header {
+body .p-partners-header {
+  flex-direction: column;
   text-align: center;
   background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
   background-size: 100%;
-  height: 150px;
+  height: 180px;
+  /* border-bottom: 2px black solid; */
+  /* border-top: 1px black solid; */
   padding-top: 1%;
-  display: flex;
-  flex-direction: column !important;
-  color: #FDFDFD; }
-  body .partners-header h1 {
+  display: flex; }
+  body .p-partners-header h1 {
     margin: 20px 0 0 0; }
-body .partners-border {
+  body .p-partners-header .header-right {
+    width: 17%; }
+    body .p-partners-header .header-right .mail-view {
+      display: flex;
+      text-align: left; }
+      body .p-partners-header .header-right .mail-view .mail-view-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #F7B733; }
+        body .p-partners-header .header-right .mail-view .mail-view-container .fa-envelope-o {
+          font-size: 2em;
+          padding: 10px;
+          color: white; }
+        body .p-partners-header .header-right .mail-view .mail-view-container .mail-view-text {
+          padding: 17px 15px 15px 5px;
+          color: white; }
+  body .p-partners-header p {
+    display: flex;
+    justify-content: center;
+    align-self: center; }
+body .p-partners-border {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-self: center;
   flex-direction: column;
   border: none;
   margin: 0;
   padding: 0; }
-  body .partners-border .partners {
+  body .p-partners-border .p-partners {
     display: flex;
     justify-content: center;
-    align-self: center; }
-    body .partners-border .partners img {
-      width: 10%;
+    align-self: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+    body .p-partners-border .p-partners img {
+      width: 30%;
       display: flex;
       justify-content: center;
       align-self: center;
-      margin: 16px 50px; }
-  body .partners-border p {
+      margin: 20px;
+      padding: 20px; }
+  body .p-partners-border p {
     display: flex;
     justify-content: center; }
 body footer {
   margin-top: 40px; }
-@media screen and (max-width: 500px) {
-  body .partners-row {
-    width: 70%;
+@media screen and (min-width: 801px) {
+  body .mail-view-container {
+    margin: 65px 0 10px 20px;
+    justify-content: flex-end; } }
+@media screen and (max-width: 800px) {
+  body .p-partners-header p {
+    margin: 15px;
+    align-self: center;
+    justify-content: center; }
+  body .p-partners-header .mail-view {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin: 0px; }
+  body .p-partners-row {
+    width: 100%;
     align-self: center;
     display: flex;
     justify-content: center;
     flex-direction: column; }
-  body .partners img {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin: 15px 35px !important; } }
+  body .partners-border {
+    flex-direction: column;
+    width: 100%; }
+  body .p-partners {
+    flex-wrap: wrap; }
+    body .p-partners img {
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin: 15px 35px !important; } }
 
 body .about-container {
+  flex-direction: column;
   text-align: center;
   background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
   background-size: 100%;
-  height: 200px !important;
+  height: 180px;
+  /* border-bottom: 2px black solid; */
+  /* border-top: 1px black solid; */
   padding-top: 1%;
-  display: flex;
-  flex-direction: column !important;
-  color: white; }
+  display: flex; }
   body .about-container h1 {
     margin: 20px 0 0 0; }
-  body .about-container .mail-view {
-    display: flex;
-    text-align: left;
-    justify-content: flex-end; }
-    body .about-container .mail-view .mail-view-container {
+  body .about-container .header-mid p {
+    width: 100%; }
+  body .about-container .header-right {
+    width: 17%; }
+    body .about-container .header-right .mail-view {
       display: flex;
-      justify-content: center;
-      border-radius: 5px;
-      /* border: 1.5px solid #0D0D0D; */
-      cursor: pointer;
-      background-color: #F7B733; }
-      body .about-container .mail-view .mail-view-container .fa-envelope-o {
-        font-size: 2em;
-        padding: 10px;
-        color: white; }
-      body .about-container .mail-view .mail-view-container .mail-view-text {
+      text-align: left; }
+      body .about-container .header-right .mail-view .mail-view-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        /* border: 1.5px solid #0D0D0D; */
+        cursor: pointer;
+        background-color: #F7B733;
+        transition: background .5s, color .3s; }
+        body .about-container .header-right .mail-view .mail-view-container .fa-envelope-o {
+          font-size: 2em;
+          padding: 10px;
+          color: white; }
+      body .about-container .header-right .mail-view .mail-view-text {
         padding: 17px 15px 15px 5px;
         color: white; }
 body .about-info-container {
@@ -951,14 +1089,89 @@ body .about-info-container {
       display: flex;
       justify-content: center;
       padding: 15px; }
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
   body .mail-view-container {
-    margin-right: 8%; } }
-@media screen and (max-width: 500px) {
-  body .about-container .mail-view.mail-view {
+    margin: 65px 0 10px 20px;
+    justify-content: flex-end; } }
+@media screen and (max-width: 800px) {
+  body .about-container {
     display: flex;
-    text-align: left;
-    justify-content: center; } }
+    flex-direction: column;
+    align-self: center; }
+    body .about-container p {
+      width: 100%;
+      display: flex;
+      margin: 10px;
+      align-self: center;
+      justify-content: center; }
+  body .header-right .mail-view {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-self: center; } }
+
+body .get-involved-container {
+  text-align: center;
+  background-image: url(https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg);
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 100px rgba(66, 171, 158, 0.8);
+  background-size: 100%;
+  height: 150px; }
+body .login-container {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  body .login-container .flex-form-login {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    @media screen and (min-width: 1001px) {
+      body .login-container .flex-form-login {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        body .login-container .flex-form-login .userEmail-container {
+          flex-direction: row; } }
+    @media screen and (min-width: 501px) and (max-width: 1000px) {
+      body .login-container .flex-form-login {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        body .login-container .flex-form-login .userEmail-container {
+          flex-direction: row; } }
+    @media screen and (max-width: 500px) {
+      body .login-container .flex-form-login {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px; }
+        body .login-container .flex-form-login .userEmail-container {
+          flex-direction: column; } }
+    body .login-container .flex-form-login label {
+      margin-top: 10px;
+      padding: 15px 15px 15px 0px; }
+    body .login-container .flex-form-login input {
+      padding: 15px; }
+    body .login-container .flex-form-login textarea {
+      padding: 15px;
+      margin-bottom: 10px; }
+    body .login-container .flex-form-login .userEmail-container, body .login-container .flex-form-login .password-container {
+      display: flex;
+      flex-direction: column; }
+    body .login-container .flex-form-login .logForm-btn {
+      color: white;
+      border-radius: 5px;
+      height: 40px;
+      width: 150px;
+      justify-content: center;
+      padding-top: 12px;
+      margin: 10px 0 150px 0;
+      border: 1.5px solid #FDFDFD;
+      background-color: #F7B733;
+      display: flex;
+      align-self: center; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1014,6 +1227,8 @@ body {
   .flex-nav a {
     color: #0D0D0D;
     text-decoration: none; }
+  .flex-nav a:hover {
+    color: #4ABDAC; }
 
 footer {
   font-family: 'Ubuntu', sans-serif;
