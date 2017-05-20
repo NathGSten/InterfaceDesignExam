@@ -13,6 +13,6 @@ new events and partners should be appended
 http://www.ces.tech/CES/media/conference-images/conference-program_1.jpg
 
 
-								<div>Html</div>\
-								<div>css</div>\
-								<div>JavaScript</div>\
+
+
+

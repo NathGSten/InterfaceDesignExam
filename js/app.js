@@ -1,5 +1,52 @@
 
 (function($) {
+	// admin logins
+	var username = "admin@codify.com";
+	var pass = "123";
+
+	var newUserEmail;
+	var newPassword;
+
+
+// registering new admin
+	$("#btn-new-admin").click(function(){
+		newUserEmail = $("#new-userEmail").val();
+		newPassword = $("#new-password").val();
+		localStorage.newUserEmail = newUserEmail;
+		localStorage.newPassword = newPassword;
+	});
+
+	// login as admin
+	$("#btn-admin-login").click(function(){
+		loginUserEmail = $("#login-userEmail").val();
+		loginPassword = $("#login-password").val();
+		login = performLogin(loginUserEmail, loginPassword);
+		if(login){
+			// sweetalert success and redirect
+			console.log("you're in");
+			console.log(localStorage.firstName);
+			console.log(loginUserEmail);
+			console.log(loginPassword);
+		}else{
+			// sweetalert error try again
+			console.log("you're OUT");
+			console.log(localStorage.firstName);
+			console.log(loginUserEmail);
+			console.log(loginPassword);
+		}
+	});
+
+	// logout 
+	$(".logOut").click(function(){
+		localStorage.firstName = null;
+		console.log("licked logout");
+		console.log(localStorage.firstName);
+		redesignMenu();
+		// document.location = "index.html";
+	});
+
+	// timepicker 
+
 	$(function() {
 		$('input.timepicker').timepicker({
 			timeFormat: 'HH:mm p',
@@ -7,6 +54,8 @@
 			maxTime: '23'
 		});
 	});
+
+	// datepicker
 
 	$( "#new-event-datepicker" ).datepicker({
 	  showWeek: true,
@@ -18,6 +67,8 @@
 		document.location = "new-event.html";
 
 	});
+
+	// adding new event
 
 	$("#new-event-btn").click(function(){
 
@@ -114,8 +165,6 @@
 		});
 	}
 
-
-
 	function newEventTagsArray(){
 		var aTags = [];
 		$(".new-event-tag:checked").each(function(index,element){
@@ -124,6 +173,46 @@
 		});
 		return aTags;
 	}
+
+	function performLogin(email, password){
+		if( (email == username && password == pass) || (email == localStorage.newUserEmail && password == localStorage.newPassword) ){
+			localStorage.firstName = "admin";
+			redesignMenu();
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	function redesignMenu(){
+		var checkUser = localStorage.getItem("firstName");
+
+		if (checkUser !== null){
+
+			var changeNameTemplate =
+				'<ul>\
+					<li class="event-page"><a href="index.html">Events</a></li>\
+					<li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>\
+					<li class="volunteer-page"><a href="partners.html">Partners</a></li>\
+					<li class="aboutUs-page"><a href="about.html">About Us</a></li>\
+					<li class="makeAdmin-page"><a href="new-admin.html">Make new admin</a></li>\
+					<li class="logOut"><a >Log out</a></li>\
+				</ul>';
+
+			// the one between these brackets are not for the menu but for the admin extra
+			$(".admin-new-event").show();
+			// the one between these brackets are not for the menu but for the admin extra
+
+			$(".nav-right-ul").html(changeNameTemplate);
+
+			$(".makeAdmin-page").show();
+			$(".logOut").show();
+		} else {
+			$(".makeAdmin-page").hide();
+			$(".logOut").hide();
+		}
+	}
+
 
 
 })(jQuery);

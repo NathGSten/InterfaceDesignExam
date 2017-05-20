@@ -1,14 +1,16 @@
+(function($) {
+
 	///////////// RELEVANT FOR MENU --    START    -- ALL SHOULD HAVE THIS  /////////////
 
 		$(".toggleNav").click( function(){
 			$(".flex-nav ul").toggleClass("open");
 		});
 
-		var localTest = localStorage.setItem("firstName", "sofie");
+		// var localTest = localStorage.setItem("firstName", "sofie");
 
 		var checkUser = localStorage.getItem("firstName");
 
-		console.log(checkUser);
+		// console.log(checkUser);
 
 		if (checkUser !== null){
 
@@ -35,4 +37,10 @@
 			$(".logOut").hide();
 		}
 
+		$(".logOut").click(function(){
+			localStorage.firstName = null;
+		});
+
 		 ///////////// RELEVANT FOR MENU --    END    -- ALL SHOULD HAVE THIS  /////////////
+
+})(jQuery);
