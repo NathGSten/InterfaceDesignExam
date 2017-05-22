@@ -32,12 +32,19 @@
 			console.log(loginUserEmail);
 			console.log(loginPassword);
 			document.location = "index.html";
+
 		}else{
 			// sweetalert error try again
 			console.log("you're OUT");
 			console.log(localStorage.firstName);
 			console.log(loginUserEmail);
 			console.log(loginPassword);
+
+			swal(
+			  'Login failed!',
+			  'The login combination was wrong. <br>Try again!',
+			  'error'
+			)
 		}
 	});
 
@@ -111,8 +118,10 @@
 		 var sEvent = JSON.stringify(jEvent);
 		 localStorage.newEvent = sEvent;
 		 console.log(sEvent);
+		 window.location.href = 'index.html';
 
 	});
+
 
 
 	if(localStorage.newEvent){
