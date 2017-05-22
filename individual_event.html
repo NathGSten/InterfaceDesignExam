@@ -63,7 +63,7 @@
 		</div>
 
 		<div class="countdown">
-			<p>COUNTDOWN</p>
+			<p></p>
 			<p id="demo"></p>
 		</div>
 
@@ -428,8 +428,10 @@
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 		// Display the result in the element with id="demo"
-		document.getElementById("demo").innerHTML = days + " DAYS / " + hours + " HOURS / "
-				+ minutes + " MINUTES / " + seconds + " SECONDS";
+		 document.getElementById("demo").innerHTML = "<span class='countdownText'>COUNTDOWN // </span>" + days + " DAYS / " + hours + " HOURS / "
+                + minutes + " MINUTES / " + seconds + " SECONDS";
+
+                $(".countdownText").css("color", "#FC4A1A");
 
 		// If the count down is finished, write some text
 		if (distance < 0) {
