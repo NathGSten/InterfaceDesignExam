@@ -14,7 +14,7 @@
 	});
 
 
-// registering new admin
+  // registering new admin    // registering new admin    // registering new admin    // registering new admin    // registering new admin    
 	$("#btn-new-admin").click(function(){
 		newUserEmail = $("#new-userEmail").val();
 		newPassword = $("#new-password").val();
@@ -22,7 +22,7 @@
 		localStorage.newPassword = newPassword;
 	});
 
-	// login as admin
+	// login as admin   // login as admin   // login as admin   // login as admin   // login as admin   // login as admin   // login as admin   
 	$("#btn-admin-login").click(function(){
 		loginUserEmail = $("#login-userEmail").val();
 		loginPassword = $("#login-password").val();
@@ -50,7 +50,7 @@
 		}
 	});
 
-	// logout 
+	// logout    // logout    // logout    // logout    // logout    // logout    // logout    // logout    // logout    // logout    // logout    
 	$(".logOut a").click(function(){
 		localStorage.firstName = null;
 		console.log("licked logout");
@@ -59,7 +59,7 @@
 		redesignMenu();
 	});
 
-	// timepicker 
+	// timepicker    // timepicker    // timepicker    // timepicker    // timepicker    // timepicker    // timepicker    // timepicker    // timepicker    
 
 	$(function() {
 		$('input.timepicker').timepicker({
@@ -69,7 +69,7 @@
 		});
 	});
 
-	// datepicker
+	// datepicker   // datepicker   // datepicker   // datepicker   // datepicker   // datepicker   // datepicker   // datepicker   
 
 	$( "#new-event-datepicker" ).datepicker({
 	  showWeek: true,
@@ -125,6 +125,8 @@
 		 window.location.href = 'index.html';
 
 	});
+
+	// APPENDING NEW EVENT TO INDEX   // APPENDING NEW EVENT TO INDEX   // APPENDING NEW EVENT TO INDEX   // APPENDING NEW EVENT TO INDEX      
 
 
 
@@ -222,6 +224,7 @@
 
 			// the one between these brackets are not for the menu but for the admin extra
 			$(".admin-new-event").show();
+			$(".admin-new-event-partner").show();
 			// the one between these brackets are not for the menu but for the admin extra
 
 			$(".nav-right-ul").html(changeNameTemplate);
@@ -279,6 +282,8 @@
 		$(".p-partners").append(sDivTemplate);
 
 	}
+
+	// DELETING PARTNER   // DELETING PARTNER   // DELETING PARTNER   // DELETING PARTNER   // DELETING PARTNER   // DELETING PARTNER   
 
 	$(".admin-delete-partner").click(function(){
 		swal({
@@ -346,6 +351,8 @@
 
 
 	}
+
+	// DELETE EVENT   // DELETE EVENT   // DELETE EVENT   // DELETE EVENT   // DELETE EVENT   // DELETE EVENT   // DELETE EVENT   // DELETE EVENT   
 
 	$(".admin-delete-event").click(function(){
 		swal({
