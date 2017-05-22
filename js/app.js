@@ -7,6 +7,8 @@
 	var newUserEmail;
 	var newPassword;
 
+	redesignMenu();
+
 	$(".nav-right-ul ul li a").click(function(){
 		redesignMenu();
 	});
