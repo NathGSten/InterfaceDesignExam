@@ -1008,6 +1008,23 @@ body .p-partners-header {
     display: flex;
     justify-content: center;
     align-self: center; }
+body .admin-new-event-partner {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px 0 0; }
+  body .admin-new-event-partner .new-event-container {
+    display: flex;
+    flex-basis: 18%;
+    margin: -20px 0px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer; }
+    body .admin-new-event-partner .new-event-container .fa {
+      margin-left: 30px;
+      font-size: 2.5em; }
 body .p-partners-border {
   display: flex;
   width: 100%;
@@ -1035,6 +1052,15 @@ body .p-partners-border {
     justify-content: center; }
 body footer {
   margin-top: 40px; }
+@media screen and (max-width: 1080px) and (min-width: 771px) {
+  body .admin-new-event-partner .new-event-container {
+    flex-basis: 20% !important; } }
+@media screen and (max-width: 770px) and (min-width: 581px) {
+  body .admin-new-event-partner .new-event-container {
+    flex-basis: 30% !important; } }
+@media screen and (max-width: 580px) and (min-width: 481px) {
+  body .admin-new-event-partner .new-event-container {
+    flex-basis: 40% !important; } }
 @media screen and (min-width: 801px) {
   body .mail-view-container {
     margin: 65px 0 10px 20px;
@@ -1049,6 +1075,16 @@ body footer {
     text-align: left;
     justify-content: center;
     margin: 0px; }
+  body .admin-new-event-partner {
+    margin-top: 30px;
+    margin-left: 10px;
+    flex-wrap: wrap; }
+    body .admin-new-event-partner .new-event-container {
+      flex-basis: 40% !important;
+      margin: 0 10px; }
+      body .admin-new-event-partner .new-event-container .fa {
+        margin-left: 10px;
+        font-size: 2.5em; }
   body .p-partners-row {
     width: 100%;
     align-self: center;
