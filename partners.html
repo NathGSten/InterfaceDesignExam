@@ -7,6 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
+    <script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.css">
+
+    <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -70,10 +76,10 @@
             </div>
 
             <div class="new-event-container admin-delete-partner">
-                <div class="admin-new-event-text">
+                <div class="admin-new-event-text admin-delete-partner-btn">
                     <h4>Delete partner?</h4>
                 </div>
-                <div class="admin-new-event-plus">
+                <div class="admin-new-event-plus admin-delete-partner-btn">
                     <i class="fa fa-trash-o" aria-hidden="true"></i>
                 </div>
             </div>
@@ -85,18 +91,14 @@
             <div class="p-partners-border">
 
                 <div class="p-partners">
-                    <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png">
-                    <img src="http://static.tumblr.com/5dd99e84eb5ca1581026f89b26b8205f/uafylyw/NPbmn8u79/tumblr_static_ibm_press_posdesign_k.png">
-                    <img src="https://static1.squarespace.com/static/57a8859915d5db4d0a5fdde3/t/581b5374ebbd1a88df38631d/1478185851006/tdc_logo_blk.png">
-                    <img src="http://www.bygovenpaa.dk/content/uploads/2015/07/kea.png">
-                    <img src="http://www.iconsdb.com/icons/preview/black/dell-xxl.png">
-                    <img src="https://mobilepay.dk/SiteCollectionImages/MobilePay-Universe-2/Materiale/Logoer/MobilePay_Logo_Sort.png">
-                    <img src="https://logo-png.com/logo/steelseries-logo.png">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Panasonic_logo.svg/2000px-Panasonic_logo.svg.png">
-                    <img src="http://pngimg.com/uploads/microsoft/microsoft_PNG8.png">
-                    <img src="http://idekoproductions.com/wp-content/uploads/2015/02/red-bull-logo1.png">
-                    <img src="http://www.radpardazesh.com/image/cache/data/Headset/Bose/bose-logo-995x158_0.png">
-                    <img src="http://it-minds.dk/sites/default/files/case/ituniversitetet_o.png">
+                    <img id="html5" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png">
+                    <img id="ibm" src="http://static.tumblr.com/5dd99e84eb5ca1581026f89b26b8205f/uafylyw/NPbmn8u79/tumblr_static_ibm_press_posdesign_k.png">
+                    <img id="tdc" src="https://static1.squarespace.com/static/57a8859915d5db4d0a5fdde3/t/581b5374ebbd1a88df38631d/1478185851006/tdc_logo_blk.png">
+                    <img id="kea" src="http://www.bygovenpaa.dk/content/uploads/2015/07/kea.png">
+                    <img id="dell" src="http://www.iconsdb.com/icons/preview/black/dell-xxl.png">
+                    <img id="mobilepay" src="https://mobilepay.dk/SiteCollectionImages/MobilePay-Universe-2/Materiale/Logoer/MobilePay_Logo_Sort.png">
+                    <img id="steelseries" src="https://logo-png.com/logo/steelseries-logo.png">
+                    <img id="redbull" src="http://idekoproductions.com/wp-content/uploads/2015/02/red-bull-logo1.png">
                 </div>
 
             </div>

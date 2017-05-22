@@ -278,6 +278,74 @@
 
 	}
 
+	$(".admin-delete-partner").click(function(){
+		swal({
+		  title: 'Delete a partner',
+		  type: 'info',
+		  html:
+		    '<p>Choose a partner to delete</p><br>\
+		    <select id="delete-partner" name="delete-partner">\
+                <option value="kea">KEA</option>\
+                <option value="ibm">IBM</option>\
+                <option value="tdc">TDC</option>\
+                <option value="html5">Html5</option>\
+                <option value="steels">Stellseries</option>\
+                <option value="ibm">IBM</option>\
+                <option value="dell">Dell</option>\
+                <option value="mobilepay">MobilePay</option>\
+            </select>',
+		  showCloseButton: true,
+		  showCancelButton: true,
+		  confirmButtonText:
+		    '<i class="fa fa-trash-o"></i> Delete it!',
+		  cancelButtonText:
+		    'Cancel'
+		}).then(function () {
+		  swal(
+		    'Deleted!',
+		    'Your file has been deleted.',
+		    'success',
+		    chosenOne = document.getElementById("delete-partner"),
+			strPartner = chosenOne.options[chosenOne.selectedIndex].value,
+			console.log(strPartner),
+		    deleteChosenPartner(strPartner)
+		  )
+		})
+	});
+
+	function deleteChosenPartner(sPartner){
+		console.log(sPartner);
+
+		switch(sPartner) {
+		    case "kea":
+		        console.log("Haps lapee");
+		        $("#kea").hide();
+		        break;
+		    case "steels":
+		        $("#steelseries").hide();
+		        break;
+		    case "ibm":
+		        $("#ibm").hide();
+		        break;
+		    case "tdc":
+		         $("#tdc").hide();
+		        break;
+		    case "html5":
+		         $("#html5").hide();
+		        break;
+		    case "dell":
+		         $("#dell").hide();
+		        break;
+		    case "mobilepay":
+		         $("#mobilepay").hide();
+		        break;
+		}
+
+
+
+	}
+
+
 
 	
 
