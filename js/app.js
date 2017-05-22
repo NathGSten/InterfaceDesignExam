@@ -7,6 +7,10 @@
 	var newUserEmail;
 	var newPassword;
 
+	$(".nav-right-ul ul li a").click(function(){
+		redesignMenu();
+	});
+
 
 // registering new admin
 	$("#btn-new-admin").click(function(){
@@ -27,6 +31,7 @@
 			console.log(localStorage.firstName);
 			console.log(loginUserEmail);
 			console.log(loginPassword);
+			document.location = "index.html";
 		}else{
 			// sweetalert error try again
 			console.log("you're OUT");
@@ -37,12 +42,12 @@
 	});
 
 	// logout 
-	$(".logOut").click(function(){
+	$(".logOut a").click(function(){
 		localStorage.firstName = null;
 		console.log("licked logout");
 		console.log(localStorage.firstName);
-		redesignMenu();
 		// document.location = "index.html";
+		redesignMenu();
 	});
 
 	// timepicker 
@@ -108,7 +113,6 @@
 		 console.log(sEvent);
 
 	});
-
 
 
 	if(localStorage.newEvent){
@@ -186,9 +190,9 @@
 
 	function redesignMenu(){
 		var checkUser = localStorage.getItem("firstName");
-
-		if (checkUser !== null){
-
+		console.log(checkUser);
+		if (checkUser !== "null"  && checkUser !== null ){
+			console.log("user is not null")
 			var changeNameTemplate =
 				'<ul>\
 					<li class="event-page"><a href="index.html">Events</a></li>\
@@ -196,7 +200,7 @@
 					<li class="volunteer-page"><a href="partners.html">Partners</a></li>\
 					<li class="aboutUs-page"><a href="about.html">About Us</a></li>\
 					<li class="makeAdmin-page"><a href="new-admin.html">Make new admin</a></li>\
-					<li class="logOut"><a >Log out</a></li>\
+					<li class="logOut"><a href="index.html" >Log out</a></li>\
 				</ul>';
 
 			// the one between these brackets are not for the menu but for the admin extra
@@ -208,6 +212,7 @@
 			$(".makeAdmin-page").show();
 			$(".logOut").show();
 		} else {
+			console.log("user is null");
 			$(".makeAdmin-page").hide();
 			$(".logOut").hide();
 		}

@@ -1,14 +1,8 @@
-html for new event and creating new partners          -----with sweetalert
+html  creating new partners 
 
 admin will need to select partners for each new event
 
-functional register and login
-
-new events and partners should be appended
-
-
-! Expected "text", "email", "password", "number", "tel", "select", "radio", "checkbox", "textarea", "file" or "url", got "another"
-
+new partners should be appended
 
 http://www.ces.tech/CES/media/conference-images/conference-program_1.jpg
 
