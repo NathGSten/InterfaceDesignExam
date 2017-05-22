@@ -64,7 +64,7 @@ img {
     flex-direction: row; }
     .event-container .header-container .header-mid {
       width: 66%;
-      color: white; }
+      color: #FDFDFD; }
     .event-container .header-container .header-right, .event-container .header-container .header-left {
       width: 17%; }
       .event-container .header-container .header-right .calender-view, .event-container .header-container .header-left .calender-view {
@@ -270,8 +270,7 @@ img {
           width: 21%;
           display: flex;
           flex-wrap: wrap;
-          flex-direction: column;
-          background: #FDFDFD; }
+          flex-direction: column; }
           .event-container .event-content .event-row .single-event .event-head {
             padding: 2px 10px !important; } }
 @media screen and (min-width: 801px) and (max-width: 1250px) {
@@ -321,8 +320,7 @@ img {
         margin: 20px;
         width: 27%;
         display: flex;
-        flex-direction: column;
-        background: #FDFDFD; }
+        flex-direction: column; }
         .event-container .event-content .event-row .single-event .event-head {
           padding: 2px 10px !important; } }
 @media screen and (min-width: 501px) and (max-width: 800px) {
