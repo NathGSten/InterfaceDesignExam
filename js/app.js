@@ -171,7 +171,7 @@
 		sDivTemplate = sDivTemplate.replace("{{address}}", jEvent.address);
 		sDivTemplate = sDivTemplate.replace("{{description}}", jEvent.shortDescription);
 
-		$(".event-row").append(sDivTemplate);
+		$("#index-event-row").append(sDivTemplate);
 
 		$.each( jEvent.tags, function(iIndex, sTag){
 
