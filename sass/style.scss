@@ -104,7 +104,7 @@ footer {
 }
 
 
-@media screen and (min-width: 721px) and (max-width: 1000px) {
+@media screen and (min-width: 771px) and (max-width: 1000px) {
 
   body {
     font-size: 0.8em !important; 
@@ -117,12 +117,13 @@ footer {
       width: 100px;
       margin-left: 5px;
       font-size: 1.2em;
+      text-align: right;
     }
 
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 720px) {
+@media screen and (min-width: 501px) and (max-width: 770px) {
 
 
   body {
