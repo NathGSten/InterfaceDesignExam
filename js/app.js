@@ -1,5 +1,7 @@
 
 (function($) {
+
+	$(".admin-new-event-indi").hide();
 	// admin logins
 	var username = "admin@codify.com";
 	var pass = "123";
@@ -225,6 +227,7 @@
 			// the one between these brackets are not for the menu but for the admin extra
 			$(".admin-new-event").show();
 			$(".admin-new-event-partner").show();
+			$(".admin-new-event-indi").show();
 			// the one between these brackets are not for the menu but for the admin extra
 
 			$(".nav-right-ul").html(changeNameTemplate);
@@ -234,6 +237,9 @@
 		} else {
 			console.log("user is null");
 			$(".makeAdmin-page").hide();
+			$(".admin-new-event").hide();
+			$(".admin-new-event-partner").hide();
+			$(".admin-new-event-indi").hide();
 			$(".logOut").hide();
 		}
 	}
