@@ -86,8 +86,8 @@
 
 	// console.log(checkUser);
 
-	if (checkUser !== null){
-
+	if (checkUser !== null  && checkUser !== "null" ){
+		// console.log("admin user not null");
 		var changeNameTemplate =
 				'<ul>\
 				  <li class="event-page"><a href="index.html">Events</a></li>\
@@ -95,7 +95,7 @@
 				  <li class="volunteer-page"><a href="partners.html">Partners</a></li>\
 				  <li class="aboutUs-page"><a href="about.html">About Us</a></li>\
 				  <li class="makeAdmin-page"><a href="new-admin.html">Make new admin</a></li>\
-				  <li class="logOut"><a href="logout.html">Log out</a></li>\
+				  <li class="logOut"><a href="index.html">Log out</a></li>\
 				</ul>';
 
 		$(".nav-right-ul").html(changeNameTemplate);
@@ -103,6 +103,7 @@
 		$(".makeAdmin-page").show();
 		$(".logOut").show();
 	} else {
+		console.log("admin user null");
 		$(".makeAdmin-page").hide();
 		$(".logOut").hide();
 	}
