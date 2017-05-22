@@ -347,6 +347,24 @@
 
 	}
 
+	$(".admin-delete-event").click(function(){
+		swal({
+		  title: 'Are you sure you want to delete?',
+		  text: "You won't be able to revert this!",
+		  type: 'warning',
+		  showCancelButton: true,
+		  confirmButtonText: 'Yes, delete it!'
+		}).then(function () {
+		  swal(
+		    'Deleted!',
+		    'Your file has been deleted.',
+		    'success'
+		  ).then (function(){
+		  	document.location = "index.html";
+		  })
+		})
+	});
+
 
 
 	
