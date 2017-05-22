@@ -1161,7 +1161,7 @@ body .login-container {
       display: flex;
       flex-direction: column; }
     body .login-container .flex-form-login .logForm-btn {
-      color: white;
+      color: #FDFDFD;
       border-radius: 5px;
       height: 40px;
       width: 150px;
@@ -1175,11 +1175,11 @@ body .login-container {
 
 body .make-new-event-container {
   display: flex;
-  flex-basis: 100%;
+  width: 100%;
   justify-content: center; }
   body .make-new-event-container .flex-form-new-event {
     display: flex;
-    flex-basis: 30%;
+    width: 40%;
     flex-direction: column;
     padding: 20px; }
     body .make-new-event-container .flex-form-new-event .new-event-element {
@@ -1202,6 +1202,8 @@ body .make-new-event-container {
       justify-content: space-between; }
       body .make-new-event-container .flex-form-new-event .time-container .new-event-element {
         flex-basis: 48%; }
+        body .make-new-event-container .flex-form-new-event .time-container .new-event-element input {
+          width: 100%; }
     body .make-new-event-container .flex-form-new-event label {
       margin-top: 10px;
       padding: 15px 15px 15px 0px; }
@@ -1211,7 +1213,7 @@ body .make-new-event-container {
       padding: 15px;
       margin-bottom: 10px; }
     body .make-new-event-container .flex-form-new-event .logForm-btn {
-      color: white;
+      color: #FDFDFD;
       border-radius: 5px;
       height: 40px;
       width: 150px;
@@ -1223,95 +1225,38 @@ body .make-new-event-container {
       display: flex;
       align-self: center; }
 
-@media screen and (min-width: 501px) and (max-width: 800px) {
-  body {
-    background-color: green; }
-    body .make-new-event-container .flex-form-new-event {
-      flex-basis: 80%; }
-      body .make-new-event-container .flex-form-new-event .new-event-element {
-        margin: 0px; }
-        body .make-new-event-container .flex-form-new-event .new-event-element .new-event-tags .single-event-tag {
-          display: flex;
-          flex-basis: 25%;
-          margin: 5px 0;
-          font-size: 1em; }
-      body .make-new-event-container .flex-form-new-event .time-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        body .make-new-event-container .flex-form-new-event .time-container .new-event-element {
-          flex-basis: 48%; }
-      body .make-new-event-container .flex-form-new-event label {
-        margin-top: 10px;
-        padding: 15px 15px 15px 0px; }
-      body .make-new-event-container .flex-form-new-event input {
-        padding: 15px; }
-      body .make-new-event-container .flex-form-new-event textarea {
-        padding: 15px;
-        margin-bottom: 10px; }
-      body .make-new-event-container .flex-form-new-event .logForm-btn {
-        color: white;
-        border-radius: 5px;
-        height: 40px;
-        width: 150px;
-        justify-content: center;
-        padding-top: 12px;
-        margin: 20px 0 30px 0;
-        border: 1.5px solid #FDFDFD;
-        background-color: #F7B733;
-        display: flex;
-        align-self: center; } }
-@media screen and (max-width: 500px) {
-  body {
-    background-color: yellow; }
-    body .make-new-event-container {
+@media screen and (min-width: 801px) and (max-width: 1250px) {
+  body .make-new-event-container .flex-form-new-event {
+    width: 60%; }
+    body .make-new-event-container .flex-form-new-event .new-event-element {
+      margin: 0px; }
+    body .make-new-event-container .flex-form-new-event .single-event-tag {
       display: flex;
-      width: 100%;
-      justify-content: center; }
-      body .make-new-event-container .flex-form-new-event {
-        display: flex;
-        flex-direction: column;
-        padding: 20px; }
-        body .make-new-event-container .flex-form-new-event .new-event-element {
-          display: flex;
-          flex-direction: column !important;
-          margin: 10px 0px; }
-          body .make-new-event-container .flex-form-new-event .new-event-element .new-event-tags {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            flex-basis: 100%; }
-            body .make-new-event-container .flex-form-new-event .new-event-element .new-event-tags .single-event-tag {
-              display: flex;
-              flex-basis: 25%;
-              margin: 5px 0;
-              font-size: 0.8em; }
-        body .make-new-event-container .flex-form-new-event .time-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between; }
-          body .make-new-event-container .flex-form-new-event .time-container .new-event-element {
-            flex-basis: 48%; }
-        body .make-new-event-container .flex-form-new-event label {
-          margin-top: 10px;
-          padding: 15px 15px 15px 0px; }
-        body .make-new-event-container .flex-form-new-event input {
-          padding: 15px; }
-        body .make-new-event-container .flex-form-new-event textarea {
-          padding: 15px;
-          margin-bottom: 10px; }
-        body .make-new-event-container .flex-form-new-event .logForm-btn {
-          color: white;
-          border-radius: 5px;
-          height: 40px;
-          width: 150px;
-          justify-content: center;
-          padding-top: 12px;
-          margin: 20px 0 30px 0;
-          border: 1.5px solid #FDFDFD;
-          background-color: #F7B733;
-          display: flex;
-          align-self: center; } }
+      flex-basis: 25%;
+      margin: 5px 0;
+      font-size: 1em; }
+    body .make-new-event-container .flex-form-new-event .logForm-btn {
+      width: 180px; } }
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  body .make-new-event-container .flex-form-new-event {
+    width: 75%; }
+    body .make-new-event-container .flex-form-new-event .new-event-element {
+      margin: 0px; }
+      body .make-new-event-container .flex-form-new-event .new-event-element .new-event-tags .single-event-tag {
+        font-size: 0.9em; }
+    body .make-new-event-container .flex-form-new-event .logForm-btn {
+      width: 200px; } }
+@media screen and (max-width: 500px) {
+  body .make-new-event-container .flex-form-new-event {
+    width: 95%; }
+    body .make-new-event-container .flex-form-new-event .new-event-element {
+      margin: 0px; }
+      body .make-new-event-container .flex-form-new-event .new-event-element .new-event-tags .single-event-tag {
+        flex-basis: 50%;
+        font-size: 0.9em;
+        margin-bottom: 20px; }
+    body .make-new-event-container .flex-form-new-event .logForm-btn {
+      width: 200px; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

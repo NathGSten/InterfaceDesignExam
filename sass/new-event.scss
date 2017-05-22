@@ -3,12 +3,12 @@ body{
 
   .make-new-event-container{
     display: flex;
-    flex-basis: 100%;
+    width: 100%;
     justify-content: center;
 
     .flex-form-new-event{
       display: flex;
-      flex-basis: 30%;
+      width: 40%;
       flex-direction: column;
       padding: 20px;
 
@@ -39,6 +39,10 @@ body{
 
         .new-event-element {
           flex-basis: 48%;
+
+          input {
+                width: 100%;
+          }
         }
       }
 
@@ -57,7 +61,7 @@ body{
       }
 
       .logForm-btn{
-        color: white;
+        color: $white;
         border-radius: 5px;
         height: 40px;
         width: 150px;
@@ -68,6 +72,36 @@ body{
         background-color: $yellow;
         display: flex;
         align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1250px) { 
+
+  body{
+
+    .make-new-event-container{
+
+      .flex-form-new-event{
+        width: 60%;
+
+        .new-event-element {
+          margin: 0px;
+        }
+
+        .single-event-tag {
+            display: flex;
+            flex-basis: 25%;
+            margin: 5px 0;
+            font-size: 1em;
+          }
+
+          
+
+        .logForm-btn{
+          width: 180px;
+        }
       }
     }
   }
@@ -78,148 +112,60 @@ body{
 @media screen and (min-width: 501px) and (max-width: 800px) {
 
   body{
-    background-color: green;
 
+    .make-new-event-container{
 
-  .make-new-event-container{
+      .flex-form-new-event{
+        width: 75%;
 
-    .flex-form-new-event{
-      flex-basis: 80%;
-
-      .new-event-element {
+        .new-event-element {
         margin: 0px;
 
         .new-event-tags {
 
           .single-event-tag {
-            display: flex;
-            flex-basis: 25%;
-            margin: 5px 0;
-            font-size: 1em;
+            font-size: 0.9em;
           }
         }
       }
 
-      .time-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .new-event-element {
-          flex-basis: 48%;
+        .logForm-btn{
+          width: 200px;
         }
-      }
-
-      label {
-        margin-top: 10px;
-        padding: 15px 15px 15px 0px;
-      }
-
-      input {
-        padding: 15px;
-      }
-
-      textarea {
-        padding: 15px;
-        margin-bottom: 10px;
-      }
-
-      .logForm-btn{
-        color: white;
-        border-radius: 5px;
-        height: 40px;
-        width: 150px;
-        justify-content: center;
-        padding-top: 12px;
-        margin: 20px 0 30px 0;
-        border: 1.5px solid $white;
-        background-color: $yellow;
-        display: flex;
-        align-self: center;
       }
     }
   }
-}
-
-
 }
 
 @media screen and (max-width: 500px) {
 
   body{
-    background-color: yellow;
 
+    .make-new-event-container{
 
-  .make-new-event-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+      .flex-form-new-event{
+        width: 95%;
 
-    .flex-form-new-event{
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-
-      .new-event-element {
-        display: flex;
-        flex-direction: column !important;
-        margin: 10px 0px;
+        .new-event-element {
+        margin: 0px;
 
         .new-event-tags {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          flex-basis: 100%;
 
           .single-event-tag {
-            display: flex;
-            flex-basis: 25%;
-            margin: 5px 0;
-            font-size: 0.8em;
+            flex-basis: 50%;
+            font-size: 0.9em;
+            margin-bottom: 20px;
           }
         }
       }
 
-      .time-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
 
-        .new-event-element {
-          flex-basis: 48%;
+        .logForm-btn{
+          width: 200px;
         }
-      }
-
-      label {
-        margin-top: 10px;
-        padding: 15px 15px 15px 0px;
-      }
-
-      input {
-        padding: 15px;
-      }
-
-      textarea {
-        padding: 15px;
-        margin-bottom: 10px;
-      }
-
-      .logForm-btn{
-        color: white;
-        border-radius: 5px;
-        height: 40px;
-        width: 150px;
-        justify-content: center;
-        padding-top: 12px;
-        margin: 20px 0 30px 0;
-        border: 1.5px solid $white;
-        background-color: $yellow;
-        display: flex;
-        align-self: center;
       }
     }
   }
-}
 
 }
 
