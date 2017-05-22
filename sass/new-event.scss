@@ -60,6 +60,10 @@ body{
         margin-bottom: 10px;
       }
 
+      #new-partner-btn {
+      margin-bottom: 100px;
+      }
+
       .logForm-btn{
         color: $white;
         border-radius: 5px;
@@ -73,6 +77,8 @@ body{
         display: flex;
         align-self: center;
       }
+
+
     }
   }
 }

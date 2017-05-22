@@ -160,7 +160,7 @@ img {
     padding: 10px 20px 0 0; }
     .event-container .admin-new-event .new-event-container {
       display: flex;
-      flex-basis: 25%;
+      flex-basis: 30%;
       margin: -20px 0px;
       flex-direction: row;
       justify-content: flex-end;
@@ -252,7 +252,7 @@ img {
   .event-container {
     flex-wrap: wrap; }
     .event-container .admin-new-event .new-event-container {
-      flex-basis: 20%; }
+      flex-basis: 80%; }
     .event-container .event-content {
       display: flex;
       justify-content: center;
@@ -1242,6 +1242,8 @@ body .make-new-event-container {
     body .make-new-event-container .flex-form-new-event textarea {
       padding: 15px;
       margin-bottom: 10px; }
+    body .make-new-event-container .flex-form-new-event #new-partner-btn {
+      margin-bottom: 100px; }
     body .make-new-event-container .flex-form-new-event .logForm-btn {
       color: #FDFDFD;
       border-radius: 5px;
