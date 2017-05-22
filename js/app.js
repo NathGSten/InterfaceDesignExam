@@ -113,6 +113,7 @@
 		 var sEvent = JSON.stringify(jEvent);
 		 localStorage.newEvent = sEvent;
 		 console.log(sEvent);
+		 window.location.href = 'index.html';
 
 	});
 
