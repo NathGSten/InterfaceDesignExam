@@ -27,12 +27,19 @@
 			console.log(localStorage.firstName);
 			console.log(loginUserEmail);
 			console.log(loginPassword);
+			window.location.href = 'index.html';
 		}else{
 			// sweetalert error try again
 			console.log("you're OUT");
 			console.log(localStorage.firstName);
 			console.log(loginUserEmail);
 			console.log(loginPassword);
+
+			swal(
+			  'Login failed!',
+			  'The login combination was wrong. <br>Try again!',
+			  'error'
+			)
 		}
 	});
 
