@@ -75,12 +75,14 @@
 	});
 	$( "#new-event-datepicker" ).datepicker( "option", "dateFormat", "d MM yy" );
 
+	// ADDING NEW EVENT   // ADDING NEW EVENT   // ADDING NEW EVENT   // ADDING NEW EVENT   // ADDING NEW EVENT   // ADDING NEW EVENT   // ADDING NEW EVENT   
+
 	$(".admin-add-event").click(function(){
 		document.location = "new-event.html";
 
 	});
 
-	// adding new event
+	
 
 	$("#new-event-btn").click(function(){
 
@@ -187,6 +189,8 @@
 		return aTags;
 	}
 
+	// LOGIN FOR BOTH ADMIN AND NEW ADMIN   // LOGIN FOR BOTH ADMIN AND NEW ADMIN   // LOGIN FOR BOTH ADMIN AND NEW ADMIN   
+
 	function performLogin(email, password){
 		if( (email == username && password == pass) || (email == localStorage.newUserEmail && password == localStorage.newPassword) ){
 			localStorage.firstName = "admin";
@@ -196,6 +200,8 @@
 			return false;
 		}
 	}
+
+	// REDESIGN MENU   // REDESIGN MENU   // REDESIGN MENU   // REDESIGN MENU   // REDESIGN MENU   // REDESIGN MENU   // REDESIGN MENU   
 
 	function redesignMenu(){
 		var checkUser = localStorage.getItem("firstName");
@@ -227,6 +233,52 @@
 		}
 	}
 
+	// ADDING NEW PARTNER  // ADDING NEW PARTNER   // ADDING NEW PARTNER   // ADDING NEW PARTNER   // ADDING NEW PARTNER   // ADDING NEW PARTNER
 
+	$(".admin-add-partner").click(function(){
+		document.location = "new-partner.html";
+
+	});
+
+	// adding new event
+
+	$("#new-partner-btn").click(function(){
+
+		var pName = $("#new-partner-name").val();
+		var pImage = $("#new-partner-image").val();
+
+
+		var jPartner = {
+		 	pName: pName,
+		 	pImage: pImage
+		 }
+
+		 var sPartner = JSON.stringify(jPartner);
+		 localStorage.newPartner = sPartner;
+		 console.log(sPartner);
+		 window.location.href = 'partners.html';
+
+	});
+
+
+	if(localStorage.newPartner){
+		var jPartner = JSON.parse(localStorage.newPartner);
+		console.log(jPartner);
+		buildNewPartnerDiv(jPartner);
+	}
+
+	function buildNewPartnerDiv(jPartner){
+		var sDivTemplate = '<img src="{{coverImage}}">'
+
+		var sTagsTemplate = '';
+
+		sDivTemplate = sDivTemplate.replace("{{coverImage}}", jPartner.pImage);
+
+		$(".p-partners").append(sDivTemplate);
+
+	}
+
+
+	
 
 })(jQuery);
