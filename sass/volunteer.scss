@@ -92,11 +92,22 @@ body{
 
         .firstName{
           margin-right: 15px;
+
+          input {
+            width: 100%;
+          }
+        }
+
+        .lastName{
+
+          input {
+            width: 100%;
+          }
         }
       }
 
       #sendMessage{
-        color: white;
+        color: $white;
         border-radius: 5px;
         height: 40px;
         width: 150px;

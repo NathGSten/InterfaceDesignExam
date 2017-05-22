@@ -537,8 +537,12 @@ body .getInvolvedContainer {
         justify-content: space-around; }
       body .getInvolvedContainer .getInvolvedWrapper .name .firstName {
         margin-right: 15px; }
+        body .getInvolvedContainer .getInvolvedWrapper .name .firstName input {
+          width: 100%; }
+      body .getInvolvedContainer .getInvolvedWrapper .name .lastName input {
+        width: 100%; }
     body .getInvolvedContainer .getInvolvedWrapper #sendMessage {
-      color: white;
+      color: #FDFDFD;
       border-radius: 5px;
       height: 40px;
       width: 150px;
