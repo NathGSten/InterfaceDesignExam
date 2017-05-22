@@ -1,0 +1,86 @@
+body{
+
+
+  .make-new-event-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .flex-form-new-event{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+
+      .new-event-element {
+        display: flex;
+        flex-direction: column !important;
+        margin: 10px 0px;
+
+        .new-event-tags {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          flex-basis: 100%;
+
+          .single-event-tag {
+            display: flex;
+            flex-basis: 25%;
+            margin: 5px 0;
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      .time-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .new-event-element {
+          flex-basis: 48%;
+        }
+      }
+
+      label {
+        margin-top: 10px;
+        padding: 15px 15px 15px 0px;
+      }
+
+      input {
+        padding: 15px;
+      }
+
+      textarea {
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+
+      .logForm-btn{
+        color: white;
+        border-radius: 5px;
+        height: 40px;
+        width: 150px;
+        justify-content: center;
+        padding-top: 12px;
+        margin: 20px 0 30px 0;
+        border: 1.5px solid $white;
+        background-color: $yellow;
+        display: flex;
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1001px) {
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px){
+      
+}
+
+@media screen and (max-width: 500px) {
+
+}
+

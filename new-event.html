@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Codify - EVENTS</title>
+	<title>Codify - MAKE EVENT</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -52,70 +52,95 @@
 
 <body>
 
-	<div class="admin-login">
+	<div class="make-event">
 
 		<div class="header-container get-involved-container">
 			<h1>ADD A NEW EVENT</h1>
 			<p>Fill in the new event information in the form below</p>
 		</div>
 
-		<div class="login-container">
-		  <div  class="flex-form-login" >
-			<div class="userEmail-container">
-				<label for="userEmail">USER EMAIL</label>
-				<input class="logForm-Email"  id="userEmail"  placeholder="Email address" required>
-			</div>
-			<div class="event-title-container">
+		<div class="make-new-event-container">
+		  <div  class="flex-form-new-event" >
+	
+			<div class="event-title-container new-event-element">
 				<label for="event-title">TITLE</label>
-				<input class="logForm-Email"  id="new-event-title" type="email" placeholder="The title of the event" required>
+				<input class="logForm-Email"  id="new-event-title" type="email" required>
 			</div>
-			<div class="event-cover-image-container">
-				<label for="event-cover-image">cover-image</label>
-				<input class="logForm-Email"  id="new-event-cover-image" type="email" placeholder="The cover-image url" required>
+			<div class="event-cover-image-container new-event-element">
+				<label for="event-cover-image">COVER IMAGE</label>
+				<input class="logForm-Email"  id="new-event-cover-image" type="email" placeholder="Add the url for the cover image" required>
 			</div>
 
-			<div class="date-container">
+			<div class="date-container new-event-element">
 				<label for="date">DATE</label>
-				<input type="text" id="new-event-datepicker">
+				<input type="text" id="new-event-datepicker" required>
 			</div>
 
 			<div class="time-container">
-				<label for="time-start">Start time</label>
-		 		<input type="text" class="timepicker" id="new-event-start-time" name="time-start"/>
-				<label for="time-end">End time</label>
-		 		<input type="text" class="timepicker" id="new-event-end-time" name="time-end"/>
+				<div class="new-event-element">
+					<label for="time-start">START TIME</label>
+			 		<input type="text" class="timepicker" id="new-event-start-time" name="time-start" required/>
+			 	</div>
+			 	<div class="new-event-element">
+					<label for="time-end">END TIME</label>
+			 		<input type="text" class="timepicker" id="new-event-end-time" name="time-end" required />
+		 		</div>
 			</div>
 
-			<div class="event-adress-container">
-				<label for="event-adress">VENUE</label>
-				<input class="logForm-Email"  id="new-event-adress" type="text" placeholder="The adress of the venue" required>
+			<div class="event-adress-container new-event-element">
+				<label for="event-adress">VENUE ADDRESS</label>
+				<input class="logForm-Email"  id="new-event-adress" type="text" required>
 			</div>
 
-			<div class="event-short-description-container">
+			<div class="event-short-description-container new-event-element">
 				<label for="event-short-description">SHORT DESCRIPTION</label>
-				<textarea id="new-event-short-description" rows="3" cols="70"></textarea>
+				<textarea id="new-event-short-description" rows="3" cols="70"  placeholder="This text will be shown in the event list" required=""></textarea>
 			</div>
-			<div class="event-description-container">
+			<div class="event-description-container new-event-element">
 				<label for="event-description">DESCRIPTION</label>
-				<textarea id="new-event-description" rows="10" cols="70"></textarea>
+				<textarea id="new-event-description" rows="10" cols="70"  placeholder="This text will be shown on the new event's page" required=""></textarea>
 			</div>
-			<div class="event-tags-container">
+			<div class="event-tags-container new-event-element">
 				<label for="event-tags">CATEGORIES / TAGS</label>
-				<input type="checkbox" id="event-HTML" class="new-event-tag" value="HTML" >HTML<br>
-				<input type="checkbox" id="event-CSS" class="new-event-tag" value="CSS" >CSS<br>
-				<input type="checkbox" id="event-PHP" class="new-event-tag" value="PHP" >PHP<br>
-				<input type="checkbox" id="event-JAVASCRIPT" class="new-event-tag" value="JAVASCRIPT" >JAVASCRIPT<br>
-				<input type="checkbox" id="event-C#" class="new-event-tag" value="C#" >C#<br>
-				<input type="checkbox" id="event-SASS" class="new-event-tag" value="SASS" >SASS<br>
-				<input type="checkbox" id="event-JAVA" class="new-event-tag" value="JAVA" >JAVA<br>
-				<input type="checkbox" id="event-SWIFT" class="new-event-tag" value="SWIFT" >SWIFT<br>
-				<input type="checkbox" id="event-SECURITY" class="new-event-tag" value="SECURITY" >SECURITY<br>
-				<input type="checkbox" id="event-RUBY" class="new-event-tag" value="RUBY" >RUBY<br>
-				<input type="checkbox" id="event-VR" class="new-event-tag" value="VR" >VR<br>
+				<div class="new-event-tags">
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-HTML" class="new-event-tag" value="HTML" >HTML<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-CSS" class="new-event-tag" value="CSS" >CSS<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-PHP" class="new-event-tag" value="PHP" >PHP<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-JAVASCRIPT" class="new-event-tag" value="JAVASCRIPT" >JAVASCRIPT<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-C#" class="new-event-tag" value="C#" >C#<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-SASS" class="new-event-tag" value="SASS" >SASS<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-JAVA" class="new-event-tag" value="JAVA" >JAVA<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-SWIFT" class="new-event-tag" value="SWIFT" >SWIFT<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-SECURITY" class="new-event-tag" value="SECURITY" >SECURITY<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-RUBY" class="new-event-tag" value="RUBY" >RUBY<br>
+					</div>
+					<div class="single-event-tag">
+						<input type="checkbox" id="event-VR" class="new-event-tag" value="VR" >VR<br>
+					</div>
+				</div>
 			</div>
 
 
-			<input id="new-event-btn" class="logForm-btn" type="submit" value="SEND">
+			<input id="new-event-btn" class="logForm-btn" type="submit" value="CREATE">
 
 		  </div>
 		</div>
