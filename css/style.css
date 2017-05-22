@@ -215,6 +215,7 @@ img {
           align-items: center;
           text-align: center;
           flex-direction: column;
+          flex-basis: 100%;
           margin: 15px 0; }
           .event-container .event-row .single-event .lowerHalf .event-info-container h1 {
             font-size: 1.5em;
