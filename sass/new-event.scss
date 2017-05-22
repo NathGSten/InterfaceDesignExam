@@ -3,7 +3,7 @@ body{
 
   .make-new-event-container{
     display: flex;
-    width: 100%;
+    flex-basis: 100%;
     justify-content: center;
 
     .flex-form-new-event{
