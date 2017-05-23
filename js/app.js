@@ -422,7 +422,7 @@
 	
 	
 
-		// SHOW CALENDAR FOR SPECIFIC MONTHS //
+		// SHOW CALENDAR FOR SPECIFIC MONTHS 
 
 		$(".july").hide();
 		$(".august").hide();
@@ -442,6 +442,77 @@
 		$(".july").hide();
 		$(".previous-month").hide();
 		$(".next-month").show();
+	});
+
+
+
+	// ATTEND EVENT ON EACH EVENT   // ATTEND EVENT ON EACH EVENT   // ATTEND EVENT ON EACH EVENT   // ATTEND EVENT ON EACH EVENT   // ATTEND EVENT ON EACH EVENT   
+	$(".btn-attend").click(function(){
+
+		console.log("hej");
+
+		swal({
+		  title: 'Write your email to sign up for this event.',
+			text: 'We cant wait to see you!',
+		  input: 'email',
+		  showCancelButton: true,
+		  confirmButtonText: 'Submit',
+		  showLoaderOnConfirm: true,
+		  preConfirm: function (email) {
+			return new Promise(function (resolve, reject) {
+			  setTimeout(function() {
+				if (email === 'taken@example.com') {
+				  reject('This email is already taken.')
+				} else {
+				  resolve()
+				}
+			  }, 2000)
+			})
+		  },
+		  allowOutsideClick: false
+		}).then(function (email) {
+		  swal({
+			type: 'success',
+			title: 'You are now attending!',
+			html: 'We will send information to: ' + email
+		  })
+		})
+
+	});
+
+
+	// REMIND OF EVENT ON EACH EVENT   // REMIND OF EVENT ON EACH EVENT   // REMIND OF EVENT ON EACH EVENT   // REMIND OF EVENT ON EACH EVENT   // REMIND OF EVENT ON EACH EVENT   
+	$(".btn-remind").click(function(){
+
+		console.log("hej");
+
+		swal({
+		  title: 'Not sure if you can make it?',
+			text: 'We will remind you when the event approaches. Submit your email!',
+		  input: 'email',
+		  showCancelButton: true,
+		  confirmButtonText: 'Submit',
+		  showLoaderOnConfirm: true,
+		  preConfirm: function (email) {
+			return new Promise(function (resolve, reject) {
+			  setTimeout(function() {
+				if (email === 'taken@example.com') {
+				  reject('This email is already taken.')
+				} else {
+				  resolve()
+				}
+			  }, 2000)
+			})
+		  },
+		  allowOutsideClick: false
+		}).then(function (email) {
+		  swal({
+			type: 'success',
+			title: 'We will remind you of this event!',
+			html: 'We will send the reminder to: ' + email
+		  })
+		})
+
 	});
 
 
