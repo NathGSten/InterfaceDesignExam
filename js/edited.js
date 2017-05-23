@@ -7,7 +7,7 @@ $(function() {
 
 	$("#header-container h1").html(jEvent.title);
 	$("#event-date-container p").html(sDate);
-	$("#event-place-container p").html(jEvent.address);
+	$(".event-place-container p").html(jEvent.address);
 	$("#event-time-container p").html(sTime);
 	$(".event-info h4").html(jEvent.title);
 	$(".event-info p").html(jEvent.description);
