@@ -371,49 +371,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 
-    $(".admin-new-event").hide();
-
     document.getElementById('header-container').style.backgroundImage="url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zmf49YPBQxuA_6ATkL7NqTKDICIfzer2PdRhjwfrakzhIJZV')";
 
 
-    ///////////// RELEVANT FOR MENU --    START    -- ALL SHOULD HAVE THIS  /////////////
-
-    $(".toggleNav").click( function(){
-        $(".flex-nav ul").toggleClass("open");
-    });
-
-    //var localTest = localStorage.setItem("firstName", null);
-
-    var checkUser = localStorage.getItem("firstName");
-
-    // console.log(checkUser);
-
-    if (checkUser !== null  && checkUser !== "null" ){
-
-        var changeNameTemplate =
-                '<ul>\
-                  <li class="event-page"><a href="index.html">Events</a></li>\
-                  <li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>\
-                  <li class="volunteer-page"><a href="partners.html">Partners</a></li>\
-                  <li class="aboutUs-page"><a href="about.html">About Us</a></li>\
-                  <li class="makeAdmin-page"><a href="new-admin.html">Make new admin</a></li>\
-                  <li class="logOut"><a href="index.html">Log out</a></li>\
-                </ul>';
-
-        $(".nav-right-ul").html(changeNameTemplate);
-
-        // the one between these brackets are not for the menu but for the admin extra
-        $(".admin-new-event").show();
-        // the one between these brackets are not for the menu but for the admin extra
-
-        $(".makeAdmin-page").show();
-        $(".logOut").show();
-    } else {
-        $(".makeAdmin-page").hide();
-        $(".logOut").hide();
-    }
-
-    ///////////// RELEVANT FOR MENU --    END    -- ALL SHOULD HAVE THIS  /////////////
+    // SET THE TIMER FOR THIS EVENT   // SET THE TIMER FOR THIS EVENT   // SET THE TIMER FOR THIS EVENT   // SET THE TIMER FOR THIS EVENT
 
     var countDownDate = new Date("Sep 19, 2017 18:00:00").getTime();
 
@@ -444,73 +405,6 @@
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
     }, 1000);
-
-    $(".btn-attend").click(function(){
-
-        console.log("hej");
-
-        swal({
-          title: 'Write your email to sign up for this event.',
-            text: 'We cant wait to see you!',
-          input: 'email',
-          showCancelButton: true,
-          confirmButtonText: 'Submit',
-          showLoaderOnConfirm: true,
-          preConfirm: function (email) {
-            return new Promise(function (resolve, reject) {
-              setTimeout(function() {
-                if (email === 'taken@example.com') {
-                  reject('This email is already taken.')
-                } else {
-                  resolve()
-                }
-              }, 2000)
-            })
-          },
-          allowOutsideClick: false
-        }).then(function (email) {
-          swal({
-            type: 'success',
-            title: 'You are now attending!',
-            html: 'We will send information to: ' + email
-          })
-        })
-
-    });
-
-    $(".btn-remind").click(function(){
-
-        console.log("hej");
-
-        swal({
-          title: 'Not sure if you can make it?',
-            text: 'We will remind you when the event approaches. Submit your email!',
-          input: 'email',
-          showCancelButton: true,
-          confirmButtonText: 'Submit',
-          showLoaderOnConfirm: true,
-          preConfirm: function (email) {
-            return new Promise(function (resolve, reject) {
-              setTimeout(function() {
-                if (email === 'taken@example.com') {
-                  reject('This email is already taken.')
-                } else {
-                  resolve()
-                }
-              }, 2000)
-            })
-          },
-          allowOutsideClick: false
-        }).then(function (email) {
-          swal({
-            type: 'success',
-            title: 'We will remind you of this event!',
-            html: 'We will send the reminder to: ' + email
-          })
-        })
-
-    });
-
 
     
 
