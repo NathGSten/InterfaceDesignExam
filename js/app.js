@@ -31,6 +31,12 @@
 		newPassword = $("#new-password").val();
 		localStorage.newUserEmail = newUserEmail;
 		localStorage.newPassword = newPassword;
+
+		swal(
+			  'Admin created!',
+			  'We will send the new admin an email with the login information!',
+			  'success'
+			)
 	});
 
 	// login as admin   // login as admin   // login as admin   // login as admin   // login as admin   // login as admin   // login as admin   
