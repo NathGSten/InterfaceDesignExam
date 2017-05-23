@@ -11,7 +11,15 @@ $(function() {
 	var aBackground = jEvent.background.split('"');
 	var aTime = jEvent.time.split(" - ");
 
+	var sDate = jEvent.date;  // format JULY 23 2017
+	var aDate = sDate.split(" ");
+	var month = aDate[0];
+	var day = aDate[1];
+	var year = aDate[2];
+	var sFormattedDate = day + " " + month + " " + year;
+
 	$("#edit-event-title").val(jEvent.title);
+	$("#edit-event-datepicker").val(sFormattedDate);
 	$("#edit-event-cover-image").val(aBackground[1]);
 	$("#edit-event-start-time").val(aTime[0]);
 	$("#edit-event-end-time").val(aTime[1]);
