@@ -426,6 +426,12 @@
 					cursor: pointer;
 					flex-direction: row;
 				}
+
+				.btn-newsletter:hover{
+					background-color: $orange;
+					border-color: $orange;
+					transition: background .5s, color .3s;
+				}
 			}
 
 			.header-right{
@@ -554,6 +560,12 @@
 						background-color: transparent;
 						cursor: pointer;
 						flex-direction: row;
+					}
+
+					.btn-newsletter:hover{
+						background-color: $orange;
+						border-color: $orange;
+						transition: background .5s, color .3s;
 					}
 				}
 
@@ -702,6 +714,12 @@
 						background-color: transparent;
 						cursor: pointer;
 						flex-direction: row;
+					}
+
+					.btn-newsletter:hover{
+						background-color: $orange;
+						border-color: $orange;
+						transition: background .5s, color .3s;
 					}
 				}
 

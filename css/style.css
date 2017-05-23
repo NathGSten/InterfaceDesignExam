@@ -322,6 +322,10 @@ img {
       background-color: transparent;
       cursor: pointer;
       flex-direction: row; }
+    .header-container .leftAndRight .header-left .btn-newsletter:hover {
+      background-color: #FC4A1A;
+      border-color: #FC4A1A;
+      transition: background .5s, color .3s; }
   .header-container .leftAndRight .header-right {
     width: 30%; }
     .header-container .leftAndRight .header-right .calender-view {
@@ -400,6 +404,10 @@ img {
         background-color: transparent;
         cursor: pointer;
         flex-direction: row; }
+      .event-container .header-container .leftAndRight .header-left .btn-newsletter:hover {
+        background-color: #FC4A1A;
+        border-color: #FC4A1A;
+        transition: background .5s, color .3s; }
     .event-container .header-container .leftAndRight .header-right {
       width: 40%; }
       .event-container .header-container .leftAndRight .header-right .calender-view {
@@ -486,6 +494,10 @@ img {
         background-color: transparent;
         cursor: pointer;
         flex-direction: row; }
+      .event-container .header-container .leftAndRight .header-left .btn-newsletter:hover {
+        background-color: #FC4A1A;
+        border-color: #FC4A1A;
+        transition: background .5s, color .3s; }
     .event-container .header-container .leftAndRight .header-right {
       width: 50%; }
       .event-container .header-container .leftAndRight .header-right .calender-view {
