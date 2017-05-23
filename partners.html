@@ -111,57 +111,9 @@
     </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
-
-    $(".admin-new-event-partner").hide();
-
-    ///////////// RELEVANT FOR MENU --    START    -- ALL SHOULD HAVE THIS  /////////////
-
-    $(".toggleNav").click( function(){
-        $(".flex-nav ul").toggleClass("open");
-    });
-
-    // var localTest = localStorage.setItem("firstName", null);
-
-    var checkUser = localStorage.getItem("firstName");
-
-    // console.log(checkUser);
-
-    if (checkUser !== null  && checkUser !== "null" ){
-
-        var changeNameTemplate =
-                '<ul>\
-                  <li class="event-page"><a href="index.html">Events</a></li>\
-                  <li class="volunteer-page"><a href="volunteer.html">Get Involved</a></li>\
-                  <li class="volunteer-page"><a href="partners.html">Partners</a></li>\
-                  <li class="aboutUs-page"><a href="about.html">About Us</a></li>\
-                  <li class="makeAdmin-page"><a href="new-admin.html">Make new admin</a></li>\
-                  <li class="logOut"><a href="index.html">Log out</a></li>\
-                </ul>';
-
-        $(".nav-right-ul").html(changeNameTemplate);
-
-        // the one between these brackets are not for the menu but for the admin extra
-        $(".admin-new-event").show();
-        // the one between these brackets are not for the menu but for the admin extra
-
-        $(".makeAdmin-page").show();
-        $(".logOut").show();
-    } else {
-        $(".makeAdmin-page").hide();
-        $(".logOut").hide();
-    }
-
-    ///////////// RELEVANT FOR MENU --    END    -- ALL SHOULD HAVE THIS  /////////////
-
-    $(".mail-view-container").click(function(){
-        document.location = "volunteer.html";
-    });
-
-
-</script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 <script src="js/app.js"></script>
+
 </body>
 </html>

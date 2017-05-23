@@ -2,6 +2,15 @@
 (function($) {
 
 	$(".admin-new-event-indi").hide();
+	$(".admin-new-event").hide();
+	$(".makeAdmin-page").hide();
+	$(".admin-new-event-partner").hide();
+
+	$(".calender-view-text2").hide();
+	$(".event-calendar").hide();
+	$(".calender-view-img2").hide();
+
+
 	// admin logins
 	var username = "admin@codify.com";
 	var pass = "123";
@@ -376,6 +385,63 @@
 		  	document.location = "index.html";
 		  })
 		})
+	});
+
+
+	// REDIRECT FROM CONTACT BTN   // REDIRECT FROM CONTACT BTN   // REDIRECT FROM CONTACT BTN   // REDIRECT FROM CONTACT BTN   
+
+	$(".mail-view-container").click(function(){
+        document.location = "volunteer.html";
+    });
+
+    // CALENDER / LIST TOGGLE   // CALENDER / LIST TOGGLE   // CALENDER / LIST TOGGLE   // CALENDER / LIST TOGGLE   // CALENDER / LIST TOGGLE   
+
+		$(".calender-view-text").click(function(){
+			$(".calender-view-img").hide();
+			$(".event-row").hide();
+			$(".calender-view-text").hide();
+			$(".event-calendar").show();
+			$(".event-calendar img").css("visibility", "visible");
+			$(".calender-view-text2").show();
+			$(".calender-view-img2").show();
+			$(this).addClass("calender-view-container2");
+			$(this).removeClass("calender-view-container2");
+		});
+
+		$(".calender-view-text2").click(function(){
+			$(".calender-view-img2").hide();
+			$(".event-row").show();
+			$(".calender-view-text2").hide();
+			$(".event-calendar").hide();
+			$(".event-calendar img").css("visibility", "hidden");
+			$(".calender-view-text").show();
+			$(".calender-view-img").show();
+			$(this).addClass("calender-view-container2");
+			$(this).removeClass("calender-view-container2");
+		});
+	
+	
+
+		// SHOW CALENDAR FOR SPECIFIC MONTHS //
+
+		$(".july").hide();
+		$(".august").hide();
+		$(".previous-month-text").hide();
+		$(".next-month-text").hide();
+		$(".previous-month").hide();
+
+		$(".next-month").click(function(){
+				$(".june").hide();
+				$(".july").show();
+				$(".previous-month").show();
+				$(".next-month").hide();
+		});
+
+	$(".previous-month").click(function(){
+		$(".june").show();
+		$(".july").hide();
+		$(".previous-month").hide();
+		$(".next-month").show();
 	});
 
 
