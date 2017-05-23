@@ -89,6 +89,8 @@
 			display: flex;
 			margin: 55px 10px 10px 15px;
 			justify-content: center;
+			align-items: center;
+
 			border-radius: 5px;
 			border: 2px solid #F7B733;
 			background-color: transparent;
@@ -108,18 +110,14 @@
 			.newsletter-view-text{
 				display: flex;
 				margin: 1%;
+				padding: 4px 15px 4px 5px;
 				border: 1px solid transparent;
 				background-color: transparent;
 				color: $white;
 			}
 		}
 
-		.btn-newsletter:hover{
-			background-color: $orange;
-			border-color: $orange;
-			transition: background .5s, color .3s;
-		}
-	}
+			}
 
 	.header-indi-event-1 {
 		background-image: url("https://www.w3schools.com/w3images/fjords.jpg") !important;

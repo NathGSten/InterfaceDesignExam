@@ -70,3 +70,14 @@ img {
 
 }
 
+/* ================================= 
+	Newsletter hover
+==================================== */
+
+.btn-newsletter:hover{
+			background-color: $orange;
+			border-color: $orange;
+			transition: background .5s, color .3s;
+		}
+
+
