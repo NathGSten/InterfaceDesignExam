@@ -43,7 +43,7 @@
 <body>
 <div class="event-container individual-event">
 
-    <div class="header-container">
+    <div class="header-container" id="header-container">
         <h1>NEW IN JAVASCRIPT</h1>
         <p></p>
 
@@ -380,6 +380,10 @@
     $(".toggleNav").click( function(){
         $(".flex-nav ul").toggleClass("open");
     });
+
+    document.getElementById('header-container').style.backgroundImage="url('http://nordic.businessinsider.com/contentassets/8360cd0c8b204134b8656ef875d51486/57ab977ddb5ce925008b5f79.jpg?preset=article-image')";
+
+
 
     //var localTest = localStorage.setItem("firstName", null);
 
