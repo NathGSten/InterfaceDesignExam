@@ -101,6 +101,35 @@
 
 	});
 
+	// EDITING EVENT
+	$(".admin-edit-event h4").click(function(){
+		var address = $(".event-place-container p").html();
+		var date = $("#event-date-container p").html();
+		var time = $("#event-time-container p").html();
+		var title = $(".header-container h1").html();
+		var body = $(".event-info p").html();
+		var aTags = [];
+		var background = $(".header-container").css("background-image");
+
+		$(".individual-event-tags div").each(function(){
+			aTags.push($(this).html());
+		});
+
+		var jEventToEdit = {
+			address: address,
+			date: date,
+			time: time,
+			title: title,
+			body: body,
+			aTags: aTags,
+			background: background
+		}
+		var sEventToEdit = JSON.stringify(jEventToEdit);
+		localStorage.eventToEdit = sEventToEdit;
+		document.location = 'edit-event.html';
+
+	});
+
 	
 
 	$("#new-event-btn").click(function(){
@@ -114,7 +143,7 @@
 		var shortDescription = $("#new-event-short-description").val();
 		var description = $("#new-event-description").val();
 
-
+		console.log(date);
 		var aDate = date.split(' ');
 		var day = aDate[0];
 		var month = aDate[1].toUpperCase();
@@ -138,7 +167,7 @@
 
 		 var sEvent = JSON.stringify(jEvent);
 		 localStorage.newEvent = sEvent;
-		 console.log(sEvent);
+		 // console.log(sEvent);
 		 window.location.href = 'index.html';
 
 	});
@@ -149,7 +178,7 @@
 
 	if(localStorage.newEvent){
 		var jEvent = JSON.parse(localStorage.newEvent);
-		console.log(jEvent);
+		// console.log(jEvent);
 		buildNewEventDiv(jEvent);
 	}
 

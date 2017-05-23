@@ -6,7 +6,10 @@ new partners should be appended
 
 http://www.ces.tech/CES/media/conference-images/conference-program_1.jpg
 
-
+$(".admin-edit-event h4").click()
+on every event edit button, read the data, build object, store in localstorage
+edit-event page identical to make new event, fill the values with the data you read from previous event
+edited-event page identical to individual event, fill the divs with content from localstorage object
 
 
 
