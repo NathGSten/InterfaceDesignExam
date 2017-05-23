@@ -521,6 +521,40 @@
 
 	});
 
+	// NEWSLETTER // NEWSLETTER // NEWSLETTER // NEWSLETTER // NEWSLETTER // NEWSLETTER // NEWSLETTER 	// NEWSLETTER // NEWSLETTER // NEWSLETTER // NEWSLETTER
+
+	$(".btn-newsletter").click(function(){
+
+		console.log("hej");
+
+		swal({
+			title: 'Write your email to subscribe for the Codify Newsletter.',
+			text: 'We cant wait to have you on board!',
+			input: 'email',
+			showCancelButton: true,
+			confirmButtonText: 'Submit',
+			showLoaderOnConfirm: true,
+			preConfirm: function (email) {
+				return new Promise(function (resolve, reject) {
+					setTimeout(function() {
+						if (email === 'taken@example.com') {
+							reject('This email is already taken.')
+						} else {
+							resolve()
+						}
+					}, 2000)
+				})
+			},
+			allowOutsideClick: false
+		}).then(function (email) {
+			swal({
+				type: 'success',
+				title: 'You are now subscribing!',
+				html: 'We will send information to: ' + email
+			})
+		})
+
+	});
 
 
 	
