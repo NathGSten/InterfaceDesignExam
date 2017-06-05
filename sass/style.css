@@ -46,6 +46,14 @@ img {
 .new-event-container:hover {
   color: #FC4A1A !important; }
 
+/* ================================= 
+	Newsletter hover
+==================================== */
+.btn-newsletter:hover {
+  background-color: #FC4A1A;
+  border-color: #FC4A1A;
+  transition: background .5s, color .3s; }
+
 .event-container {
   display: flex;
   flex-direction: column;
@@ -105,6 +113,7 @@ img {
       display: flex;
       margin: 55px 10px 10px 15px;
       justify-content: center;
+      align-items: center;
       border-radius: 5px;
       border: 2px solid #F7B733;
       background-color: transparent;
@@ -119,13 +128,10 @@ img {
       .event-container .header-container .btn-newsletter .newsletter-view-text {
         display: flex;
         margin: 1%;
+        padding: 4px 15px 4px 5px;
         border: 1px solid transparent;
         background-color: transparent;
         color: #FDFDFD; }
-    .event-container .header-container .btn-newsletter:hover {
-      background-color: #FC4A1A;
-      border-color: #FC4A1A;
-      transition: background .5s, color .3s; }
   .event-container .header-indi-event-1 {
     background-image: url("https://www.w3schools.com/w3images/fjords.jpg") !important; }
   .event-container .event-content {
@@ -186,6 +192,8 @@ img {
           cursor: pointer;
           color: #212121;
           font-size: 11px; }
+        .event-container .tags-row .tags-border .tags .filters:hover {
+          border-color: #FDFDFD; }
   .event-container .admin-new-event {
     display: flex;
     flex-basis: 100%;
@@ -687,6 +695,14 @@ img {
   color: #FC4A1A !important; }
 
 /* ================================= 
+	Newsletter hover
+==================================== */
+.btn-newsletter:hover {
+  background-color: #FC4A1A;
+  border-color: #FC4A1A;
+  transition: background .5s, color .3s; }
+
+/* ================================= 
   Button Transitions
 ==================================== */
 button, .swal2-modal .swal2-styled, #sendMessage {
@@ -734,11 +750,25 @@ img {
 .new-event-container:hover {
   color: #FC4A1A !important; }
 
+/* ================================= 
+	Newsletter hover
+==================================== */
+.btn-newsletter:hover {
+  background-color: #FC4A1A;
+  border-color: #FC4A1A;
+  transition: background .5s, color .3s; }
+
 body .swal2-modal .swal2-styled {
   background-color: #F7B733 !important;
   font-family: 'Roboto', sans-serif; }
 body .swal2-content {
   font-family: 'Roboto', sans-serif; }
+body #share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline; }
 body .individual-event {
   display: flex;
   width: 100%; }
