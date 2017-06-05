@@ -64,7 +64,17 @@ $(function() {
 
 		 var sEvent = JSON.stringify(jEvent);
 		 localStorage.editedEvent = sEvent;
-		 window.location.href = 'edited-event.html';
+
+		swal(
+			'Successfull adding!',
+			'The event is now edited',
+			'success'
+		)
+
+		setTimeout(function () {
+			document.location = 'edited-event.html';
+		}, 2000);
+		 //window.location.href = 'edited-event.html';
 
 	});
 

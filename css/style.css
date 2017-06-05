@@ -763,12 +763,6 @@ body .swal2-modal .swal2-styled {
   font-family: 'Roboto', sans-serif; }
 body .swal2-content {
   font-family: 'Roboto', sans-serif; }
-body #share-buttons img {
-  width: 35px;
-  padding: 5px;
-  border: 0;
-  box-shadow: 0;
-  display: inline; }
 body .individual-event {
   display: flex;
   width: 100%; }

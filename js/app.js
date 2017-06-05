@@ -29,14 +29,32 @@
 	$("#btn-new-admin").click(function(){
 		newUserEmail = $("#new-userEmail").val();
 		newPassword = $("#new-password").val();
-		localStorage.newUserEmail = newUserEmail;
-		localStorage.newPassword = newPassword;
 
-		swal(
-			  'Admin created!',
-			  'We will send the new admin an email with the login information!',
-			  'success'
+		var nothing = "";
+
+		if (newUserEmail != nothing && newPassword != nothing) {
+
+			localStorage.newUserEmail = newUserEmail;
+			localStorage.newPassword = newPassword;
+
+			swal(
+				'Admin created!',
+				'We will send the new admin an email <br> with the login information!',
+				'success'
 			)
+
+			setTimeout(function () {
+				document.location = 'index.html';
+			}, 2000);
+
+		} else {
+
+			swal(
+				'Admin was not created!',
+				'Try again!',
+				'error'
+			)
+		}
 	});
 
 	// login as admin   // login as admin   // login as admin   // login as admin   // login as admin   // login as admin   // login as admin   
@@ -50,7 +68,16 @@
 			console.log(localStorage.firstName);
 			console.log(loginUserEmail);
 			console.log(loginPassword);
-			document.location = "index.html";
+
+			swal(
+				'Login successfull!',
+				'The login combination was right. <br>We are logging you in!',
+				'success'
+			)
+
+			setTimeout(function () {
+				document.location = "index.html";
+			}, 2000);
 
 		}else{
 			// sweetalert error try again
@@ -168,7 +195,16 @@
 		 var sEvent = JSON.stringify(jEvent);
 		 localStorage.newEvent = sEvent;
 		 // console.log(sEvent);
-		 window.location.href = 'index.html';
+
+		swal(
+			'Successfull adding!',
+			'The event was successfully submitted.',
+			'success'
+		)
+
+		setTimeout(function () {
+			document.location = "index.html";
+		}, 2000);
 
 	});
 
@@ -302,16 +338,39 @@
 		var pName = $("#new-partner-name").val();
 		var pImage = $("#new-partner-image").val();
 
+		var nothing = "";
 
-		var jPartner = {
-		 	pName: pName,
-		 	pImage: pImage
-		 }
+		if (pName != nothing && pImage != nothing) {
 
-		 var sPartner = JSON.stringify(jPartner);
-		 localStorage.newPartner = sPartner;
-		 console.log(sPartner);
-		 window.location.href = 'partners.html';
+			var jPartner = {
+				pName: pName,
+				pImage: pImage
+			}
+
+			var sPartner = JSON.stringify(jPartner);
+			localStorage.newPartner = sPartner;
+			console.log(sPartner);
+
+			swal(
+				'Successfull adding!',
+				'The new partner is now added',
+				'success'
+			)
+
+			setTimeout(function () {
+				document.location = 'partners.html';
+			}, 2000);
+
+		} else {
+
+			swal(
+				'Unsuccessfull adding!',
+				'The new partner was not added properly',
+				'error'
+			)
+		}
+
+		 //window.location.href = 'partners.html';
 
 	});
 
