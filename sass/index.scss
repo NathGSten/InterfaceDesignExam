@@ -188,11 +188,11 @@
 					align-items: center;
 					border-radius: 5px;
 					height: 40px !important;
-					border: 1px solid $darkGrey;
+					border: 1px solid $blue;
 					padding: 0 10px;
 					margin: 0 20px;
 					cursor: pointer;
-					color: $darkGrey;
+					color: $blue;
 					font-size: 11px;
 
 
@@ -240,25 +240,25 @@
 		flex-basis: 100%;
 		padding: 20px;
 
-		//img {
-		//	visibility: hidden;
-		//	width: 100%;
-		//	height: 100%;
-		//}
-
-		iframe{
-			border: none;
-			height: 800px;
-			background-color: white !important;
-
-			.header{
-				background-color: white;
-			}
-			.mv-daynames-table{
-				background-color: white;
-				color: black;
-			}
+		img {
+			visibility: hidden;
+			width: 100%;
+			height: 100%;
 		}
+
+		//iframe{
+		//	border: none;
+		//	height: 800px;
+		//	background-color: white !important;
+        //
+		//	.header{
+		//		background-color: white;
+		//	}
+		//	.mv-daynames-table{
+		//		background-color: white;
+		//		color: black;
+		//	}
+		//}
 	}
 
 	.event-row {
@@ -321,6 +321,28 @@
 					flex-direction: column;
 					flex-basis: 100%;
 					margin: 15px 0;
+
+					.time{
+						display: flex;
+						flex-direction: row;
+
+						.fa-clock-o{
+							color: $blue;
+							padding-top: 5px;
+							padding-right: 5px;
+						}
+					}
+
+					.place{
+						display: flex;
+						flex-direction: row;
+
+						.fa-map-marker{
+							color: $blue;
+							padding-top: 5px;
+							padding-right: 5px;
+						}
+					}
 
 					h1{
 						font-size: 1.5em;

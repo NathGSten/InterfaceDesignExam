@@ -1,3 +1,8 @@
+// TOGGLE MENU
+
+$(".toggleNav").click( function(){
+	$(".flex-nav ul").toggleClass("open");
+});
 
 (function($) {
 
@@ -157,26 +162,75 @@
 
 	});
 
-	
-
 	$("#new-event-btn").click(function(){
 
 		var title = $("#new-event-title").val();
-		var coverImage = $("#new-event-cover-image").val();
 		var date = $("#new-event-datepicker").val();
 		var startTime = $("#new-event-start-time").val();
 		var endTime = $("#new-event-end-time").val();
-		var address = $("#new-event-address").val();
-		var shortDescription = $("#new-event-short-description").val();
-		var description = $("#new-event-description").val();
 
 		console.log(date);
 		var aDate = date.split(' ');
 		var day = aDate[0];
 		var month = aDate[1].toUpperCase();
 		var year = aDate[2];
-		
-		var aTags = newEventTagsArray();
+
+		switch(title) {
+			case "Html 5 for beginners":
+				var aTags = ['Html','css'];
+				var coverImage = "https://www.timeshighereducation.com/sites/default/files/lecture-hall.jpg";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "Learn to write html 5 - the most used markup language for structuring and presenting content on the World Wide Web.";
+				break;
+			case "New in Javascript":
+				var aTags = ['JavaScript','Html','css'];
+				var coverImage = "http://nordic.businessinsider.com/contentassets/8360cd0c8b204134b8656ef875d51486/57ab977ddb5ce925008b5f79.jpg?preset=article-image";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "Adding javascript to your webpage makes a big difference! Dont know how to do it? No worries. We got you!";
+				break;
+			case "Advanced Javascript":
+				var aTags = ['JavaScript','Html','css'];
+				var coverImage = "https://courses.telegraph.co.uk/images/26/625x351/coding625x351.jpg";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "Make your site on top of the line with advanced javascript. A senior developer from Danske Bank will show you his favorite functions!";
+				break;
+			case "Make an Android app":
+				var aTags = ['Java'];
+				var coverImage = "http://i2.cdn.turner.com/cnn/dam/assets/111030010449-apple-iphone-newly-purchased-story-top.jpg";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "Always wanted to be an Android wizard? Look no further. This is where your journey begins - create your first app today!";
+				break;
+			case "Expand with PHP":
+				var aTags = ['PHP','JavaScript'];
+				var coverImage = "https://i.ytimg.com/vi/5v-sJF81qFs/maxresdefault.jpg";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "PHP is a great tool in so many ways! Join us and find out why. This is beginners level";
+				break;
+			case "Building a theme":
+				var aTags = ['PHP','css','JavaScript'];
+				var coverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBurgXuzEiGDmaFuR2MraE8cEypRI-n2X6dbB1y4_KS8QqcTTR";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "Wordpress themes can be expensive and hard to decode - so what about building your own?";
+				break;
+			case "Protect yourself":
+				var aTags = ['PHP','Security'];
+				var coverImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-zmf49YPBQxuA_6ATkL7NqTKDICIfzer2PdRhjwfrakzhIJZV";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "The risk of being hacked gets bigger each year and we want to help you protect yourself and your clients!";
+				break;
+			case "Advantage of SASS":
+				var aTags = ['Html','css','Sass'];
+				var coverImage = "http://www.webinsation.com/wp-content/uploads/2012/06/sass-vs-css.jpg";
+				var address = "Valby Langgade 14, 2500 Valby";
+				var shortDescription = "Is there a way to make css easier to work with? Yes there is - come and we will show you!";
+				break;
+			default:
+				var aTags = newEventTagsArray();
+				var coverImage = $("#new-event-cover-image").val();
+				var address = $("#new-event-address").val();
+				var shortDescription = $("#new-event-short-description").val();
+				var description = $("#new-event-description").val();
+		}
 
 		var jEvent = {
 		 	title: title,
@@ -235,8 +289,12 @@
 					<div class="lowerHalf">\
 						<div class="event-info-container">\
 							<h1>{{title}}</h1>\
-							<h3>{{startTime}} - {{endTime}}</h3>\
-							<h5>{{address}}</h5>\
+							<div class="time">\
+								<i class="fa fa-clock-o" aria-hidden="true"></i></i><h3>{{startTime}} - {{endTime}}</h3>\
+							</div>\
+							<div class="place">\
+								<i class="fa fa-map-marker" aria-hidden="true"></i><h5>{{address}}</h5>\
+							</div>\
 							<p>{{description}}</p>\
 							<div class="event-tags" id="new-event-tags-container">\
 							</div>\
@@ -613,7 +671,7 @@
 
 	$(".btn-newsletter").click(function(){
 
-		console.log("hej");
+		// console.log("hej");
 
 		swal({
 			title: 'Write your email to subscribe for the Codify Newsletter.',
@@ -644,7 +702,29 @@
 
 	});
 
+	// SEND MESSAGE // SEND MESSAGE // SEND MESSAGE // SEND MESSAGE // SEND MESSAGE // SEND MESSAGE // SEND MESSAGE // SEND MESSAGE // SEND MESSAGE
 
-	
+	$("#sendMessage").click(function(){
+		var fname = $("#fname").val();
+		var lname = $("#lname").val();
+		var email = $("#email").val();
+		var subject = $("#subject").val();
+
+		if(fname == "" || lname == "" || email == "" || subject == ""){
+			swal({
+				type: 'error',
+				title: 'Your message was unfortunately not successfully sent!',
+				html: 'Try again'
+			})
+		} else {
+			swal({
+				type: 'success',
+				title: 'Your message was successfully sent!',
+				html: 'Thank you for taking your time to write us. We will get back to you on ' + email + ' as fast as possible.'
+			})
+		}
+
+	});
+
 
 })(jQuery);
